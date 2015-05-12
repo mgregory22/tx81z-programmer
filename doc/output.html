@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Output Controls</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Output Controls</h2>
+
+<img src="output.gif" align="right">
+
+<p>
+
+(All of these controls are in groups of four, one for each operator.  Operator 1
+is on the left followed by operators 2, 3, and 4.)
+
+<h3>Menu Button</h3>
+
+The label for this section is a button which brings up a menu, and this is
+documented in the section on <a href="ve_menubtns.html">Menu Buttons</a>.
+
+<h3>Output Levels</h3>
+
+The four LCD controls at the top of the output section are the operator output
+levels.  For carrier operators, this is the volume.  For modulator operators,
+this is the amount of modulation that is applied by the operator.
+
+<h3>Operator Enable Buttons</h3>
+
+Directly below the output level controls are four numbered buttons.  These are
+the operator toggle buttons, and they are used to temporarily disable operators
+so you can listen to certain operators individually as you edit the sound.
+If the button is pushed down then the operator is enabled.  The settings for
+these buttons are not stored with the sound.  That is, all operators are always
+enabled when you change patches on the TX81Z, even if you stored it while
+operators were disabled.  If you want to permanently disable an operator then
+you have to set its output level to zero.
+
+<h3>Key Velocity</h3>
+
+The key velocity sliders determine how much each operator will be affected by
+the speed in which the keys are pressed (provided you are using a
+velocity-sensitive keyboard, of course).  Turning these up actually
+<i>decreases</i> the overall output level of the operators, so it would be more
+accurate to say that these determine how much a <i>lack</i> of velocity affects
+the sound.  I often find myself turning up the output levels to compensate for
+the decrease in overall output level.
+
+<h3>Scaling</h3>
+
+Scaling represents the change in output level across the keyboard.  Rate
+scaling compresses the EG time as you go up the keyboard, so the envelope will
+sound shorter/faster.  Level scaling will decrease the output level as you go
+up the keyboard, so the notes will sound softer.
+
+<p>
+
+And, just in case you're wondering, yeah rate scaling does belong with the EG
+parameters.  I just like it better over there on the left :-)
+
+</body>
+
+</html>

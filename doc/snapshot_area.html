@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>TX81Z Programmer - Snapshot Area</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Snapshot Area</h2>
+
+<img src="snapshot.gif">
+
+<p>
+
+<h3>Snapshot List Box</h3>
+
+The main feature of the snapshot area is the list in the center.  Everything
+that can be manipulated in the TX81Z shows up in the snapshot list.  The list
+is divided into two columns within the list box.  The column on the left is
+the <a href="item_types.html">item type</a>, and the column on the right is
+the item name.
+
+<p>
+
+The snapshot list box is an ordinary Windows list box.  The only modification
+to it is with the drawing of it, but that doesn't affect the functionality at
+all.  For a discussion of how list boxes work see
+<a href="listboxes.html">List Boxes</a>.
+
+<p>
+
+Actions are performed on individual items by selecting them and pushing one of
+the buttons to the left or right of the list (see
+<a href="snapshot_buttons.html">Snapshot Buttons</a>), or by double clicking
+on them.
+
+<p>
+
+<a name=doubleclicking><h3>Double-Clicking Items</h3>
+
+Double-clicking on an item will generally open the editor for that item, but
+there are exceptions for the bank and library items that I'd like to discuss.
+
+<p>
+
+When you double-click on a bank or library item, the program copies the
+selected item to an edit buffer first.  This is because all edits occur only
+on the snapshot's edit buffer as opposed to edits affecting bank or library
+items directly, as discussed in the section on
+<a href="edit_buffers.html">Edit Buffers</a>.
+
+<p>
+
+The program will also try to synchronize the unit with what is in the snapshot
+edit buffer.  This happens in one of two ways:
+
+<p>
+
+<ul>
+<li>If you double-click on a library item, like a VMEM (voice) or a PMEM 
+(performance), the program will not only copy that item into one of the
+editable seven items in the snapshot, it will also transmit that item to the
+TX81Z's edit buffer.
+<p>
+<li>If you double-click on a bank item in the snapshot, the program will skip
+sending the entire voice and just send a program change to change the unit to
+the patch number you double-clicked.
+</ul>
+
+<p>
+
+You can also configure double-clicking on a bank item to
+send a program change without opening an editor.  This makes it faster to
+audition the patches in the unit.  This is done by going into the <a
+href="mainwnd_menu.html#optionsmenu"><i>Options</i> menu</a> and checking <a
+href="mainwnd_menu.html#dblclknoopen"><i>Do Not Open Editor When
+Double-Clicking Bank Items</i></a>.
+
+<p>
+
+Note that sometimes you can load a snapshot from a file that doesn't match the
+bank loaded on the TX81Z.  The program has no way to know when this happens
+and you'll just have to re-synch the two.
+
+<h3>The Selected Indicator</h3>
+
+Just above the list and to the right is a readout that tells you how many
+items are selected in the list.  This is useful when copying items from a
+library into the snapshot because the same number of items need to be selected
+in each in order to copy them (see the <a
+href="snapshot_buttons.html#copyitemsfromlib"><i>Copy Items From Lib</i></a>
+button).
+
+<p>
+
+<h3>The File Name Indicator</h3>
+
+The gray text field at the top of the window tells you the file name of
+the snapshot you have open.
+
+<p>
+
+If you're working on a snapshot from scratch, the indicator will be blank.
+
+<p>
+
+If the snapshot has been modified but not saved, this will be colored red (or
+whatever color you have chosen as the highlight color; see <a
+href="mainwnd_menu.html#setcolor"><i>Set Highlight Color...</i></a> for more).
+
+<p>
+
+You can configure the indicator to display the full path to the file by going
+into the <i>Options</i> menu and checking
+<a href="mainwnd_menu.html#showpaths"><i>Show Full Path Names</i></a>.
+
+<p>
+
+<b>See also:</b> <a href="snapshot_menu.html">Snapshot Menu</a>,
+<a href="snapshot_buttons.html">Snapshot Buttons</a>
+
+<p>
+
+</body>
+</html>
+

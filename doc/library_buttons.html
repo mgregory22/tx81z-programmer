@@ -1,0 +1,174 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Library Buttons</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Library Buttons</h2>
+
+<p>
+
+<img src="library_buttons.gif">
+
+<p>
+
+The library buttons allow you to manipulate the contents of libraries.
+
+<p>
+
+<a name="copy"><h3>Copy</h3>
+
+The copy button will copy the selected items to the other library.  You can
+only have selected items in one library at a time, and the icon on the copy
+button will point to the other library, so it should be pretty obvious what
+will happen when you click the copy button.
+
+<p>
+
+Where the copied items end up in the destination library's list box depends
+on what sort is activated.  It will place the items in sorted order.
+
+<p>
+
+If you have the <a href="mainwnd_menu.html#disallowdupes"><i>Disallow
+Duplicates In Libraries</i></a> option selected in the main menu, then any
+duplicates you try to copy will not copy over, but the items that were
+duplicated are selected in the destination list after the copy.
+
+<p>
+
+<blockquote>
+<table class=note><tr><td class=note>
+  <h5>Note</h5>
+  Items that have different names but have all the same parameter settings are
+  considered duplicates in this context.
+</table>
+</blockquote>
+
+<p>
+
+<a name="delete"><h3>Delete</h3>
+
+<p>
+
+Deletes the selected items from the library.
+
+<p>
+
+<a name="rename"><h3>Rename</h3>
+
+<p>
+
+This will bring up the <i>Rename</i> dialog to allow you to rename all of the
+selected items.
+
+<p>
+
+<img src="renamedlg.gif">
+
+<p>
+
+All of the selected items will be given the name you enter in the <i>Enter New
+Name:</i> field.  You can make these unique by checking the <i>Use Item 
+umbers</i> option (this will be disabled if only one item is selected).
+Checking this will enable the count controls.  The <i>Start Counting At</i>
+field lets you set the starting number to being counting.  The <i>Count
+Position</i> slider lets you place the rightmost digit of the number.  The
+counting begins with the top item in the selection and is incremented by
+one for each item going down.
+
+<p>
+
+Item names are limited to 10 characters.  This is the same limit as it is
+on the TX81Z.
+
+<p>
+
+<blockquote>
+<table class=note><tr><td class=note>
+<h5>Note</h5>
+When you rename items, the library will be resorted if you have it sorted by
+name.
+</table>
+</blockquote>
+
+<p>
+
+<a name="recomment"><h3>Recomment</h3>
+
+<p>
+
+This brings up the <i>Edit Item Comment</i> box so you can enter a new
+comment.
+
+<p>
+
+<img src="recommentdlg.gif">
+
+<p>
+
+All the selected items will be given the same comment.  Comments
+are limited to 40 characters.
+
+<p>
+
+<blockquote>
+<table class=note><tr><td class=note>
+<h5>Note</h5>
+When you recomment items, the library will be resorted if you have it sorted
+by comment.
+</table>
+</blockquote>
+
+<p>
+
+<a name="compare"><h3>Compare</h3>
+
+<p>
+
+This button allows you to compare the parameters of two items.  It will bring
+up the <i>Item Comparison</i> window, which lists each parameter and the values
+of the two items.  The top item of the selection is on the left, and the bottom
+one is on the right.  Differences between the items are highlighted in red, or
+whatever the current <a href="mainwnd_menu.html#setcolor">highlight color</a>
+is.
+
+<p>
+
+<img src="diff.gif">
+
+<p>
+
+You can configure the list to show only items that are different, only
+items that are the same, or all items in the <i>View</i> menu of the
+<i>Item Comparison</i> window.
+
+<p>
+
+There are a few limitations with this function:
+
+<p>
+
+<ul>
+  <li>You can only compare two items at once.
+<p>
+  <li>The two items have to be the same type.
+<p>
+  <li>The type of the items has to be VMEM, PMEM, FX, or SYS.
+<p>
+  <li>The two items have to both be in the same library.  
+</ul>
+
+<p>
+
+The <i>Compare</i> button in the main window will be disabled if these
+conditions are not met.
+
+</body>
+
+</html>

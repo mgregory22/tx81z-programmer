@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Frequency Controls</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Frequency Controls</h2>
+
+<img src="frequency.gif">
+
+<p>
+
+All of the frequency controls are grouped by operator, with operator 1
+on the left, followed by operators 2, 3, and 4.
+
+<h3>Menu Button</h3>
+
+The label for this section is a button which brings up a menu, and this is
+documented in the section on <a href="ve_menubtns.html">Menu Buttons</a>.
+
+<h3>Waveform Selector</h3>
+
+This combo box is where you set the waveform for the operator.  The
+TX81Z has eight different waveforms that you can use for each operator.
+Wave 1 (the sine wave) is the simplest waveform, the one that will
+yield the fewest harmonics.  The waveforms more or less get more
+complex as you increase the value.
+
+<p>
+
+The combo boxes can be swapped out for a faster method of selected the
+waveform.  See the section on the <a href="ve_menus.html#oneclick">One
+Click OP &amp; LFO Wave Type Selection</a> option.
+
+<h3>Ratio/Fixed Mode Button</h3>
+
+This selects whether or not the frequency of the operator follows the
+keyboard (ratio), or stays the same over the entire keyboard (fixed).
+Ratio is typically used for the tonal part of the sound and fixed is
+typically used for the atonal part of a sound or for special effects,
+like the click of a jazz organ or whatever.
+
+<h3>Frequency Indicator</h3>
+
+This will tell you what frequency is currently dialed up for the
+operator.  If the operator is set to ratio mode, then the indicator
+will tell you the ratio, which is determined by the values of the
+coarse and fine frequency settings.  If the operator is set to fixed
+mode, the indicator will contain the fixed frequency value, which is
+a combination of the fixed range, coarse frequency, and fine frequency
+settings.
+
+<h3>Fixed Frequency Range</h3>
+
+This control is disabled when the frequency mode of the operator is
+set to <i>Ratio</i>.  When it's set to <i>Fixed</i>, this more or less
+acts as a multiplier for the coarse and fine frequency settings and
+sets their overall range.
+
+<h3>Coarse Frequency</h3>
+
+This sets the "coarse" frequency for the operator.  I've tried to come
+up with a definition for that term, but all I can say is that it
+changes the frequency in larger increments than the fine setting.  If
+the operator is set to <i>Fixed</i> mode, this will only change the 
+value for every fourth setting in the whole range.  In other words,
+the bottom two bits of this value are ignored by the unit in fixed mode.
+Yeah, it's strange.
+
+<h3>Fine Frequency</h3>
+
+I haven't come up with a clear definition of "fine" frequency either.
+It's the smallest possible change you can make to the base frequency
+value.
+
+<h3>Detune</h3>
+
+Detune detunes the operator a little bit.  It doesn't change the 
+frequency shown in the display.
+
+<h3>Simplified Frequency Controls</h3>
+
+<img src="simplefreq.gif">
+
+<p>
+
+If you go into the <i>Options</i> menu of the voice editor and turn on
+<a href="ve_menus.html#simplefreq">Simplified Frequency Selection</a>,
+this will swap out the normal base frequency controls and replace them
+with a single slider that you can use to set the frequency.  The
+frequencies are in sorted order (sort of).  See the section on
+<a href="ve_simplefreq.html">Simplified Frequency Selection</a> for
+more information.
+
+</body>
+
+</html>

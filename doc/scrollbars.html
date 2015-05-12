@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Scroll Bars</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Scroll Bars</h2>
+
+A window that displays text (like this one) can be thought of as a viewport
+on a document.  The scroll bar is the control on the side of the page that
+moves this viewport up and down if the entire document doesn't fit inside the
+viewport.
+
+<p>
+
+<img src="scrollbar.gif">
+
+<p>
+
+From a programmer's point of view, a scroll bar is a control that allows the
+user to select a value from a range of discrete values.  For example, in a text
+editing program, the program has to figure out how many lines of text there are
+in the document and how much text can fit within the viewport, and set the
+range and thumb size of the scroll bars to reflect these values, so when the
+user of the program changes the position of the scroll bar, the program will
+scroll the text in a predictable manner.
+
+<p>
+
+The scroll bar position can be changed in a number of ways.
+
+<p>
+<ul>
+  <li>Clicking one of the arrow buttons will change the position by one (which
+      usually translates to one line of text), and often performs the same
+      function as pressing one of the arrow cursor keys on the keyboard.
+<p>
+  <li>Clicking on the shaft, but not on the thumb, will page the scroll bar,
+      which typically moves the viewport up or down one full screen.  This is
+      the same as pressing Page Up or Page Down.
+<p>
+  <li>Clicking on the thumb doesn't do anything, but clicking and dragging it
+      will cause the viewport to follow the thumb as you drag it.  Sometimes
+      the window doesn't do the actual scrolling until you release the thumb,
+      which makes it difficult to see where the viewport will end up, but most
+      programs written nowadays will scroll the window as you drag.
+<p>
+  <li>You can also right-click on the scroll bar and pull up a menu of
+      scrolling options.  This is for the most part useless, but there are two
+      extra options in here that might be useful at times, Top and Bottom,
+      which will move the thumb to the top or bottom of the scroll range.  This
+      can usually be done with the keyboard using the Ctrl-Home and Ctrl-End
+      key chords/combinations.
+</ul>
+
+<p>
+
+I like scroll bars a lot, if you hadn't noticed from the bajillion scroll bars
+I have in the program.  Most of these are part of other controls, like the
+<a href="listboxes.html">list boxes</a>, the <a href="algctrl.html">algorithm
+control</a>, and the <a href="lcdctrl.html">LCD controls</a>.  They're used
+for scrolling on the list boxes, but for the other controls they're used for
+setting the value of the control.
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Quick Start</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Quick Start</h2>
+
+<ol>
+  <li>When you start the program for the first time, it will prompt you to
+      configure your MIDI connections to the TX81Z.  The ports need to match
+      your cable connections, the transmit channel must match the basic receive
+      channel on the TX81Z, and the receive channel must match the transmit
+      channel on the TX81Z.  See <a href="mainwnd_menu.html#midisetup">MIDI
+      Setup</a> for a more thorough explanation.
+<p>
+  <li>Go over to the TX81Z unit and configure its MIDI settings on the front
+      panel so the editor will work with it.  System exclusive messages 
+      absolutely must be turned on and program change messages should be set to
+      "com" or "ind".  This is particularly important if you want to store
+      patches using the TX81Z Programmer.  Both of these settings are set in
+      single utility mode.
+<p>
+  <li>Next, you'll want to load the TX81Z data into the editor.  In the main
+      window, click the
+      <a href="snapshot_buttons.html#retrievedata"><i>Retrieve Snapshot
+      Data</i></a> button.  When the <i>Select Data</i> dialog box appears,
+      click the <i>Check All</i> button and click <i>OK</i>.  The program will
+      then request all the bulk dumps the unit is capable of sending and load
+      them into the snapshot.  See <a href="snapshot.html">The Snapshot</a>
+      for more information about snapshots.
+<p>
+  <li>Save the snapshot to disk and, for safety's safe, make a backup.  I
+      highly recommend doing this, since this is a powerful editor, built
+      for convenience, so the tradeoff here is that it can be very easy to
+      accidentally wipe out all of your custom patches on the unit if you are
+      not careful.  It's a good idea to read through the
+      <a href="mainwnd.html">main window</a>,
+      <a href="snapshot.html">snapshot</a> and
+      <a href="libraries.html">libraries</a> sections of the manual before
+      using this program.
+<p>
+      You'll want to make a file that will always be in sync with the unit, so
+      that you don't have to retrieve the data every time you run the program.
+      Of course, you don't have to do it this way, but that's how I do it, so
+      that's what I'm going to recommend.
+<p>
+      Click on the disk button at the top of the main window and click
+      <a href="snapshot_menu.html#saveas"><i>Save As...</i></a> to save the
+      file.  This will be your scratch file.
+<p>
+      Now click the disk button again and click
+      <a href="snapshot_menu.html#savecopy"><i>Save Copy As...</i></a>.  Save
+      it under a different name.  This will be your backup in case something
+      valuable gets overwritten in the snapshot.
+<p>
+      To restore a backup use the <a href="snapshot_menu.html#loadcopy"><i>Load
+      Copy</i></a> menu item to load the backup into the snapshot, then use
+      the <a href="snapshot_buttons.html#retrievedata"><i>Transmit Snapshot
+      Data</i></a> button to transmit to the TX81Z.
+<p>
+  <li>Now you're ready to go in safety.  You can edit a snapshot item by
+      clicking on it and clicking the
+      <a href="snapshot_buttons.html#edititem"><i>Edit Item</i></a> button.
+      You can create libraries of snapshot items by selecting them and
+      clicking one of the
+      <a href="snapshot_buttons.html#addtolib"><i>Add To Lib</i></a> buttons.
+      Read the rest of this manual for details. :-)
+</ol>
+
+</body>
+
+</html>

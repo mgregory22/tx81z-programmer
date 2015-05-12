@@ -1,0 +1,109 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Multiple Parameter Editing</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Multiple Parameter Editing</h2>
+
+<img src="multiedit.gif">
+
+<p>
+
+This little panel of buttons is where you can set up multiple parameter
+editing.  This is based on the concept of "following operators", where the
+edits you make to one operator will be followed by other operators.
+
+<p>
+
+<h3>Operator Follow 1..4</h3>
+
+<p>
+
+The <i>1</i> through <i>4</i> buttons turn on following for that particular
+operator, which causes that operator to follow any edits you make to any other
+operator-specific parameter.  This includes any of the output section controls,
+frequency controls, EG controls (with the exception of operator 1 shift, since
+it's permanently disabled), and EG bias sensitivity.
+
+<p>
+
+For example, if you activate the <i>1</i> button, like so:
+
+<p>
+
+<img src="multiedit_1.gif">
+
+<p>
+
+and you begin to edit the output level for operator 2, then the slider for
+operator 1 will be highlighted in red:
+
+<p>
+
+<img src="multiedit_output.gif">
+
+<P>
+
+and any change you make to operator 2 will also be made to operator 1.  This
+isn't restricted to edits on operator 2, though.  Operator 1 will also follow
+edits you make to operator 3 or operator 4.  So, buttons <i>1</i> through
+<i>4</i> will turn on following for the corresponding operator.
+
+<p>
+
+<h3>Carrier Follow And Modulator Follow</h3>
+
+<i>Carrier Follow</i> and <i>Modulator Follow</i> are similar, but make the
+carrier operators follow each other and the modulator operators follow each
+other, these two being independent of each other.  For example, if you have
+algorithm 5 selected (which has operators 1 and 3 as carriers, and 2 and 4 as
+modulators) and you turn on <i>Carrier Follow</i>, then operator 3 will follow
+edits you make to operator 1, and operator 1 will follow edits you make to
+operator 3.  Edits you make to operators 1 and 3 when <i>Carrier Follow</i> is
+on won't affect operators 2 or 4, because 2 and 4 are modulators.  It's easier
+to understand by playing with it, rather than reading an explanation, so
+experiment.  Just note that when you select a control, any controls that are
+following your edits will be highlighted in red (or whatever you have the
+current highlight color set to in
+<a href="mainwnd_menu.html#setcolor"><i>Set Highlight Color...</i></a>).
+
+<p>
+
+The <i>Carrier/Modulator Follow</i> and <i>Operator Follow</i> functions are
+mutually exclusive of each other, so for example if you have operator 1 follow
+on, and you turn on carrier follow, then operator 1 follow will be turned off.
+
+<p>
+
+<h3>Relative/Absolute</h3>
+
+Following edits can be done on a relative or absolute basis.  Clicking the
+<i>Relative</i> button will change it to <i>Absolute</i>.  When <i>Relative</i>
+is selected, then, going by the example, operator 1 will change by one if you
+change operator 2 by one, five if you change operator 2 by five, etc.  When
+<i>absolute</i> is selected, the output level of operator 1 will be set to the
+same value as you change the output level of operator 2.
+
+<p>
+
+<h3>1..4 On</h3>
+
+This is just a shortcut to turn on following for all four operators at once.
+
+<p>
+
+<h3>Off</h3>
+
+<p>
+
+A shortcut to turn all following off.
+
+</body>
+
+</html>

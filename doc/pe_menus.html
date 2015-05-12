@@ -1,0 +1,192 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Performance Editor Menus</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Performance Editor Menus</h2>
+
+<h3>Performance Menu</h3>
+
+<img src="pe_pfm_menu.gif">
+
+<p>
+
+This menu allows you to do some operations that affect the unit and snapshot,
+or one of the open libraries.
+
+<a name="retrieve"><h4>Retrieve Performance</h4>
+
+This retrieves the performance edit buffer from the unit and updates the 
+performance editor and the snapshot.
+
+<a name="transmit"><h4>Transmit Performance</h4>
+
+This sends the contents of the performance editor to the unit.
+
+<a name="store"><h4>Store Performance</h4>
+
+This brings up the store performance dialog so you can store the performance
+in the performance memory bank of the unit.
+
+<p>
+
+<img src="pe_store_pfm.gif">
+
+<p>
+
+Just select the location where you want the performance to be stored and click
+OK.  The program will transmit a series of remote control messages to store
+the performance edit buffer in the memory number you select.
+<p>
+
+<blockquote>
+<table class=warning><tr><td class=warning>
+<h5>Warning</h5>
+The program change table will be updated before the performance is stored.
+This is necessary to make sure that the editor is storing the performance in
+the right place.
+</table>
+</blockquote>
+
+<p>
+
+<blockquote>
+<table class=warning><tr><td class=warning>
+<h5>Warning</h5>
+You'll want to be careful with this function because if the performance edit
+buffer in the unit and the PCED of the editor's snapshot are not properly
+synchronized then you could end up storing a performance that's different from
+the performance you are looking at in the editor.  You could also overwrite a
+patch that you didn't intend to overwrite if the memory banks aren't
+synchronized, so be careful.  It's a good idea to save all of your important
+patches in a library so they can be recovered if they accidentally get wiped
+out on the unit.
+</table>
+</blockquote>
+
+<a name="initializing"><h4>Initialize Performance</h4>
+
+This will initialize the performance edit buffer on the unit to one of the five
+standard init types and update editor's snapshot and performance editor.
+
+<h4>Add To Library 1<br>
+Add To Library 2</h4>
+
+These will add the performance to one of the libraries that are currently open
+in the main window.
+
+<h4>Bundle To Library 1<br>
+Bundle To Library 2</h4>
+
+These will create a performance bundle and add it to one of the libraries that
+are currently open in the main window.  See <a href="bundles.html">Performance
+Bundles</a> for more information on bundles.
+
+<h4>Close Editor</h4>
+
+This closes the performance editor window.
+
+<h4>Exit Program</h4>
+
+This quits the entire program.
+
+<p>
+
+<h3>Edit Menu</h3>
+
+<img src="pe_edit_menu.gif">
+
+<p>
+
+<h4>Undo</h4>
+
+<p>
+
+This undoes all the edits made to the performance since the changed the input
+focus.  In other words, if you click on a slider and make multiple changes,
+when you click undo, it will set the control back to the value it had when
+you first clicked on it.
+
+<p>
+
+You can also undo copying and swapping by LCD dragging and dropping.
+
+<p>
+
+You can also undo the copying or swapping of performance instruments.
+
+<p>
+
+What you can't undo is things that happen to the entire performance.  This
+includes retrieving, initializing, storing and transmitting the performance.
+The entire undo list is cleared and the menu item is grayed out when any of
+these things happen.  Also, if you do something to the performance in the main
+window, this is also undoable and it will clear the undo list in the
+performance editor.
+
+<p>
+
+<h4>Redo</h4>
+
+<p>
+
+This is the opposite of undo.  Just read the last section backwards :-)
+
+<p>
+
+<h3>Window Menu</h3>
+
+<img src="pe_window_menu.gif">
+
+<p>
+
+<h4>MIDI Keyboard Control, Remote Control, Main Window, etc.</h4>
+
+<p>
+
+The options in this menu will open a different program window.  The windows
+are covered in their own sections:
+
+<p>
+
+<ul>
+  <li><a href="midi_keyboard.html">MIDI Keyboard Control</a>
+<p>
+  <li><a href="remote_control.html">Remote Control</a>
+<p>
+  <li><a href="mainwnd.html">Main Window</a>
+<p>
+  <li><a href="voice_editor.html">Voice Editor</a>
+<p>
+  <li><a href="effects_editor.html">Effects Editor</a>
+<p>
+  <li><a href="pctable_editor.html">Program Change Table Editor</a>
+<p>
+  <li><a href="microtunings_editors.html">Microtunings Editors</a>
+<p>
+  <li><a href="system_editor.html">System Setup Editor</a>
+</ul>
+
+<h3>Help Menu</h3>
+
+<img src="ve_help_menu.gif">
+
+<p>
+
+<h4>Help</h4>
+
+<p>
+
+Brings up the voice editor section of the manual.
+
+<p>
+
+</body>
+
+</html>

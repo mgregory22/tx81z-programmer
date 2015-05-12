@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Keyboard Navigation</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Keyboard Navigation In The Editors</h2>
+
+Every editable parameter has its own control, so there are a lot of controls
+in the editors.  I've tried a few different ways to make it easier to
+manipulate them all and keyboard navigation is one thing I came up with.
+
+<p>
+
+The keyboard is not used like it is in a regular
+<a href="dialogs.html">dialog</a> with the tab key switching between the
+different controls.  The tab key method is good for filling out forms, like
+your name and address, but synthesizer parameters are not normally programmed
+in a particular order like a form is, so the tab key doesn't work very well.
+I decided that the arrow keys would make the most sense, so that is how I
+implemented keyboard navigation.  The problem with doing it that way is that
+some of the controls ordinarily use the arrows keys to select values, like
+<a href="comboboxes.html">combo boxes</a> and
+<a href="scrollbars.html">scroll bars</a>.  So, I rigged up the six editing
+keys above them to make up for this.
+
+<p>
+
+<img src="keynav.gif">
+
+<p>
+
+I've taken the liberty of redefining the meaning of a few keys, which might
+make it strange at first, but I think it makes sense tactilely.
+
+<p>
+
+The rules are pretty simple: for the six editing keys, the top three keys
+increase the value and the bottom three keys decrease it.
+
+<p>
+
+The arrow keys are the same in that they move the cursor in a certain
+direction, the only difference is that they move it from control to control.
+
+<p>
+
+An exception is with text controls, like the voice name, the left and right
+arrow keys will move the cursor left and right within the control, but if you
+use the right arrow key to move the cursor, it will eventually be moved out of
+the control and onto the control to the right.  The left arrow key will return
+it to the text control.
+
+</body>
+
+</html>

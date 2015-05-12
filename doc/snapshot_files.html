@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Snapshot Files</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Snapshot Files</h2>
+
+A snapshot file is just series of TX81Z bulk dumps stuck end to end in the
+file, so they should be compatible with any ordinary sysex manager program.
+
+<p>
+
+When the program loads a snapshot file, it scans the dumps for sysex headers
+and looks at these to figure out what type of dump it is.  It then loads the
+dump in the corresponding slot in the snapshot.  This means that it doesn't
+matter what program created the sysex file, nor does it matter what order the
+dumps appear in the file.  The program creating the file only needs to write
+ordinary TX81Z bulk dumps to the file in order to be loaded directly into the
+snapshot of the TX81Z Programmer.
+
+<p>
+
+When you are creating a snapshot to be saved to a file, it doesn't need to
+contain a complete set of dumps.  You can create a snapshot of just one bank
+of voices if you want.
+
+<p>
+
+If you have a file with multiple dumps of the same type, only the first one
+will be loaded, since the snapshot only has room for one.  The only exception
+is with the voice banks.  Since there are five of them, it will load up to five
+voice banks into the snapshot.  The first one will go into bank I, and second
+one will go into bank A, the third bank B, etc.  The program doesn't try to
+figure out which banks are preset banks or anything, it just loads them into
+the slots.  You can't transmit the voices in the present slots to the unit,
+anyway.  They are just there so you can manipulate them.  If there are more
+than five voice banks in the file, the rest will be ignored.
+
+</body>
+
+</html>

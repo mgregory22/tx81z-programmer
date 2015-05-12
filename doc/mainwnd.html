@@ -1,0 +1,133 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Main Window</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>The Main Window</h2>
+
+<p>
+
+<img src="mainwnd.gif">
+
+<p>
+
+<h3>The Design Of The TX81Z Programmer</h3>
+
+The two things that are imperative to keep in mind when using this program are:
+
+<ol>
+  <li>The items in a library contain valuable data.
+<p>
+  <li>The items in a snapshot represent the slots available on the TX81Z and
+      their actual contents may or may not represent what the unit currently
+      contains.
+</ol>
+
+<p>
+
+The main ramification of this is that the data in the snapshot can be wiped
+out at any time by the data in the unit, and you shouldn't become too attached
+to the snapshot data.  If you want to treat the snapshot items you see as valuable data that you want to work
+with, copy them into a library and work with that.  There are a few situations
+where I needed to synchronize the snapshot data with the unit automatically, so
+that's why I'm telling you this.  The situations where this occurs is explained
+in the section on <a href="synchronization.html">synchronization</a>.
+
+<p>
+
+I'll try to explain why I designed this program like this.  The design is
+based on three ideas:
+
+<p>
+
+<ol>
+  <li>The TX81Z is a data storage device (as far as this program is concerned).
+<p>
+  <li>The data received from the TX81Z is volatile, meaning that it can change
+      outside the program and leave the program's data in a different state
+      from the data in the TX81Z.
+<p>
+  <li>There needs to be a place to store TX81Z data permanently.
+</ol>
+
+<p>
+
+These three ideas are not completely compatible with each other, so it was
+natural to treat them as distinct logical entities within the program and
+keep strict boundaries between them.  Thus, the TX81Z is not represented
+graphically in this program.  If you want to know what data the unit contains,
+the only certain way to do that is to go over to the unit and browse its
+contents from the front panel.  This leaves the program with two of these
+entities to represent.
+
+<p>
+
+Logical entity #2 above is represented in the program by the
+<a href="snapshot.html">snapshot</a>.  #3 is represented by the
+<a href="libraries.html">libraries</a>.
+
+<p>
+
+The data flow of the program looks like this:
+
+<p>
+
+<img src="dataflow.gif">
+
+<p>
+
+Which basically means that data in a library can't go directly to the TX81Z,
+it has to get there through the snapshot.  The converse is also true: data
+from the TX81Z never goes directly into a library.
+
+<p>
+
+<h3>Main Window Features</h3>
+
+The main window is split horizontally along the middle .  The top half is
+used to manage the <a href="snapshot.html">snapshot</a>.  In this manual, I'll
+refer to this part of the window as the <a href="snapshot_area.html">snapshot
+area</a>.
+
+<p>
+
+The bottom half of the window is used to manage your
+<a href="libraries.html">libraries</a>.  I'll call this part of the window the
+<a href="library_area.html">library area</a>.
+
+<p>
+
+The controls in the main window are documented in the areas they are in: either
+the <a href="snapshot_area.html">snapshot area</a> or the 
+<a href="library_area.html">library area</a>.
+
+<p>
+
+I designed this window so that everything you need to manage your TX81Z data
+is at your fingertips.  I know it's kind of crammed, but the main window is
+fully resizable, and the line going across through the library labels and down
+through the library buttons is actually a two-way splitter that you can drag to
+resize the different areas of the window.
+
+<p>
+
+<blockquote>
+<table class=note><tr><td class=note>
+<h5>Note</h5>
+You'll probably notice that the windows in my screen shots have really fat
+borders.  That's just how I have my desktop set up (you can change the border
+size in the display properties icon in the control panel).  I tend to have
+windows all over the place when I work, so I resize them a lot.  Fatter
+borders just makes this easier.
+</table>
+</blockquote>
+
+</body>
+
+</html>

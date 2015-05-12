@@ -1,0 +1,202 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Performance Editor Controls</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Performance Editor Controls</h2>
+
+<h3>Assign Mode</h3>
+
+<img src="pe_assign.gif">
+
+<p>
+
+The assign mode determines which of the eight possible voices turn on as you
+play each note.  The two possible settings are <i>normal</i> and
+<i>alternate</i>.  When a key is pressed in normal mode, all of the instruments
+sound off that are on the channel of the note-on message.  In alternate mode,
+all of the notes assigned to a channel act like a chain, and when a key is
+pressed, only one of the notes in the chain is played.  The next key will
+play the next note in the chain, and this continues until it circles around.
+
+<p>
+
+For example, say you have a performance set up like this:
+
+<p>
+
+<table>
+  <tr>
+    <th>Max Notes
+    <td>2 <td>2 <td>2 <td>2 <td>0 <td>0 <td>0 <td>0 
+  <tr>
+    <th>Voice
+    <td>I01 <td>I02 <td>I03 <td>I04 <td>* <td>* <td>* <td>* 
+  <tr>
+    <th>Channel
+    <td>1 <td>1 <td>2 <td>2 <td>* <td>* <td>* <td>*
+</table>
+
+<p>
+
+In normal mode, if you were you play the notes C-E-G-B on channel 1, then you
+would hear voices I01 and I02 for all four notes.  In alternate mode, you would
+hear voice I01 for C-E, and I02 for G-B, because there are two notes assigned
+to each.
+
+<p>
+
+It's kind of a strange feature, but you can do some nifty things with it.
+
+<h3>Effect Select</h3>
+
+<img src="pe_effect.gif">
+
+<p>
+
+This is where you select the effect you want to use for the performance.  These
+effects are described in the <a href="effects_editor.html">Effects Editor</a>
+section.  Unfortunately, you can only have one of these effects activated at a
+time.
+
+<h3>Microtune Table</h3>
+
+<img src="pe_mttable.gif">
+
+<p>
+
+This is where the microtune table is selected.  Don't ask, I have no idea what
+they are or what properties they have &mdash; I just copied the names out of
+the manual :-)
+
+<h3>Microtune key</h3>
+
+<img src="pe_mtkey.gif">
+
+<p>
+
+This is where the microtune key is selected.  This only applies to certain
+microtuning tables: Pure Major, Pure Minor, Mean Tone, and Pythagorean.  If
+this setting doesn't apply to the selected microtuning table, then this control
+will have asterisk in it to indicate that it has no effect.
+
+<h3>Instrument Controls</h3>
+
+<img src="pe_inst.gif">
+
+<p>
+
+These controls are where the individual instruments are edited.  An
+"instrument" is a voice along with some performance parameters.  The
+performance parameters are completely independent of the parameters that are
+set in the voice editor.
+
+<h4>Max Notes</h4>
+
+This determines how many notes are assigned to the instrument.  The TX81Z has
+a limit of eight note polyphony, so all of the max note settings for all the
+instruments of a performance must add up to eight or less.  If you attempt to
+assign more notes to an instrument than there are available, the unit will
+attempt to rob notes from higher numbered instruments in order to fulfill the
+request.  This also means that the <i>Max Notes</i> setting of low numbered
+instruments takes precedence over that of higher numbered instruments.  For
+instance, if have all 8 notes allotted for instrument 1, then you won't be
+able to assign any notes to any of the other instruments until you decrease
+the number of notes allotted for instrument 1.
+
+<h4>Voice</h4>
+
+There are two controls for selecting the voice: a menu button and an LCD
+control.  Pushing the menu button will bring up a menu of all available voices.
+These names come from the snapshot, so if the snapshot isn't fully loaded, then
+some or all of the names might be missing.  You can still select the voice and
+it will edit the unit just the same.
+
+<p>
+
+The slider does the same thing, but a little more inconveniently.  I originally
+had the slider by itself with the voice name statically displayed, but I
+swapped the static display with a menu button and I just left the slider in
+there.  You can type the voice number into the slider and use the other 
+<a href="lcdctrl.html">LCD control</a> features, so it's not entirely
+useless.
+
+<h4>Channel</h4>
+
+This sets the MIDI channel for the instrument.  Setting this to <i>omni</i>
+will make the instrument respond on all channels.
+
+<h4>Low Limit<br>
+High Limit</h4>
+
+This sets the keyboard range in which the instrument will sound.  Useful for
+creating split performances.
+
+<h4>Detune</h4>
+
+Detunes the instrument.  It's good for thickening up instruments in layered
+performances.
+
+<h4>Note Shift</h4>
+
+Transposes the instrument.
+
+<h4>Volume</h4>
+
+Sets the overall volume of the instrument.
+
+<h4>Out Assign</h4>
+
+Sets the output jack for the instrument.  Either I, II, or both, or if the
+TX81Z is exciting you too much, you can turn the output totally off so you can
+take a breather.
+
+<h4>LFO Select</h4>
+
+The TX81Z has a limitation of only being able to use 2 different LFOs and a
+generic "vib" LFO for all instruments.  The unit will only allow you to use
+the first two instruments with note assignments greater than zero for the LFOs.
+
+<h4>Microtune</h4>
+
+In addition to the microtuning table and key settings, each instrument has the
+option to use the microtuning settings or not.  This is where you toggle it
+off and on for each instrument.
+
+<h4>Instrument Menu Button</h4>
+
+<img src="pe_menubtn.gif">
+
+<p>
+
+The instrument menu button gives you a couple of high level editing operations 
+so you can edit multiple instruments.  You can copy one instrument to another
+or swap two instruments, which is useful when you want to use the LFO of a
+certain voice and you want to move it to slot 1 or 2.  You can also copy an
+instrument to multiple instruments.  When this function is selected, you'll see
+a dialog box that looks like this:
+
+<p>
+
+<img src="pe_copyinst.gif">
+
+<p>
+
+Just check which instruments you want to copy the settings to and click OK to
+copy them.
+
+<p>
+
+Note the rules for max notes always apply, so pay careful attention when using
+these functions because it's possible for notes to be robbed from other
+instruments.
+
+</body>
+
+</html>

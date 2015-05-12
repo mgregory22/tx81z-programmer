@@ -1,0 +1,87 @@
+
+[OPTIONS]
+Binary Index=No
+Binary TOC=Yes
+Compatibility=1.1 or later
+Compiled file=.\TX81Z.chm
+Contents file=TX81Z.hhc
+Default Window=Main
+Default topic=index.html
+Display compile progress=No
+Full-text search=Yes
+Language=0x409 English (United States)
+Title=TX81Z Programmer User Manual
+
+[WINDOWS]
+Main="TX81Z Programmer Manual","TX81Z.hhc",,"index.html","index.html",,,,,0x42420,122,0x184e,[0,8,564,392],0xb0000,,,,,,0
+
+
+[FILES]
+algctrl.html
+algorithm.html
+ampmod.html
+bundles.html
+buttons.html
+comboboxes.html
+controls.html
+dialogs.html
+edit_buffers.html
+editable_items.html
+effects_editor.html
+eg.html
+egbias.html
+frequency.html
+glossary.html
+index.html
+invokation.html
+item_types.html
+keyboard_navigation.html
+lcdctrl.html
+lfo.html
+libraries.html
+library_area.html
+library_buttons.html
+library_menus.html
+license.html
+listboxes.html
+mainwnd.html
+mainwnd_controls.html
+mainwnd_menu.html
+menus.html
+microtunings_editors.html
+midi_keyboard.html
+misc.html
+mysteries.html
+output.html
+pctable_editor.html
+pe_controls.html
+pe_menus.html
+performance_editor.html
+pitchbias.html
+pitchmod.html
+portamento.html
+quickstart.html
+remote_control.html
+rpanel.html
+scrollbars.html
+snapshot.html
+snapshot_area.html
+synchronization.html
+snapshot_menu.html
+snapshot_files.html
+snapshot_buttons.html
+system_editor.html
+tx81z_notes.html
+ve_eggraphs.html
+ve_lcdctrls.html
+ve_menubtns.html
+ve_menus.html
+ve_multiedit.html
+ve_scrolling.html
+ve_simplefreq.html
+voice_editor.html
+vol.html
+windows.html
+
+[INFOTYPES]
+

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TX81Z", "TX81Z.vcxproj", "{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugU|Win32 = DebugU|Win32
+		Release|Win32 = Release|Win32
+		ReleaseU|Win32 = ReleaseU|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.Debug|Win32.Build.0 = Debug|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.DebugU|Win32.ActiveCfg = DebugU|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.DebugU|Win32.Build.0 = DebugU|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.Release|Win32.ActiveCfg = Release|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.Release|Win32.Build.0 = Release|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.ReleaseU|Win32.ActiveCfg = ReleaseU|Win32
+		{16B805AD-AB09-46AD-B6C5-14A2A4CDDE0F}.ReleaseU|Win32.Build.0 = ReleaseU|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

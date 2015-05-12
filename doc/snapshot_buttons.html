@@ -1,0 +1,224 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Snapshot Buttons</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Snapshot Buttons</h2>
+
+<img src="snapshot.gif">
+
+<p>
+
+The push buttons in the snapshot area issue commands to the program that
+operate on items in the snapshot.  Sometimes some of the buttons are disabled.
+This is because some of them need a certain number of items selected, or the
+items need to be a certain type, or both.
+
+<p>
+
+<blockquote>
+<table class=note><tr><td class=note>
+<h5>Note</h5>
+These buttons work on the snapshot items only, not the library items - don't
+try to select a library item and click the <i>Edit Item</i> button to edit it,
+it won't work!  Double-click the library item to copy it into the snapshot.
+Remember, only the first seven snapshot items can be edited.  See
+<a href="editable_items.html">Editable Items</a> for a full explanation.
+</table>
+</blockquote>
+
+<p>
+
+<a name="edititem"><h3>Edit Item</h3>
+
+<p>
+
+This will bring up the editor for the selected item.   If the item is a bank
+item, then a program change is sent to the TX81Z (which it may or may not
+receive - see <a href="system_editor.html">Program Change Switch</a>), and the
+item is copied into the one of the edit buffers within the program.  See
+<a href="edit_buffers.html">Edit Buffers</a> for more about that.
+
+<p>
+
+If nothing in the snapshot is selected, or more than one snapshot item is
+selected, then this button will be disabled.
+
+<p>
+
+<a name="transmitpc"><h3>Transmit Program Change</h3>
+
+<p>
+
+This will just send a program change to the TX81Z that will change it to the
+currently selected bank item.
+
+<p>
+
+If a bank item is not selected, then this button will be disabled.
+
+<p>
+
+<a name="addtolib"><h3>Add To Lib 1<br>Add To Lib 2</h3>
+
+<p>
+
+This will copy all of the currently selected items into a library.  If any of
+the items already exist in the library, then they are not copied and a window
+will pop up to tell you this.  TODO: As of this writing, there is no way to
+find out which items are duplicates, though.
+
+<p>
+
+If there are no snapshot items selected, then these buttons will be disabled.
+
+<p>
+
+<a name="bundletolib"><h3>Bundle To Lib 1<br>Bundle To Lib 2</h3>
+
+<p>
+
+These buttons will create performance bundles from the currently selected
+performances and add them to a library.  See
+<a href="bundles.html">Performance Bundles</a> for more information on bundles.
+
+<p>
+
+If there is nothing selected, or there is anything selected besides
+performances, then these buttons will be disabled.
+
+<p>
+
+<a name="copyitemsfromlib"><h3>Copy Items From Lib</h3>
+
+<p>
+
+This button copies items from a library into the snapshot.  It will be disabled
+most of time.  To enable the button, you have to fulfill three conditions:
+
+<p>
+
+<ol>
+  <li>There must be items selected in both the snapshot and one of the
+      libraries.
+<p>
+  <li>The same number of items must be selected in both.
+<p>
+  <li>If there is more than one type of item selected, the same number of items
+      of each type must be selected in the snapshot and the library.
+<p>
+      For example, if you want to copy two voices and two performances from
+      a library, then you must select exactly two voices and two performances
+      in both the snapshot and the library you want to copy them from,
+      otherwise the <i>Copy Items From Lib</i> button will remain disabled.
+</ol>
+
+<p>
+
+The relative positions of the items are preserved when items are copied.  In
+other words, once they are copied into the snapshot, they will be in the same
+order as they were in the library.
+
+<p>
+
+VMEMs are voices, and can be copied into the VCED or any of the memory slots
+in the user bank (I01..I32).  PMEMs are performances and can be copied into
+the PCED or one of the perforance slots (PF01..PF24).
+
+<p>
+
+Note that items are not transmitted to the unit when you copy them into the
+snapshot.  You have to transmit them separately with the
+<a href="retrieveselected"><i>Transmit Selected Items</i></a> or
+<a href="retrievedata"><i>Transmit Snapshot Data</i></a> button.
+
+<p>
+
+<a name="retrieveselected"><h3>Retrieve Selected Items<br>Transmit Selected Items</h3>
+
+<p>
+
+These buttons will retrieve or transmit the items that are selected in the
+snapshot from or to the TX81Z unit.
+
+<p>
+
+<blockquote>
+<table class=warning><tr><td class=warning>
+  <h5>Warning</h5>
+  If you use one of these buttons to transfer a bank item, the entire bank
+  will be sent or transmitted.  The TX81Z can't receive or transmit one item
+  if it's part of a bank, so be careful.
+</table>
+</blockquote>
+
+<p>
+
+<a name="storeitem"><h3>Store Item</h3>
+
+<p>
+
+This button will be disabled unless one of the edit buffers is selected.  This
+function stores the edit buffer in the TX81Z, and copies it into the
+corresponding position in the snapshot.  When you click this button a dialog
+box will pop up to ask you which memory slot you want to store the voice in.
+
+<p>
+
+<img src="storedlg.gif">
+
+<p>
+
+Click the memory number and click <i>OK</i> to store it.  Click <i>Cancel</i>
+if you change your mind.
+
+<p>
+
+The FX, PC, MTO, MTF, and SYS can't be stored, since they don't have edit
+buffers associated with them (or memory banks, depending on how you want to
+look at it).
+
+<blockquote>
+<table class=note><tr><td class=note>
+<h5>Note</h5>
+It's very important that you have the TX81Z configured to accept program
+changes.  The storing function needs to send a program change to the unit so
+it can store the patch in the right place.
+<p>
+It's also very important for the program to be able to receive incoming data
+from the unit to store patches.  If you have things set up so that you only
+have the computer transmitting to the unit and not receiving, then you should
+not store patches or performances within the program, but do it from the front
+panel.
+</table>
+</blockquote>
+
+<p>
+
+<a name="retrievedata"><h3>Retrieve Snapshot Data<br>Transmit Snapshot Data</h3>
+
+<p>
+
+These two buttons bring up a dialog box to ask you what you want to retrieve
+or transmit to the unit.  
+
+<p>
+
+<img src="datadlg.gif">
+
+<p>
+
+Check which items you want to retrieve or transmit.  The <i>Check All</i> and
+<i>Clear All</i> buttons check or clear all of the check boxes.  Nothing will
+be sent or retrieved until you click <i>OK</i> when some check boxes are
+checked.
+
+</body>
+
+</html>

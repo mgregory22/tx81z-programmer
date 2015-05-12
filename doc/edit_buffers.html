@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>TX81Z Programmer - Edit Buffers</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Edit Buffers</h2>
+
+When you change patches on the TX81Z, the unit doesn't really "go" directly
+to a patch in memory.  It fetches the patch from a memory bank and copies it
+to its internal edit buffer.  This is how you can edit a patch on the unit
+without modifying the memory bank.  You have to explicitly store the edit
+buffer to modify the bank.
+
+<p>
+
+The program keeps track of the edit buffers by treating them as separate items
+from the items in a bank.  The voice edit buffer is called the VCED and the
+performance edit buffer is called the PCED in the sysex part of the TX81Z
+manual, so these are the labels I used to represent their types in the 
+snapshot.
+
+<p>
+
+Voice edits always affect the VCED item in the snapshot, and performance edits
+always affect the PCED item.  It's not possible to edit a bank or library item
+in-place, it has to be copied to one of the edit buffers first.  The other
+items, like the program change table and the system setup, don't have edit
+buffers, so they are edited in-place.
+
+</body>
+</html>
+

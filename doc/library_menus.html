@@ -1,0 +1,191 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Library Menus</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Library Menus</h2>
+
+<p>
+
+<a name="filemenu"><h3>Library File Menu</h3>
+
+<p>
+
+<img src="library_file_menu.gif">
+
+<p>
+
+<a name="new"><b>New</b> creates an empty library with no file name.
+
+<p>
+
+<a name="open"><b>Open</b> loads a library into the program from a file.
+
+<p>
+
+<a name="save"><b>Save</b> saves the library to the file indicated in the file name
+indicator.  If the library has no file name, you will be prompted for one.
+
+<p>
+
+<a name="saveas"><b>Save As...</b> saves the library in a new file.
+
+<p>
+
+<a name="import">
+<b>Import</b> imports items from a file into the library.  Selecting this menu
+item brings up the <i>Import File</i> dialog box.
+
+<p>
+
+<img src="importdlg.gif">
+
+<p>
+
+Importing actually does a heuristic search for data that could conceivably be
+a voice or a performance by checking the range of each byte in a potential
+match to see if they all fall within valid ranges.  This allows you to import
+patches from any file whatsoever.  Here are some of the voice patches that
+exist in Microsoft Excel:
+
+<p>
+
+<img src="excel.gif">
+
+<p>
+
+But seriously, I created this feature because I had some old disks from a V50
+that I wanted to recover the patches from, but the disks couldn't be read by
+DOS, even though they were IBM compatible disks.  So, I used a disk utility to
+create some raw disk images, which is like having the entire disk in one file,
+and I used this import function to search the file and recover the patches.
+It worked pretty good, so I kept it in here.
+
+<p>
+
+You can search for voices, performances, or both.  Performances are kind of
+useless if you don't know which patches go with them, and that information is
+lost when importing, but it's conceivable that you could figure it out by
+looking at the patch numbers and judging by the order of the voices that were
+imported.  I didn't implement any help for this task because that's way beyond
+the scope of this program and I didn't think it would be that useful, anyway.
+
+<p>
+
+<i>Do Not Import Duplicates</i> is like the
+<a href="mainwnd_menu.html#disallowdupes"><i>Disallow Duplicates</i></a> menu
+item.  It will prevent importing duplicate patches, even if they have the same
+name.
+
+<p>
+
+<i>Make Duplicate Names Unique</i> will put a number in patch names that are
+the same and increment it so the names of the imported patches are all unique.
+Two patches that have the same name can still have different parameter
+settings, so even if you disallow duplicates, some of the imported patches can
+still have the same name.
+
+<p>
+
+<i>Check Every Byte Position For A Match</i> will start the search at the next
+byte after finding an item.  Normally when an item is found using the heuristic,
+the search will begin at the byte following the match, but when this is checked
+it will starting searching from the second byte of the match.  This will
+increase the number of patches found, but there will likely be a lot of overlap.
+
+<p>
+
+<a name="export">
+<b>Export</b> exports voices or performances from a library into one or more
+files.  The items are exported into banks with 32 items each.  The <i>Export
+File</i> dialog box will be displayed when you select this command.
+
+<p>
+
+<img src="exportdlg.gif">
+
+<p>
+
+If you have more than a bank's worth of items, then this window will pop up
+multiple times and prompt you for a file name for each export batch (however
+many banks it takes to export all of the items).  If the last batch doesn't
+contain a full bank of items, the program will fill it out with init voices or
+init performances.
+
+<p>
+
+Check the <i>Selected Only</i> option to export only the items that are
+selected in the library.
+
+<p>
+
+Check <i>Write Sysex Headers</i> to add a sysex header and footer to the file
+instead of writing just the raw data (chances are, you'll want this on).
+
+<p>
+
+<i>Append To File</i> will allow you to concatenate multiple batches into one
+file.  Just check it and select an existent file and it will add the batch to
+the end of it.
+
+<p>
+
+<a name="sortmenu"><h3>Library Sort Menu</h3>
+
+<p>
+
+<img src="library_sort_menu.gif">
+
+<p>
+
+This ought to be pretty self-explanatory.  These items give you different ways
+to sort the items in the library.
+
+<p>
+
+<b>Sort By Order Added</b> sorts by the order the items were added to the
+library.
+
+<p>
+
+<b>Sort By Type</b> sorts the list by type.
+
+<p>
+
+<b>Sort By Name</b> sorts alphabetically by name.
+
+<p>
+
+<b>Sort By Comment</b> sort alphabetically by comment.  If you want to organize
+your patches by date so you can sort them, it might be a good idea to use a
+format like YYYY-MM-DD so that the alphabetical sort will sort them by date.
+
+<p>
+
+<b>Sort By Selection</b> will move all of the selected items to the top of the
+list.
+
+<p>
+
+<b>Sort By Search...</b> will bring up the search dialog.
+
+<p>
+
+<img src="searchdlg.gif">
+
+<p>
+
+Enter the text you want to search for, check the fields you want to search
+and it will move all the matching items to the top of the list.  The search
+is case insensitive.  It's kind of slow if the library is big, but just be
+patient.
+
+</body>
+
+</html>

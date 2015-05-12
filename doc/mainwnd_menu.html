@@ -1,0 +1,325 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Main Window Menu</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Main Window Menu</h2>
+
+<p>
+
+<h3>Program Menu</h3>
+
+<p>
+
+<img src="mainwnd_program_menu.gif">
+
+<p>
+
+<h4>Exit</h4>
+
+Exits the program.  The program will prompt you to save if you have made
+changes to the snapshot and/or libraries.  You can configure the program to
+automatically save the snapshot when it exits, in which case it won't prompt
+you.  See the <a href="#autosavesnapshots"><i>Automatically Save Snapshots</i></a>
+option below.
+
+<p>
+
+<a name="midimenu"><h3>MIDI Menu</h3>
+
+<p>
+
+<img src="mainwnd_midi_menu.gif">
+
+<p>
+
+<a name="midisetup"><h4>Setup...</h4>
+
+Brings up the <i>MIDI Setup</i> dialog so you can configure your MIDI
+connections to the TX81Z.
+
+<p>
+
+<img src="midi_setup.gif">
+
+<p>
+
+Here is where you set the MIDI ports your TX81Z is connected to.  The master
+controller port can also be set to the port your MIDI keyboard is connected to.
+This will cause all MIDI messages (except sysex) to be forwarded as-is from
+that port to the TX81Z if you need it (i.e. if it isn't already being routed by
+your MIDI setup).
+
+<p>
+
+The names of the ports depend on what type of MIDI devices you have in your
+system.  For example, I have a MOTU Midi Express XT, which is a 16-port MIDI
+device (8 in/8 out), and my TX81Z is hooked up on the two 2 ports.  This device
+is called MXPXT in the system for some reason.  Hardware manufacturers have a
+unique knack for inventing cryptic names, so you might have to experiment a bit
+to get it working.  
+
+<p>
+
+The channels are used to distinguish different TX81Z's in your MIDI chain if
+you are linking them together in series.  Nowadays they use device numbers, but
+in the early days of MIDI, they thought using channels would be sufficient, so
+we're stuck with using channels on early devices like the TX81Z.
+
+<p>
+
+The channel settings in the <i>MIDI Setup</i> dialog have to match the channels
+that are set on the unit.  They can be found in <tt>PLAY SINGLE</tt> (press the
+PLAY/PERFORM button on the unit until you see <tt>PLAY SINGLE</tt> in the
+display)-&gt; <tt>UTILITY MODE</tt> (press the UTILITY button) -&gt; <tt>Midi
+Control?</tt> (press the INC button) and now you should see <tt>Basic Rcv. Ch=
+&lt;some channel&gt;</tt> in the display.  This channel and the <i>MIDI
+Out/Transmit</i> channel in the <i>MIDI Setup</i> dialog need to be the same.
+Now click the right arrow under PARAMETER to set the transmit channel, which
+should match the <i>MIDI In/Receive</i> channel in the dialog.
+
+<p>
+
+<a name="optionsmenu"><h3>Options Menu</h3>
+
+<p>
+
+Most of these items can be checked or unchecked.  The boldface items are just
+used to break up the menu a little bit and don't have any functionality.
+
+<p>
+
+<img src="mainwnd_options_menu.gif">
+
+<p>
+
+<h3>Startup Options:</h3>
+
+<p>
+
+<a name="loadprevious"><h4>Load Previously Open Files At Startup</h4>
+
+When this option is set, the program will open the previously opened snapshot
+and library files when it starts up next time.
+
+<p>
+
+<a name="startupbuffers"><h4>Retrieve Edit Buffers At Startup</h4>
+
+When this option is set, the program will retrieve the voice edit buffer (VCED)
+and the performance edit buffer (PCED) from the unit when it starts up.
+
+<p>
+
+<h3>Main Window Options:</h3>
+
+<p>
+
+<a name="showpaths"><h4>Show Full Path Names</h4>
+
+This option just makes file names appear with fully qualified path names.  A
+file name is normally displayed without the path, unless it's a file in one
+of the recent documents' lists that is in a different directory from the
+current file, then it will display the full path.
+
+<p>
+
+<a name="dblclknoopen"><h4>Do Not Open Editor When Double-Clicking Bank Items</h4>
+
+<p>
+
+This will disable the opening of the editor when you double click on a library
+item or an item in a bank (items I01..I32, PF01..PF24, A01..A32, etc.).  This
+is useful if you want to audition library patches without editing them.
+
+<p>
+
+<a name="bringmaintofront"><h4>Bring Main Window To The Front After Closing An Editor</h4>
+
+<p>
+
+This is just a little thing I threw in to try and make managing the windows
+a little easier.  If you close an editor, like the voice editor, when this is
+checked, the main window will be brought to the front and become the active
+window.
+
+<p>
+
+<h3>Snapshot Options:</h3>
+
+<p>
+
+<a name="autosavesnapshots"><h4>Automatically Save Snapshots</h4>
+
+<p>
+
+This option will cause the program to save snapshots automatically without
+prompting you.  This happens in three situations:
+
+<p>
+
+<ul>
+  <li>When you exit the program.
+<p>
+  <li>When you create a new snapshot by going into the snapshot menu and
+      clicking <i>New</i>.
+<p>
+  <li>When you open a new snapshot file.
+</ul>
+
+<p>
+
+This is handy because it cuts down the number of windows that pop up, but it
+can also work against you by saving things you don't want to save without
+telling you.  You can avoid this by always using a scratch snapshot file
+as the current snapshot file and using the
+<a href="snapshot_menu.html#savecopy"><i>Save Copy As...</i></a>
+and <a href="snapshot_menu.html#loadcopy"><i>Load Copy</i></a> items to work with other snapshot files.
+Or, you can keep all your important stuff in libraries, which is probably the
+best idea.
+
+<p>
+
+<h3>Library Options:</h3>
+
+<p>
+
+<a name="disallowdupes"><h4>Disallow Duplicates In Libraries</h4>
+
+<p>
+
+This will prevent duplicate items from being copied into a library, even if
+they have the same name.
+
+<p>
+
+<h3>Global Options:</h3>
+
+<p>
+
+<h4>Unslashed Zeros</h4>
+
+I don't have a big monitor and sometimes it's just too much effort for me to
+tell the difference between the zeros and the eights, so I added this to make
+it easier.  Of course, the O's and the zeros look identical with this option
+on, so it's a tradeoff either way.
+
+<p>
+
+<a name="setcolor"><h4>Set Highlight Color...</h4>
+
+<p>
+
+This allows you to set the highlight color used for modified files and items,
+and a few other places, like the color of the EG graphs and the highlight color
+of the keys on the keyboard controls.
+
+<p>
+
+<h3>TX81Z Version:</h3>
+
+<p>
+
+<h4>Version 1.0<br>
+Other Version (1.1 - 1.6)</h4>
+
+<p>
+
+These options affect the operation of the program so that it will reflect the
+features of the TX81Z that you are using.  This version number refers to the
+version of the firmware of your TX81Z.  For instructions on finding the
+version number see the <a href="tx81z_notes.html#version">TX81Z Notes</a>
+section.  This version number will be automatically detected by the program
+whenever possible, so you shouldn't have to manually change the version number
+very often.  The differences between versions are listed in the 
+<a href="tx81z_notes.html#versions">TX81Z Notes</a> section.
+
+<p>
+
+<a name="windowmenu"><h3>Window Menu</h3>
+
+<p>
+
+<img src="mainwnd_window_menu.gif">
+
+<p>
+
+This menu is used to display the various editor windows, the on-screen MIDI
+keyboard, and the TX81Z remote control.  Each of these are covered in their
+respective sections in the manual:
+
+<p>
+
+<ul>
+  <li><a href="midi_keyboard.html">MIDI Keyboard Control</a>
+<p>
+  <li><a href="remote_control.html">Remote Control</a>
+<p>
+  <li><a href="voice_editor.html">Voice Editor</a>
+<p>
+  <li><a href="performance_editor.html">Performance Editor</a>
+<p>
+  <li><a href="effects_editor.html">Effects Editor</a>
+<p>
+  <li><a href="pctable_editor.html">Program Change Table Editor</a>
+<p>
+  <li><a href="microtunings_editors.html">Microtunings Editors</a>
+<p>
+  <li><a href="system_editor.html">System Setup Editor</a>
+</ul>
+
+<p>
+
+<a name="helpmenu"><h3>Help Menu</h3>
+
+<p>
+
+<img src="mainwnd_help_menu.gif">
+
+<p>
+
+<a name="help"><h4>Help</h4>
+
+<p>
+
+Brings up the help file and opens it to the Main Window section.
+
+<p>
+
+<a name="ordering"><h4>Ordering Info...</h4>
+
+This will open up the help file to the ordering page.  If the help file is
+not in the same directory as the executable, then the program will open up
+your browser to the PayPal page on the internet.  I've heard people complain
+about not being able to figure out how to register shareware, so I thought I
+would throw that in as a backup.
+
+<p>
+
+<a name="register"><h4>Register...</h4>
+
+<p>
+
+Tells you how to register the program and lets you enter your registration
+code.
+
+<p>
+
+<a name="about"><h4>About...</h4>
+
+<p>
+
+Displays the TX81Z Programmer splash screen, which shows the program version,
+my name, etc.
+
+
+
+</body>
+
+</html>

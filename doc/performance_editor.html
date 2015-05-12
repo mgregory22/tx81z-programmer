@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Performance Editor</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Performance Editor</h2>
+
+<img src="pfmdlg.gif">
+
+<p>
+
+This is where performances are edited.  A performance is a set of up to eight
+voices that can be played together.  You can create layered, split and multiple
+channel performances with the TX81Z.
+
+<h3>A Note About Opening The Editor</h3>
+
+When the editor opens, it sends remote controls commands to switch the unit to
+performance mode.  This causes the unit to send a bulk dump of the performance
+edit buffer and possibly the voice edit buffer.  The program receives these
+and updates the snapshot, and by extension the editor.  If the controls flash
+and change to different values when you open the editor, this is what is
+happening.  This flashing happens when the snapshot file is out of sync with
+the unit.  The performance editor initially opens with its controls set to the
+data in the snapshot, then when it receives a dump and updates the snapshot,
+it will adjust the controls to reflect this.
+
+</body>
+
+</html>

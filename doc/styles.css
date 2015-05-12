@@ -1,0 +1,10 @@
+body { color:black; background-color:white }
+table { border:1px solid silver }
+th,td { border:1px solid silver; padding:5px }
+table.note { border:0px }
+td.note { border:1px solid black; padding:10px; background-color:#EEEEEE; font-size:smaller }
+table.warning { border:0px }
+td.warning { border:1px solid black; padding:10px; background-color:#FFFFBB; font-size:smaller; color:red }
+table.g { border:0px }
+th.g, td.g { border:0px; padding:5px; text-align:left; vertical-align:top }
+ul.toc { margin-left:0; padding-left:1em }

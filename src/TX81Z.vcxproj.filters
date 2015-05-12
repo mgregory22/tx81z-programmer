@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a8290279-3ac4-467c-b2d8-8462a68b0ad4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{15355bb7-df26-446e-92d3-0ff3b0cbda15}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d6e3fbae-ceef-4e49-9b5b-81adf4c18c57}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aboutdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="algctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="area.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bndldlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdvlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="copyinstdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datadlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diffdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="egctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exportdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filepath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fxdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="guierror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="importdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="keynav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kybdctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kybddlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcdctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menubtn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="midi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="midierror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="minifont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mtfdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mtgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mtodlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pcdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pfmdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pfmnav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recommentdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="remotewnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renamedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rpanel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="searchdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snapshot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sysdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tx81z.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="txlbx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="txlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="txpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="undo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voicedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voicemenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voicenav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tx81z.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aboutdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="algctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bndldlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdvlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="copyinstdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="datadlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="diffdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="egctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exportdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filepath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fxdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="guierror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="importdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keynav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kybdctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kybddlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcdctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menubtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="midi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="midierror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minifont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mtfdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mtgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mtodlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pcdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pfmdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pfmnav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="recommentdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="remotewnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="renamedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snapshot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="storedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sysdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tx81z.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="txlbx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="txlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="txpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="undo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="voicedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="voicemenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="voicenav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="disabledrecomment.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="left_arr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\logo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="menubtn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="menubtn.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="recomment.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="right_arr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z5.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z5.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z6.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z6.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z7.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z7.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z8.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z8.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tx81z9.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tx81z9.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="finger.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\finger.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hand.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\link.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="split.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splitD.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitD.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitdown.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splitL.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitL.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splitLR.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitLR.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splitR.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitR.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splitU.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitU.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\splitUD.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitUD.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="splitup.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

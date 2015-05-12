@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Effects Editor</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Effects Editor</h2>
+
+<img src="fxdlg.gif">
+
+<p>
+
+The TX81Z has some simple MIDI effects that can be used with performances.
+You can hear the effects in single mode, but only when the effects are actually
+being edited, so that's more of a previewing type of function.  In other words,
+you can't save effect settings with individual voices.  In fact, the settings
+of the effects is global, which means there is one only one set of effect
+settings for all 24 performances.  The only thing saved with a performance is
+which of the three effects (or none of them) is used with the performance.
+Kind of sucks, but that's how it is.
+
+<h2>Delay (Effect 1)</h2>
+
+This produces a MIDI delay effect, which repeats the notes you are playing, as
+far as the polyphony of the unit allows (the unit has a polyphony of eight, so 
+only eight notes can sound off at a time, and this delay works within that
+limitation).
+
+<h3>Time</h3>
+
+This the delay time setting, from 0.01 seconds to 1.28 seconds.
+
+<h3>Pitch Shift</h3>
+
+This determines how much the pitch is shifted for each instance of the delay.
+
+<h3>Feedback</h3>
+
+Feedback determines how many times the sound will repeat due to the delay.
+
+<h3>Effect Level</h3>
+
+This is the overall volume of the effect.
+
+<h2>Pan (Effect 2)</h2>
+
+Panning will make the sound shift from output I to output II in various ways.
+
+<h3>Select</h3>
+
+This selects the method that is used to determine the volume of the sound out
+of outputs I and II.
+
+<ul>
+  <li><b>LFO</b> - This will make the sound pan from output I to output II in conjunction with the
+LFO setting of the instrument in the performance.
+<p>
+  <li><b>velocity</b> - This will make softly played notes louder out of output I, and loudly played
+notes louder out of output II.  
+<p>
+  <li><b>note</b> - This will make low notes louder out of output I and high notes louder out of
+output II.
+</ul>
+
+<h3>Direction</h3>
+This will flip the pan direction.  If this is set to II-&gt;I, then the
+relationships for the above settings will be reversed.
+
+<h3>Pan Range</h3>
+This determines how much panning will occur, in terms of depth.
+
+<h2>Chord (Effect 3)</h2>
+This is where you set up the chording effect, which causes the unit to play
+chords for each single note that you play.  One chord can be set up for each
+note in the octave, and each chord can have up to 4 notes.  To assign notes
+to a chord, depress the button of the note you want to assign the chord to,
+and use the keyboard display to toggle the notes of the chord off and on.
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - System Setup Editor</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>System Setup Editor</h2>
+
+<img src="sysdlg.gif">
+
+<p>
+
+This is where you edit the configuration of the unit.  This is kind of like
+where you tell it the context in which it is being used.
+
+<h3>Master Tune</h3>
+This is the master tune setting, in units of 64/100 cents.
+
+<h3>Basic Receive Channel</h3>
+This is the channel that the TX81Z receives MIDI data on.  This includes the
+channel that single mode operates on, as well as all sysex data.  The MIDI out
+channel of the editor has to match this channel in order for the editor to
+operator on the unit.  If you change this setting, the editor will try to
+follow and it will set its MIDI out channel to match it.  This doesn't always
+work though, because the channel can be changed in the editor faster than the
+unit can react to it, so it's possible to cut off communication with the unit
+by changing this setting too quickly.  If this is set to <i>omni</i> then the
+unit will react to all MIDI channels.
+
+<h3>Transmit Channel</h3>
+This is the channel that the unit sends MIDI data on, like bulk dumps.  The
+editor's MIDI in channel must match this channel on the unit to receive bulk
+dumps from it.  If you change this setting in the system setup editor, the
+editor will follow it and change its MIDI in channel to match it.
+
+<h3>Program Change Switch</h3>
+This setting determines how the unit reacts to program changes.  When set to
+<i>off</i>, the unit will not be affected by any program changes.  When this
+is set to <i>com</i> or <i>ind</i>, then when the unit is in single mode, it
+will change to whatever patch is set in the corresponding program change table
+entry.  When the unit is in performance mode, these two act a little
+differently.  When it's set to <i>com</i>, and the unit is sent a program
+change that corresponds to a voice, then the unit will change to single mode
+and dial up that voice.  But if this is set to <i>ind</i>, and it receives a
+voice program change, then the unit will stay on the same performance, but the
+instruments in the performance that are on the channel in which the program
+change was sent will be changed to the voice indicated by the program change.
+
+<p>
+
+Let me give you an example.  Say the unit has PF01 dialed up, which is a
+performance with eight voices that looks like this:
+
+<p>
+
+<table>
+  <tr>
+    <th>Channel
+    <td>1 <td>1 <td>1 <td>2 <td>2 <td>2 <td>3 <td>3
+  <tr>
+    <th>Voice
+    <td>I01 <td>I02 <td>I03 <td>I04 <td>I05 <td>I06 <td>I07 <td>I08
+</table>
+
+<p>
+
+Also, the program change table has A21 in entry 21, and you send program change
+21 to the unit on channel 1.  If the program change switch is set to <i>com</i>,
+then the unit will switch to single mode and dial up voice A21.  But if the
+program change switch is set to <i>ind</i>, then all of the instruments slots
+in the performance which are set to channel 1 will change to A21, so the
+performance above will look like this:
+
+<p>
+
+<table>
+  <tr>
+    <th>Channel
+    <td>1 <td>1 <td>1 <td>2 <td>2 <td>2 <td>3 <td>3
+  <tr>
+    <th>Voice
+    <td>A21 <td>A21 <td>A21 <td>I04 <td>I05 <td>I06 <td>I07 <td>I08
+</table>
+
+<p>
+
+The editor can be used to automatically send program change messages as you
+edit the different voices and performances on the unit, which is pretty handy.
+This setting is absolutely necessary if you want to store patches in the unit
+from the editor because it needs to send a program change message so it can
+store the item in the right place.  If you want this to take effect, then you
+should set this setting to <i>com</i> or <i>ind</i>.  I highly recommend it.
+
+<a name="noteswitch"><h3>Note Switch</h3>
+This is used if you want to use two TX81Zs in conjunction with each other.
+You set one of them to <i>even</i> and set the other to <i>odd</i>, load up
+both of them with the same patches and set them both to the same MIDI channel,
+and they will more or less operate like a single TX81Z with 16 note polyphony
+with one unit playing the even numbered notes and the other unit playing the
+odd numbered notes ("numbered" referring to the MIDI note number).  I have
+never tried this, so I can't say how well it works.
+
+<h3>Pitch Bend Switch<br>
+Control Change Switch</h3>
+This allows you to set up a single global channel for pitch bend messages or
+control change messages, or turn either of these classes of messages off.  This
+can be useful if you want these message to affect all of the instruments in a
+performance, even if they are on different channels.
+
+<h3>Combine Mode</h3>
+Combine mode is a weird little thing that allows you to preserve "function
+settings" across multiple voices as you change programs.  The functions it
+affects are:
+<p>
+<ul>
+  <li>Pitch Bend Range
+  <li>Portamento Time
+  <li>FC Volume
+  <li>FC/MW/BC Pitch and Amplitude
+  <li>BC Pitch Bias
+  <li>BC EG Bias
+  <li>Poly/Mono
+  <li>Portamento Mode
+</ul>
+<p>
+If you're changing patches on the TX81Z, and no matter what patch you change to,
+it looks "edited" (i.e. the "P" in "PLAY SINGLE" is lowercase), then you have
+combine mode turned off, and the current set of function settings is being
+applied to every voice to change to.  It's an odd little feature, and I have
+no idea what it's good for, so I keep it on all the time.
+
+<a name="atbc"><h3>AT -&gt; BC</h3>
+This will cause aftertouch messages to act like breath controller messages so
+you can use aftertouch with the unit.
+
+<h3>System Exclusive</h3>
+This setting allows the unit to be modified by sysex messages.  The editor
+needs this turned on to operate on the unit.  If you turn this off here,
+communication between the editor and the unit will be cut off, and you'll have
+to reactivate it on the unit.
+
+<h3>Memory Protect</h3>
+When this is on, the unit won't let you store voices or performances.  None of
+the other settings are affected, though.
+
+<h3>Startup Message</h3>
+
+This is the message that is briefly displayed when you turn the unit on.
+
+</body>
+
+</html>

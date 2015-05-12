@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Mysteries</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Mysteries Of The TX81Z</h2>
+
+<ul>
+<li>How are the coarse frequency values for the operators calculated?  Are they
+stored in a table, or are they calculated on the fly?  
+<p>
+From what I could gather from trying to figure this out, all the frequencies
+are multiples of the frequencies between the 1.00 and 2.00 range: 1.00, 1.41.
+1.57, and 1.73.  These are each taken and multiplied by 0.5, 1, 2, 3... up to
+15.  They are then sorted and that's basically what you're looking at when you
+step through the coarse frequencies for an operator.  They don't follow this
+pattern quite exactly, though, and I think this is due to rounding errors in
+the unit that can happen when you do limited precision arithmetic.
+<p>
+<li>How are the fine frequency values calculated? 
+<p>
+<li>How are the actual frequencies coming out of the unit calculated?
+<p>
+When I was creating the simplified frequency selection sliders, I wanted to
+sort all the frequencies so that the lowest was at the bottom, and the highest
+was at the top.  If you've played around with the frequency settings for
+awhile, you'll notice that some of them are duplicated when you have different
+coarse and fine frequencies set.  Now, I'm very perfectionistic about these
+things, and I knew that the frequencies it put out are actually different than
+what it showed on the display, so to sort them accurately I wrote a little
+utility that would measure the actual frequency coming out of the unit for
+every possible set of frequency settings.  When I did that, what happened was
+the some of the frequencies are actually higher then frequencies that showed
+up as lower in the display!  For example, the display frequency of 1.49 puts
+out a slightly higher frequency than the one it puts one at 1.50.  So, this is
+why the simplified frequencies are out of order, because I measured the audio
+instead of going by the numbers.  I don't know if this phenomenon is particular
+to my unit, or a range of frequencies on the unit (I only measured A440), so
+it could very well be the wrong way to do it, I don't know.
+</ul>
+
+</body>
+
+</html>

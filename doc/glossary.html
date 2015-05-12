@@ -1,0 +1,265 @@
+<html>
+
+<head>
+<title>TX81Z Programmer - Glossary</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Glossary</h2>
+
+<p>
+
+<a name="bank"><table class=g><tr>
+<th class=g>Bank
+<td class=g>A set of numbered <a href="#item">items</a> that are
+<a href="#packed">packed</a> into one bulk dump.  Individual <a
+href="#bankitem">bank items</a> cannot be received or transmitted by the
+TX81Z, the whole bank must be sent.  There are six banks: the user-editable
+<a href="#voice">voice</a> bank (I01..I32), the user-editable <a
+href="#performance">performance</a> bank (PF01..PF24), and the four <a
+href="#preset">preset</a> <a href="#voice">voice</a> banks (A through D, 01
+through 32).
+</table>
+
+<p>
+
+<a name="bankitem"><table class=g><tr>
+<th class=g><nobr>Bank Item</nobr>
+<td class=g>An <a href="#item">item</a> that exists in one of the
+<a href="#bank">bank</a> <a href="#slot">slots</a> in the <a
+href="#snapshot">snapshot</a>.  The <a href="#typecode">type code</a> will
+consist of the <a href="#patchnumber">patch number</a> (I01..I32, PF01..PF24,
+A01..A32, B01..B32, C01..C32, or D01..D32).
+</table>
+
+<p>
+
+<a name="carrier"><table class=g><tr>
+<th class=g>Carrier
+<td class=g>A sound-producing <a href="#operator">operator</a> in a
+<a href="#voice">voice</a>, as opposed to a <a href="#modulator">modulator</a>.
+</table>
+
+<p>
+
+<a name="editbuffer"><table class=g><tr>
+<th class=g><nobr>Edit Buffer</nobr>
+<td class=g>The two areas of memory in the TX81Z where <a
+href="#voice">voices</a> and <a href="#performance">performances</a> are
+loaded and played or edited from the unit's front panel.  These exist in the
+<a href="#snapshot">snapshot</a> as the <a href="#vced">VCED</a> and the <a
+href="#pced">PCED</a>.
+</table>
+
+<p>
+
+<a name="effects"><table class=g><tr>
+<th class=g>Effects
+<td class=g>Some simple MIDI effects that can be applied to the <a
+href="#voice">voices</a> in a <a href="#performance">performance</a>.
+See <a href="effects_editor.html">The Effects Editor</a> for more.
+</table>
+
+<p>
+
+<a name="focus"><table class=g><tr>
+<th class=g>Focus
+<td class=g>This refers to the active control in a dialog box that is ready to
+receive keyboard input.  Usually this is represented by a blinking cursor or
+a dotted rectangle or some type of flashing or color change or something.
+</table>
+
+<p>
+
+<a name="gui"><table class=g><tr>
+<th class=g>GUI
+<td class=g>An acronym that stands for "graphical user interface".  This term
+is usually used in contrast to a CLI, or "command line interface", like DOS.
+</table>
+
+<p>
+
+<a name="inputfocus"><table class=g><tr>
+<th class=g><nobr>Input Focus</nobr>
+<td class=g>See <a href="#focus">Focus</a>.
+</table>
+
+<p>
+
+<a name="item"><table class=g><tr>
+<th class=g>Item
+<td class=g>An editable unit of TX81Z data, like a <a href="#voice">voice</a>
+or <a href="#performance">performance</a>.
+</table>
+
+<p>
+
+<a name="kybdfocus"><table class=g><tr>
+<th class=g><nobr>Keyboard Focus</nobr>
+<td class=g>See <a href="#focus">Focus</a>.
+</table>
+
+<p>
+
+<a name="library"><table class=g><tr>
+<th class=g>Library
+<td class=g>A file used to store any number of <a href="#item">items</a>.
+</table>
+
+<p>
+
+<a name="libraryitem"><table class=g><tr>
+<th class=g><nobr>Library Item</nobr>
+<td class=g>An <a href="#item">item</a> that is stored in a <a
+href="#library">Library</a>.
+</table>
+
+<p>
+
+<a name="midi"><table class=g><tr>
+<th class=g>MIDI
+<td class=g>A specification created by musical equipment manufacturers that
+specifies a standard way for electronic instruments to be controlled by one
+another.  It consists of a hardware standard (which is basically the way that
+the cables are connected between instruments), and a software protocol (which
+consists of MIDI messages that are transmitted across 16 different channels --
+the messages consist of commands like "turn on note C3!", "set the volume to
+60!", "turn on the sustain pedal!", and things like that).
+</table>
+
+<p>
+
+<a name="modulation"><table class=g><tr>
+
+<th class=g>Modulation
+<td class=g>In synthesis, this refers to a cyclical change imposed on a sound
+through an oscillator.  Examples include vibrato (pitch modulation), tremolo 
+(amplitude modulation), and wah (filter/spectrum modulation).
+</table>
+
+<p>
+
+<a name="modulator"><table class=g><tr>
+<th class=g>Modulator
+<td class=g>An operator in a <a href="#voice">voice</a> that modifies other
+operators via frequency modulation.
+</table>
+
+<p>
+
+<a name="operator"><table class=g><tr>
+<th class=g><nobr>Operator</nobr>
+<td class=g>The sound producing unit of a voice, analogous to an oscillator.
+Each voice in the TX81Z has 4 operators.
+</table>
+
+<p>
+
+<a name="packed"><table class=g><tr>
+<th class=g>Packed
+<td class=g>In the TX81Z, there are two different formats that <a
+href="#voice">voices</a> and <a href="#performance">performances</a> can be
+stored in.  The <a href="#editbuffer">edit buffer</a> format, which keeps each
+parameter in a separate byte, or the packed format that the TX81Z uses for its
+memory banks, which combines certain parameters so that several are stored
+in one byte.  For example, if you look in the manual in the sysex section on
+page 74, (the VMEM format) and look at address 6, the AMS, EBS and KVS settings
+for an operator are stored in one byte.  But looking at the VCED section on 
+page 71, they are stored in bytes 8, 7, and 9 respectively.
+<a href="#bankitems">Bank items</a> and the <a href="#vmem">VMEM</a> and
+<a href="#pmem">PMEM</a> <a href="#libraryitems">library items</a> are stored
+in the packed format.
+</table>
+
+<p>
+
+<a name="pced"><table class=g><tr>
+<th class=g>PCED
+<td class=g>The <a href="#performance">performance</a> <a
+href="#editbuffer">edit buffer</a>.
+</table>
+
+<p>
+
+<a name="performance"><table class=g><tr>
+<th class=g>Performance
+<td class=g>A configuration of up to eight voices that can all be played at the
+same time.  <a href="#effects">Effects</a>, <a
+href="#microtunings">microtunings</a> and other modifications like detune can
+be used on the voices in a performance.  See the section on the
+<a href="performance_editor.html">performance editor</a> for more.
+</table>
+
+<p>
+
+<a name="pmem"><table class=g><tr>
+<th class=g>PMEM
+<td class=g>A <a href="#packed">packed</a> <a
+href="#performance">performance</a> that is stored in a <a
+href="#library">library</a>.
+</table>
+
+<p>
+
+<a name="preset"><table class=g><tr>
+<th class=g>Presets
+<td class=g>Non-editable <a href="#item">items</a> that are stored in the
+TX81Z's read only memory.
+</table>
+
+<p>
+
+<a name="slot"><table class=g><tr>
+<th class=g>Slot
+<td class=g>In a <a href="#snapshot">snapshot</a> there are a fixed number of
+<a href="#item">item</a> numbers and they cannot be moved around.  The items
+themselves can, but not the item numbers.  For lack of a better term, I call
+these "slots".  When you copy a <a href="#libraryitem">library item</a> into
+the snapshot, it goes into a particular slot, like SYS or I05.
+</table>
+
+<p>
+
+<a name="snapshot"><table class=g><tr>
+<th class=g>Snapshot
+<td class=g>A copy of the TX81Z data that is stored in memory by the TX81Z
+Programmer.  See <a href="snapshot.html">The Snapshot</a> for more.
+</table>
+
+<p>
+
+<a name="vced"><table class=g><tr>
+<th class=g>VCED
+<td class=g>The <a href="#voice">voice</a> <a href="#editbuffer">edit buffer</a>.
+</table>
+
+<p>
+
+<a name="vmem"><table class=g><tr>
+<th class=g>VMEM
+<td class=g>A <a href="#packed">packed</a> <a href="#voice">voice</a> that is
+stored in a <a href="#library">library</a>.
+</table>
+
+<p>
+
+<a name="voice"><table class=g><tr>
+<th class=g>Voice
+<td class=g>The basic unit of sound on the TX81Z.  See
+<a href="voice_editor.html">The Voice Editor</a> for more.
+</table>
+
+<p>
+
+<a name=""><table class=g><tr>
+<th class=g>
+<td class=g>
+</table>
+
+</body>
+
+</html>

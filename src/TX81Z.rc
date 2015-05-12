@@ -1,0 +1,1606 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#include <winres.h>
+#include <dlgs.h>
+#include "lcdctrl.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PROGICON            ICON                    "res/Tx81z.ico"
+IDI_PROGICON1           ICON                    "res/Tx81z1.ico"
+IDI_PROGICON2           ICON                    "res/Tx81z2.ico"
+IDI_PROGICON3           ICON                    "res/Tx81z3.ico"
+IDI_PROGICON4           ICON                    "res/Tx81z4.ico"
+IDI_PROGICON5           ICON                    "res/Tx81z5.ico"
+IDI_PROGICON6           ICON                    "res/Tx81z6.ico"
+IDI_PROGICON7           ICON                    "res/Tx81z7.ico"
+IDI_PROGICON8           ICON                    "res/Tx81z8.ico"
+IDI_PROGICON9           ICON                    "res/Tx81z9.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MAIN_MENU MENU
+BEGIN
+    POPUP "&Program"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&MIDI"
+    BEGIN
+        MENUITEM "&Setup...",                   IDM_MIDI_SETUP
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM ":",                           IDM_START_OPTIONS, GRAYED
+        MENUITEM "&Load Previously Open Files At Startup", IDM_OPEN_PREVIOUS
+        MENUITEM "Retrieve &Edit Buffers At Startup", IDM_STARTUP_EDIT_BUFFER_REQUEST
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_MAINWND_OPTIONS, GRAYED
+        MENUITEM "Show &Full Path Names",       IDM_SHOW_FULL_PATHS
+        MENUITEM "&Do Not Open Editor When Double-Clicking Bank Items", IDM_DBLCLKING_BANK_DOESNT_OPEN
+        MENUITEM "&Bring Main Window To The Front After Closing An Editor", IDM_MAINWND_TO_FRONT
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_SNAPSHOT_OPTIONS, GRAYED
+        MENUITEM "&Automatically Save Snapshots When Closing Them", IDM_SNAPSHOT_AUTOSAVE
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_LIBRARY_OPTIONS, GRAYED
+        MENUITEM "Disallo&w Duplicates In Libraries", IDM_LIBRARY_NO_DUPLICATES
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_GLOBAL_OPTIONS, GRAYED
+        MENUITEM "&Unslashed Zeros",            IDM_UNSLASHED_ZEROS
+        MENUITEM "Set &Highlight Color...",     IDM_HIGHLIGHT_COLOR
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_VERSION_OPTIONS, GRAYED
+        MENUITEM "Version 1.&0",                IDM_VERSION_10
+        MENUITEM "Other Version (1.&1 - 1.6)",  IDM_VERSION_OTHER
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   IDM_ABOUT
+    END
+END
+
+IDM_SNAPSHOT_FILE_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&New",                        IDM_SNAPSHOT_FILE_NEW
+        MENUITEM "&Open",                       IDM_SNAPSHOT_FILE_OPEN
+        MENUITEM "&Save",                       IDM_SNAPSHOT_FILE_SAVE
+        MENUITEM "Save &As...",                 IDM_SNAPSHOT_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Save &Copy As...",            IDM_SNAPSHOT_FILE_SAVE_COPY
+        MENUITEM "&Load Copy",                  IDM_SNAPSHOT_FILE_LOAD_COPY
+    END
+END
+
+IDM_LIB_FILE_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&New",                        IDM_LIB_FILE_NEW
+        MENUITEM "&Open",                       IDM_LIB_FILE_OPEN
+        MENUITEM "&Save",                       IDM_LIB_FILE_SAVE
+        MENUITEM "Save &As...",                 IDM_LIB_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Import",                     IDM_LIB_FILE_IMPORT
+        MENUITEM "&Export",                     IDM_LIB_FILE_EXPORT
+    END
+END
+
+IDM_LIB_SORT_MENU MENU
+BEGIN
+    POPUP "Sort"
+    BEGIN
+        MENUITEM "Sort By &Order Added",        IDM_LIB_SORT_ORDER_ADDED
+        MENUITEM "Sort By &Type",               IDM_LIB_SORT_TYPE
+        MENUITEM "Sort By &Name",               IDM_LIB_SORT_NAME
+        MENUITEM "Sort By &Comment",            IDM_LIB_SORT_COMMENT
+        MENUITEM "Sort By &Selection",          IDM_LIB_SORT_SELECTION
+        MENUITEM "Sort By Sea&rch...",          IDM_LIB_SORT_SEARCH
+    END
+END
+
+IDM_VOICEDLG_MENU MENU
+BEGIN
+    POPUP "&Voice"
+    BEGIN
+        MENUITEM "&Retrieve Voice",             IDM_RETRIEVE_VOICE
+        MENUITEM "&Transmit Voice",             IDM_TRANSMIT_VOICE
+        MENUITEM "&Store Voice",                IDM_STORE_VOICE
+        MENUITEM "&Initialize Voice",           IDM_INIT_VOICE
+        MENUITEM SEPARATOR
+        MENUITEM "&1",                          IDM_ADD_TO_LIB_1
+        MENUITEM "&2",                          IDM_ADD_TO_LIB_2
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM ":",                           IDM_FREQ_OPTIONS, GRAYED
+        MENUITEM "&One Click OP && LFO Wave Type Selection", IDM_FAST_WAVE_SELECTION
+        MENUITEM "Simplified &Frequency Selection", IDM_SIMPLE_FREQ_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_EG_OPTIONS, GRAYED
+        MENUITEM "Hide &Labels On EG Graphs",   IDM_HIDE_EG_LABELS
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_MOUSE_OPTIONS, GRAYED
+        MENUITEM "Mouse Wheel &Off",            IDM_MOUSEWHEEL_OFF
+        MENUITEM "Mouse Wheel &Scrolls",        IDM_MOUSEWHEEL_SCROLL
+        MENUITEM "Mouse Wheel &Edits",          IDM_MOUSEWHEEL_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM ":",                           IDM_WINDOW_OPTIONS, GRAYED
+        MENUITEM "&Hide Scroll Bars",           IDM_HIDE_SCROLLBARS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "F&it To Controls",            IDM_FIT_TO_CONTROLS
+        MENUITEM SEPARATOR
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_VOICE_QUICKEDIT_MENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Copy"
+        BEGIN
+            MENUITEM "OP1 To OP2 (",                IDC_COPY_OP1_2
+            MENUITEM "OP1 To OP3 (",                IDC_COPY_OP1_3
+            MENUITEM "OP1 To OP4 (",                IDC_COPY_OP1_4
+            MENUITEM SEPARATOR
+            MENUITEM "OP2 To OP1 (",                IDC_COPY_OP2_1
+            MENUITEM "OP2 To OP3 (",                IDC_COPY_OP2_3
+            MENUITEM "OP2 To OP4 (",                IDC_COPY_OP2_4
+            MENUITEM SEPARATOR
+            MENUITEM "OP3 To OP1 (",                IDC_COPY_OP3_1
+            MENUITEM "OP3 To OP2 (",                IDC_COPY_OP3_2
+            MENUITEM "OP3 To OP4 (",                IDC_COPY_OP3_4
+            MENUITEM SEPARATOR
+            MENUITEM "OP4 To OP1 (",                IDC_COPY_OP4_1
+            MENUITEM "OP4 To OP2 (",                IDC_COPY_OP4_2
+            MENUITEM "OP4 To OP3 (",                IDC_COPY_OP4_3
+        END
+        POPUP "Swap"
+        BEGIN
+            MENUITEM "OP1 And OP2 (",               IDC_SWAP_OP1_2
+            MENUITEM "OP1 And OP3 (",               IDC_SWAP_OP1_3
+            MENUITEM "OP1 And OP4 (",               IDC_SWAP_OP1_4
+            MENUITEM SEPARATOR
+            MENUITEM "OP2 And OP1 (",               IDC_SWAP_OP1_2
+            MENUITEM "OP2 And OP3 (",               IDC_SWAP_OP2_3
+            MENUITEM "OP2 And OP4 (",               IDC_SWAP_OP2_4
+            MENUITEM SEPARATOR
+            MENUITEM "OP3 And OP1 (",               IDC_SWAP_OP1_3
+            MENUITEM "OP3 And OP2 (",               IDC_SWAP_OP2_3
+            MENUITEM "OP3 And OP4 (",               IDC_SWAP_OP3_4
+            MENUITEM SEPARATOR
+            MENUITEM "OP4 And OP1 (",               IDC_SWAP_OP1_4
+            MENUITEM "OP4 And OP2 (",               IDC_SWAP_OP2_4
+            MENUITEM "OP4 And OP3 (",               IDC_SWAP_OP3_4
+        END
+        POPUP "Rand"
+        BEGIN
+            MENUITEM "OP1 (",                       IDC_RAND_OP1
+            MENUITEM "OP2 (",                       IDC_RAND_OP2
+            MENUITEM "OP3 (",                       IDC_RAND_OP3
+            MENUITEM "OP4 (",                       IDC_RAND_OP4
+            MENUITEM SEPARATOR
+            MENUITEM "All Operators (",             IDC_RAND_ALL
+        END
+    END
+END
+
+IDM_PFMDLG_MENU MENU
+BEGIN
+    POPUP "&Performance"
+    BEGIN
+        MENUITEM "&Retrieve Performance",       IDM_RETRIEVE_PFM
+        MENUITEM "&Transmit Performance",       IDM_TRANSMIT_PFM
+        MENUITEM "S&tore Performance",          IDM_STORE_PFM
+        POPUP "&Initialize Performance"
+        BEGIN
+            MENUITEM "&Single",                     IDM_INIT_SINGLE_PFM
+            MENUITEM "&Dual",                       IDM_INIT_DUAL_PFM
+            MENUITEM "Sp&lit",                      IDM_INIT_SPLIT_PFM
+            MENUITEM "&Mono 8",                     IDM_INIT_MONO8_PFM
+            MENUITEM "&Poly 4",                     IDM_INIT_POLY4_PFM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&1",                          IDM_ADD_TO_LIB_1
+        MENUITEM "&2",                          IDM_ADD_TO_LIB_2
+        MENUITEM "&1",                          IDM_BUNDLE_TO_LIB_1
+        MENUITEM "&2",                          IDM_BUNDLE_TO_LIB_2
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_PFM_QUICKEDIT_MENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Copy"
+        BEGIN
+            MENUITEM "1",                           1
+            MENUITEM "2",                           2
+            MENUITEM "3",                           3
+            MENUITEM "4",                           4
+            MENUITEM "5",                           5
+            MENUITEM "6",                           6
+            MENUITEM "7",                           7
+            MENUITEM SEPARATOR
+            MENUITEM "To Multiple Instruments...",  IDM_COPY_TO_MULTIPLE_INSTS
+        END
+        POPUP "Swap"
+        BEGIN
+            MENUITEM "1",                           1
+            MENUITEM "2",                           2
+            MENUITEM "3",                           3
+            MENUITEM "4",                           4
+            MENUITEM "5",                           5
+            MENUITEM "6",                           6
+            MENUITEM "7",                           7
+        END
+    END
+END
+
+IDM_FXDLG_MENU MENU
+BEGIN
+    POPUP "E&ffects"
+    BEGIN
+        MENUITEM "&Retrieve Effect Settings",   IDM_RETRIEVE_FX
+        MENUITEM "&Transmit Effect Settings",   IDM_TRANSMIT_FX
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_PCDLG_MENU MENU
+BEGIN
+    POPUP "&PC Table"
+    BEGIN
+        MENUITEM "&Retrieve PC Table",          IDM_RETRIEVE_PC
+        MENUITEM "&Transmit PC Table",          IDM_TRANSMIT_PC
+        MENUITEM "&Initialize PC Table",        IDM_INIT_PC
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_MTODLG_MENU MENU
+BEGIN
+    POPUP "&Microtunings"
+    BEGIN
+        MENUITEM "&Retrieve Microtunings (Octave)", IDM_RETRIEVE_MTO
+        MENUITEM "&Transmit Microtunings (Octave)", IDM_TRANSMIT_MTO
+        POPUP "&Initialize Microtunings (Octave)"
+        BEGIN
+            MENUITEM "1 - Equal Tempered",          IDM_EQUAL_TEMPERED
+            POPUP "2 - Pure Major"
+            BEGIN
+                MENUITEM "C",                           IDM_PURE_MAJOR_C
+                MENUITEM "Db",                          IDM_PURE_MAJOR_Db
+                MENUITEM "D",                           IDM_PURE_MAJOR_D
+                MENUITEM "Eb",                          IDM_PURE_MAJOR_Eb
+                MENUITEM "E",                           IDM_PURE_MAJOR_E
+                MENUITEM "F",                           IDM_PURE_MAJOR_F
+                MENUITEM "Gb",                          IDM_PURE_MAJOR_Gb
+                MENUITEM "G",                           IDM_PURE_MAJOR_G
+                MENUITEM "Ab",                          IDM_PURE_MAJOR_Ab
+                MENUITEM "A",                           IDM_PURE_MAJOR_A
+                MENUITEM "Bb",                          IDM_PURE_MAJOR_Bb
+                MENUITEM "B",                           IDM_PURE_MAJOR_B
+            END
+            POPUP "3 - Pure Minor"
+            BEGIN
+                MENUITEM "A",                           IDM_PURE_MINOR_A
+                MENUITEM "A#",                          IDM_PURE_MINOR_As
+                MENUITEM "B",                           IDM_PURE_MINOR_B
+                MENUITEM "C",                           IDM_PURE_MINOR_C
+                MENUITEM "C#",                          IDM_PURE_MINOR_Cs
+                MENUITEM "D",                           IDM_PURE_MINOR_D
+                MENUITEM "D#",                          IDM_PURE_MINOR_Ds
+                MENUITEM "E",                           IDM_PURE_MINOR_E
+                MENUITEM "F",                           IDM_PURE_MINOR_F
+                MENUITEM "F#",                          IDM_PURE_MINOR_Fs
+                MENUITEM "G",                           IDM_PURE_MINOR_G
+                MENUITEM "G#",                          IDM_PURE_MINOR_Gs
+            END
+            POPUP "4 - Mean Tone"
+            BEGIN
+                MENUITEM "C",                           IDM_MEAN_TONE_C
+                MENUITEM "Db",                          IDM_MEAN_TONE_Db
+                MENUITEM "D",                           IDM_MEAN_TONE_D
+                MENUITEM "Eb",                          IDM_MEAN_TONE_Eb
+                MENUITEM "E",                           IDM_MEAN_TONE_E
+                MENUITEM "F",                           IDM_MEAN_TONE_F
+                MENUITEM "Gb",                          IDM_MEAN_TONE_Gb
+                MENUITEM "G",                           IDM_MEAN_TONE_G
+                MENUITEM "Ab",                          IDM_MEAN_TONE_Ab
+                MENUITEM "A",                           IDM_MEAN_TONE_A
+                MENUITEM "Bb",                          IDM_MEAN_TONE_Bb
+                MENUITEM "B",                           IDM_MEAN_TONE_B
+            END
+            POPUP "5 - Pythagorean"
+            BEGIN
+                MENUITEM "C",                           IDM_PYTHAGOREAN_C
+                MENUITEM "Db",                          IDM_PYTHAGOREAN_Db
+                MENUITEM "D",                           IDM_PYTHAGOREAN_D
+                MENUITEM "Eb",                          IDM_PYTHAGOREAN_Eb
+                MENUITEM "E",                           IDM_PYTHAGOREAN_E
+                MENUITEM "F",                           IDM_PYTHAGOREAN_F
+                MENUITEM "Gb",                          IDM_PYTHAGOREAN_Gb
+                MENUITEM "G",                           IDM_PYTHAGOREAN_G
+                MENUITEM "Ab",                          IDM_PYTHAGOREAN_Ab
+                MENUITEM "A",                           IDM_PYTHAGOREAN_A
+                MENUITEM "Bb",                          IDM_PYTHAGOREAN_Bb
+                MENUITEM "B",                           IDM_PYTHAGOREAN_B
+            END
+            MENUITEM "6 - Werckmeister",            IDM_WERCKMEISTER
+            MENUITEM "7 - Kirnberger",              IDM_KIRNBERGER
+            MENUITEM "8 - Valloti && Young",        IDM_VALLOTI_AND_YOUNG
+            MENUITEM "9 - 1/4 Shift Equal",         IDM_1_4_SHIFT_EQUAL
+            MENUITEM "10 - 1/4 Tone",               IDM_1_4_TONE
+            MENUITEM "11 - 1/8 Tone",               IDM_1_8_TONE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_MTFDLG_MENU MENU
+BEGIN
+    POPUP "&Microtunings"
+    BEGIN
+        MENUITEM "&Retrieve Microtunings (Full Kbd)", IDM_RETRIEVE_MTF
+        MENUITEM "&Transmit Microtunings (Full Kbd)", IDM_TRANSMIT_MTF
+        POPUP "&Initialize Microtunings (Full Kbd)"
+        BEGIN
+            MENUITEM "1 - Equal Tempered",          IDM_EQUAL_TEMPERED
+            POPUP "2 - Pure Major"
+            BEGIN
+                MENUITEM "C",                           IDM_PURE_MAJOR_C
+                MENUITEM "Db",                          IDM_PURE_MAJOR_Db
+                MENUITEM "D",                           IDM_PURE_MAJOR_D
+                MENUITEM "Eb",                          IDM_PURE_MAJOR_Eb
+                MENUITEM "E",                           IDM_PURE_MAJOR_E
+                MENUITEM "F",                           IDM_PURE_MAJOR_F
+                MENUITEM "Gb",                          IDM_PURE_MAJOR_Gb
+                MENUITEM "G",                           IDM_PURE_MAJOR_G
+                MENUITEM "Ab",                          IDM_PURE_MAJOR_Ab
+                MENUITEM "A",                           IDM_PURE_MAJOR_A
+                MENUITEM "Bb",                          IDM_PURE_MAJOR_Bb
+                MENUITEM "B",                           IDM_PURE_MAJOR_B
+            END
+            POPUP "3 - Pure Minor"
+            BEGIN
+                MENUITEM "A",                           IDM_PURE_MINOR_A
+                MENUITEM "A#",                          IDM_PURE_MINOR_As
+                MENUITEM "B",                           IDM_PURE_MINOR_B
+                MENUITEM "C",                           IDM_PURE_MINOR_C
+                MENUITEM "C#",                          IDM_PURE_MINOR_Cs
+                MENUITEM "D",                           IDM_PURE_MINOR_D
+                MENUITEM "D#",                          IDM_PURE_MINOR_Ds
+                MENUITEM "E",                           IDM_PURE_MINOR_E
+                MENUITEM "F",                           IDM_PURE_MINOR_F
+                MENUITEM "F#",                          IDM_PURE_MINOR_Fs
+                MENUITEM "G",                           IDM_PURE_MINOR_G
+                MENUITEM "G#",                          IDM_PURE_MINOR_Gs
+            END
+            POPUP "4 - Mean Tone"
+            BEGIN
+                MENUITEM "C",                           IDM_MEAN_TONE_C
+                MENUITEM "Db",                          IDM_MEAN_TONE_Db
+                MENUITEM "D",                           IDM_MEAN_TONE_D
+                MENUITEM "Eb",                          IDM_MEAN_TONE_Eb
+                MENUITEM "E",                           IDM_MEAN_TONE_E
+                MENUITEM "F",                           IDM_MEAN_TONE_F
+                MENUITEM "Gb",                          IDM_MEAN_TONE_Gb
+                MENUITEM "G",                           IDM_MEAN_TONE_G
+                MENUITEM "Ab",                          IDM_MEAN_TONE_Ab
+                MENUITEM "A",                           IDM_MEAN_TONE_A
+                MENUITEM "Bb",                          IDM_MEAN_TONE_Bb
+                MENUITEM "B",                           IDM_MEAN_TONE_B
+            END
+            POPUP "5 - Pythagorean"
+            BEGIN
+                MENUITEM "C",                           IDM_PYTHAGOREAN_C
+                MENUITEM "Db",                          IDM_PYTHAGOREAN_Db
+                MENUITEM "D",                           IDM_PYTHAGOREAN_D
+                MENUITEM "Eb",                          IDM_PYTHAGOREAN_Eb
+                MENUITEM "E",                           IDM_PYTHAGOREAN_E
+                MENUITEM "F",                           IDM_PYTHAGOREAN_F
+                MENUITEM "Gb",                          IDM_PYTHAGOREAN_Gb
+                MENUITEM "G",                           IDM_PYTHAGOREAN_G
+                MENUITEM "Ab",                          IDM_PYTHAGOREAN_Ab
+                MENUITEM "A",                           IDM_PYTHAGOREAN_A
+                MENUITEM "Bb",                          IDM_PYTHAGOREAN_Bb
+                MENUITEM "B",                           IDM_PYTHAGOREAN_B
+            END
+            MENUITEM "6 - Werckmeister",            IDM_WERCKMEISTER
+            MENUITEM "7 - Kirnberger",              IDM_KIRNBERGER
+            MENUITEM "8 - Valloti && Young",        IDM_VALLOTI_AND_YOUNG
+            MENUITEM "9 - 1/4 Shift Equal",         IDM_1_4_SHIFT_EQUAL
+            MENUITEM "10 - 1/4 Tone",               IDM_1_4_TONE
+            MENUITEM "11 - 1/8 Tone",               IDM_1_8_TONE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "&System Setup Editor",        IDM_SYSDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_SYSDLG_MENU MENU
+BEGIN
+    POPUP "&System"
+    BEGIN
+        MENUITEM "&Retrieve System Setup",      IDM_RETRIEVE_SYS
+        MENUITEM "&Transmit System Setup",      IDM_TRANSMIT_SYS
+        MENUITEM SEPARATOR
+        MENUITEM "&Close Editor",               IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Program",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         IDM_REDO
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "MIDI &Keyboard Control",      IDM_KYBDDLG
+        MENUITEM "&Remote Control",             IDM_REMOTEWND
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                IDM_MAINWND
+        MENUITEM "&Voice Editor",               IDM_VOICEDLG
+        MENUITEM "&Performance Editor",         IDM_PFMDLG
+        MENUITEM "&Effects Editor",             IDM_FXDLG
+        MENUITEM "Program &Change Editor",      IDM_PCDLG
+        MENUITEM "Microtunings (&Octave) Editor", IDM_MTODLG
+        MENUITEM "Microtunings (&Full Kbd) Editor", IDM_MTFDLG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+    END
+END
+
+IDM_DIFF_MENU MENU
+BEGIN
+    POPUP "&Comparison"
+    BEGIN
+        MENUITEM "&Close",                      IDM_CLOSE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&All",                        IDM_VIEW_ALL
+        MENUITEM "&Differences Only",           IDM_VIEW_DIFFS
+        MENUITEM "&Samenesses Only",            IDM_VIEW_SAMES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDA_PROGACCEL ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+    "Z",            IDM_UNDO,               VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_REDO,               VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F1,          IDM_HELP,               VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINWND DIALOG 0, 0, 359, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+MENU IDM_MAIN_MENU
+CLASS "MainWnd"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           " Snapshot",IDC_SNAPSHOT_LBL,5,0,40,8
+    EDITTEXT        IDC_SNAPSHOT_TBX,116,9,127,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_SNAPSHOT_FILE_BTN,116,22,20,13,BS_BITMAP | BS_LEFT
+    LTEXT           "Selected:",IDC_SNAPSHOT_SELECTED_LBL,187,24,31,8
+    RTEXT           "0",IDC_SNAPSHOT_SELECTED_STC,218,23,25,11,SS_CENTERIMAGE | SS_SUNKEN
+    LISTBOX         IDC_SNAPSHOT_LBX,116,35,127,41,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit Item",IDC_ITEM_EDIT_BTN,3,10,108,13
+    PUSHBUTTON      "Transmit Program Change",IDC_TRANSMIT_PC_BTN,3,23,108,13
+    PUSHBUTTON      "Add To Lib 1",IDC_ITEM_ADD_TO_LIB0_BTN,3,36,54,13
+    PUSHBUTTON      "Add To Lib 2",IDC_ITEM_ADD_TO_LIB1_BTN,57,36,54,13
+    PUSHBUTTON      "Copy Items From Lib",IDC_ITEM_COPY_FROM_LIB_BTN,3,62,108,13
+    PUSHBUTTON      "Retrieve Snapshot Data",IDC_SNAPSHOT_RX_BTN,248,49,108,13
+    PUSHBUTTON      "Transmit Snapshot Data",IDC_SNAPSHOT_TX_BTN,248,62,108,13
+    CTEXT           "Library 1",IDC_LIB0_LBL,0,77,36,8
+    EDITTEXT        IDC_LIB0_TBX,0,87,151,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "",IDC_LIB0_FILE_BTN,0,99,20,13,BS_BITMAP | BS_LEFT
+    PUSHBUTTON      "",IDC_LIB0_SORT_BTN,21,99,20,13,BS_BITMAP | BS_LEFT
+    LTEXT           "Selected:",IDC_LIB0_SELECTED_LBL,95,101,29,8
+    RTEXT           "0",IDC_LIB0_SELECTED_STC,126,100,25,11,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Count:",IDC_LIB0_COUNT_LBL,44,101,21,8
+    RTEXT           "0",IDC_LIB0_COUNT_STC,67,100,25,11,SS_CENTERIMAGE | SS_SUNKEN
+    LISTBOX         IDC_LIB0_LBX,0,112,151,78,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL
+    CTEXT           "Library 2",IDC_LIB1_LBL,207,77,36,8
+    EDITTEXT        IDC_LIB1_TBX,208,87,151,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "",IDC_LIB1_FILE_BTN,208,99,20,13,BS_BITMAP | BS_LEFT
+    PUSHBUTTON      "",IDC_LIB1_SORT_BTN,229,99,20,13,BS_BITMAP | BS_LEFT
+    LTEXT           "Selected:",IDC_LIB1_SELECTED_LBL,303,101,29,8
+    RTEXT           "0",IDC_LIB1_SELECTED_STC,334,100,25,11,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Count:",IDC_LIB1_COUNT_LBL,252,101,21,8
+    RTEXT           "0",IDC_LIB1_COUNT_STC,275,100,25,11,SS_CENTERIMAGE | SS_SUNKEN
+    LISTBOX         IDC_LIB1_LBX,208,112,151,78,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL
+    CONTROL         "Copy",IDC_COPY_BTN,"Button",BS_OWNERDRAW | WS_TABSTOP,151,115,55,14
+    CONTROL         "Delete",IDC_DELETE_BTN,"Button",BS_OWNERDRAW | WS_TABSTOP,151,129,55,14
+    CONTROL         "Rename",IDC_RENAME_BTN,"Button",BS_OWNERDRAW | WS_TABSTOP,151,144,55,14
+    CONTROL         "Recomment",IDC_RECOMMENT_BTN,"Button",BS_OWNERDRAW | WS_TABSTOP,151,158,55,14
+    CONTROL         "Compare",IDC_DIFF_BTN,"Button",BS_OWNERDRAW | WS_TABSTOP,151,172,55,14
+    PUSHBUTTON      "Store Item",IDC_ITEM_STORE_BTN,248,36,108,13
+    PUSHBUTTON      "Retrieve Selected Items",IDC_SNAPSHOT_RX_ITEMS_BTN,248,10,108,13
+    PUSHBUTTON      "Transmit Selected Items",IDC_SNAPSHOT_TX_ITEMS_BTN,248,23,108,13
+    PUSHBUTTON      "Bundle To Lib 1",IDC_ITEM_BNDL_TO_LIB0_BTN,3,49,54,13
+    PUSHBUTTON      "Bundle To Lib 2",IDC_ITEM_BNDL_TO_LIB1_BTN,57,49,54,13
+END
+
+IDD_MIDIDLG DIALOG 0, 0, 170, 212
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MIDI Setup"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Specify the MIDI ports your device is connected to:",IDC_MSG_LBL,5,5,160,35
+    GROUPBOX        "MIDI In/Receive",IDC_MIDI_IN_GBX,5,40,160,40
+    LTEXT           "Port:",IDC_MIDI_IN_PORT_LBL,11,52,20,8
+    COMBOBOX        IDC_MIDI_IN_PORT_CBO,10,62,115,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Channel:",IDC_MIDI_IN_CHANNEL_LBL,128,52,30,8
+    COMBOBOX        IDC_MIDI_IN_CHANNEL_CBO,128,62,32,159,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "MIDI Out/Transmit",IDC_MIDI_OUT_GBX,5,90,160,40
+    LTEXT           "Port:",IDC_MIDI_OUT_PORT_LBL,11,102,20,8
+    COMBOBOX        IDC_MIDI_OUT_PORT_CBO,10,112,115,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Channel:",IDC_MIDI_OUT_CHANNEL_LBL,128,102,30,8
+    COMBOBOX        IDC_MIDI_OUT_CHANNEL_CBO,128,112,32,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Test",IDC_MIDI_TEST_BTN,5,192,50,14
+    DEFPUSHBUTTON   "OK",IDOK,60,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,192,50,14
+    GROUPBOX        "Master Controller Input",IDC_MIDI_MASTER_GBX,5,140,160,40
+    LTEXT           "Port:",IDC_MIDI_MASTER_PORT_LBL,11,152,20,8
+    COMBOBOX        IDC_MIDI_MASTER_PORT_CBO,10,162,115,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TX81ZDLG DIALOGEX 0, 0, 122, 66
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Please Wait"
+CLASS "TX81Z"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CTEXT           "",IDC_MSG_LBL,5,4,110,18
+    CONTROL         "",IDC_PROGRESSBAR,"msctls_progress32",WS_BORDER,5,27,110,14
+    PUSHBUTTON      "Cancel",IDCANCEL,35,46,50,14
+END
+
+IDD_VOICEDLG DIALOGEX 0, 0, 537, 575
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Voice Editor - TX81Z Programmer"
+MENU IDM_VOICEDLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_VOICE_NAME,"LcdCtrl",WS_TABSTOP | 0x1,4,10,77,12
+    GROUPBOX        "Voice Name",IDC_VOICENAME_GBX,0,0,86,27
+    CONTROL         "",IDC_ALGORITHM,"AlgCtrl",WS_TABSTOP,5,40,53,64
+    LTEXT           "Feedback (OP4)",IDC_STATIC,6,109,52,8
+    CONTROL         "",IDC_FEEDBACK,"LcdCtrl",WS_TABSTOP | 0x22,5,118,53,8
+    CONTROL         "",IDC_OP1_OUT,"LcdCtrl",WS_TABSTOP | 0x12,8,145,11,160
+    CONTROL         "",IDC_OP2_OUT,"LcdCtrl",WS_TABSTOP | 0x12,20,145,11,160
+    CONTROL         "",IDC_OP3_OUT,"LcdCtrl",WS_TABSTOP | 0x12,32,145,11,160
+    CONTROL         "",IDC_OP4_OUT,"LcdCtrl",WS_TABSTOP | 0x12,44,145,11,160
+    CONTROL         "1",IDC_OP1_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,8,306,12,10
+    CONTROL         "2",IDC_OP2_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,20,306,11,10
+    CONTROL         "3",IDC_OP3_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,32,306,12,10
+    CONTROL         "4",IDC_OP4_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE,44,306,11,10
+    LTEXT           "Key Velocity",IDC_KVS_LBL,65,290,47,8,SS_NOTIFY
+    CONTROL         "",IDC_OP1_KVS,"LcdCtrl",WS_TABSTOP | 0x12,65,299,11,47
+    CONTROL         "",IDC_OP2_KVS,"LcdCtrl",WS_TABSTOP | 0x12,77,299,11,47
+    CONTROL         "",IDC_OP3_KVS,"LcdCtrl",WS_TABSTOP | 0x12,89,299,11,47
+    CONTROL         "",IDC_OP4_KVS,"LcdCtrl",WS_TABSTOP | 0x12,101,299,11,47
+    LTEXT           "Rate Scaling",IDC_STATIC,7,320,45,8
+    CONTROL         "",IDC_OP1_RS,"LcdCtrl",WS_TABSTOP | 0x12,7,329,11,44
+    CONTROL         "",IDC_OP2_RS,"LcdCtrl",WS_TABSTOP | 0x12,19,329,11,44
+    CONTROL         "",IDC_OP3_RS,"LcdCtrl",WS_TABSTOP | 0x12,31,329,11,44
+    CONTROL         "",IDC_OP4_RS,"LcdCtrl",WS_TABSTOP | 0x12,43,329,11,44
+    LTEXT           "Level Scaling",IDC_STATIC,8,379,47,8
+    CONTROL         "",IDC_OP1_LS,"LcdCtrl",WS_TABSTOP | 0x12,8,389,11,160
+    CONTROL         "",IDC_OP2_LS,"LcdCtrl",WS_TABSTOP | 0x12,20,389,11,160
+    CONTROL         "",IDC_OP3_LS,"LcdCtrl",WS_TABSTOP | 0x12,32,389,11,160
+    CONTROL         "",IDC_OP4_LS,"LcdCtrl",WS_TABSTOP | 0x12,44,389,11,160
+    CONTROL         "1",IDC_OP1_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,162,13,22,10
+    CONTROL         "2",IDC_OP2_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,184,13,22,10
+    CONTROL         "3",IDC_OP3_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,206,13,22,10
+    CONTROL         "4",IDC_OP4_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,228,13,22,10
+    GROUPBOX        "Multiple Parameter Editing",IDC_QUICKEDIT_GBX,95,0,166,54
+    RTEXT           "Operator Follow:",IDC_STATIC,100,13,60,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_OP1_WAVE,72,68,42,130,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_TABSTOP
+    COMBOBOX        IDC_OP2_WAVE,120,68,42,130,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_TABSTOP
+    COMBOBOX        IDC_OP3_WAVE,171,68,42,130,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_TABSTOP
+    COMBOBOX        IDC_OP4_WAVE,220,68,42,130,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_TABSTOP
+    CONTROL         "",IDC_OP1_WAVE_RPANEL,"RPanel",WS_TABSTOP,71,69,43,13
+    CONTROL         "",IDC_OP2_WAVE_RPANEL,"RPanel",WS_TABSTOP,120,69,43,13
+    CONTROL         "",IDC_OP3_WAVE_RPANEL,"RPanel",WS_TABSTOP,171,69,43,13
+    CONTROL         "",IDC_OP4_WAVE_RPANEL,"RPanel",WS_TABSTOP,220,69,43,13
+    CONTROL         "Ratio",IDC_OP1_FIXED,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,75,83,35,12
+    CONTROL         "Ratio",IDC_OP2_FIXED,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,124,83,35,12
+    CONTROL         "Ratio",IDC_OP3_FIXED,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,175,83,35,12
+    CONTROL         "Ratio",IDC_OP4_FIXED,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,224,83,35,12
+    RTEXT           "",IDC_OP1_FREQ,75,96,35,10,SS_SUNKEN
+    RTEXT           "",IDC_OP2_FREQ,124,96,35,10,SS_SUNKEN
+    RTEXT           "",IDC_OP3_FREQ,175,96,35,10,SS_SUNKEN
+    RTEXT           "",IDC_OP4_FREQ,224,96,35,10,SS_SUNKEN
+    LTEXT           "Fixed Range",IDC_RANGE_LBL,69,159,21,18
+    LTEXT           "Coarse",IDC_CRS_LBL,70,254,24,8
+    LTEXT           "Fine",IDC_FINE_LBL,106,173,14,8
+    CONTROL         "",IDC_OP1_RANGE,"LcdCtrl",WS_TABSTOP | 0x10,69,107,23,51
+    CONTROL         "",IDC_OP1_CRS,"LcdCtrl",WS_TABSTOP | 0x1a,93,107,11,155
+    CONTROL         "",IDC_OP1_FINE,"LcdCtrl",WS_TABSTOP | 0x1a,105,107,11,65
+    CONTROL         "",IDC_OP2_RANGE,"LcdCtrl",WS_TABSTOP | 0x10,119,107,23,51
+    CONTROL         "",IDC_OP2_CRS,"LcdCtrl",WS_TABSTOP | 0x1a,143,107,11,155
+    CONTROL         "",IDC_OP2_FINE,"LcdCtrl",WS_TABSTOP | 0x1a,155,107,11,65
+    CONTROL         "",IDC_OP3_RANGE,"LcdCtrl",WS_TABSTOP | 0x10,169,107,23,51
+    CONTROL         "",IDC_OP3_CRS,"LcdCtrl",WS_TABSTOP | 0x1a,193,107,11,155
+    CONTROL         "",IDC_OP3_FINE,"LcdCtrl",WS_TABSTOP | 0x1a,205,107,11,65
+    CONTROL         "",IDC_OP4_RANGE,"LcdCtrl",WS_TABSTOP | 0x10,219,107,23,51
+    CONTROL         "",IDC_OP4_CRS,"LcdCtrl",WS_TABSTOP | 0x1a,243,107,11,155
+    CONTROL         "",IDC_OP4_FINE,"LcdCtrl",WS_TABSTOP | 0x1a,255,107,11,65
+    CONTROL         "",IDC_OP1_SIMPLE_FREQ,"LcdCtrl",NOT WS_VISIBLE | WS_TABSTOP | 0x10,81,97,23,181
+    CONTROL         "",IDC_OP2_SIMPLE_FREQ,"LcdCtrl",NOT WS_VISIBLE | WS_TABSTOP | 0x10,131,97,23,181
+    CONTROL         "",IDC_OP3_SIMPLE_FREQ,"LcdCtrl",NOT WS_VISIBLE | WS_TABSTOP | 0x10,181,97,23,181
+    CONTROL         "",IDC_OP4_SIMPLE_FREQ,"LcdCtrl",NOT WS_VISIBLE | WS_TABSTOP | 0x10,231,97,23,181
+    LTEXT           "Detune",IDC_DETUNE_LBL,81,270,24,8
+    CONTROL         "",IDC_OP1_DET,"LcdCtrl",WS_TABSTOP | 0x16,105,227,11,51
+    CONTROL         "",IDC_OP2_DET,"LcdCtrl",WS_TABSTOP | 0x16,155,227,11,51
+    CONTROL         "",IDC_OP3_DET,"LcdCtrl",WS_TABSTOP | 0x16,205,227,11,51
+    CONTROL         "",IDC_OP4_DET,"LcdCtrl",WS_TABSTOP | 0x16,255,227,11,51
+    COMBOBOX        IDC_LFO_WAVE,70,365,49,94,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_TABSTOP
+    CONTROL         "",IDC_LFO_WAVE_RPANEL,"RPanel",WS_TABSTOP,69,364,50,18
+    CONTROL         "Key Sync",IDC_LFO_SYNC,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,73,384,42,12
+    RTEXT           "Speed",IDC_STATIC,68,401,21,8
+    CONTROL         "",IDC_LFO_SPEED,"LcdCtrl",WS_TABSTOP | 0x12,73,410,11,160
+    RTEXT           "Delay",IDC_STATIC,99,401,19,8
+    CONTROL         "",IDC_LFO_DELAY,"LcdCtrl",WS_TABSTOP | 0x12,103,410,11,160
+    GROUPBOX        "LFO",IDC_LFO_GBX,65,353,58,221
+    LTEXT           "Sensitivity",IDC_STATIC,129,379,34,8
+    CONTROL         "",IDC_PMS,"LcdCtrl",WS_TABSTOP | 0x22,129,389,69,8
+    CTEXT           "PMD",IDC_STATIC,128,401,16,8
+    CONTROL         "",IDC_LFO_PMD,"LcdCtrl",WS_TABSTOP | 0x12,130,410,11,160
+    CTEXT           "MW",IDC_STATIC,148,401,15,8
+    CONTROL         "",IDC_MW_PITCH,"LcdCtrl",WS_TABSTOP | 0x12,149,410,11,160
+    CTEXT           "FC",IDC_STATIC,168,401,11,8
+    CONTROL         "",IDC_FC_PITCH,"LcdCtrl",WS_TABSTOP | 0x12,168,410,11,160
+    CTEXT           "BC",IDC_STATIC,187,401,11,8
+    CONTROL         "",IDC_BC_PITCH,"LcdCtrl",WS_TABSTOP | 0x12,187,410,11,160
+    GROUPBOX        "Pitch Modulation",IDC_PITCHMOD_GBX,125,369,80,205
+    LTEXT           "Sensitivity",IDC_STATIC,213,379,34,8
+    CONTROL         "",IDC_AMS,"LcdCtrl",WS_TABSTOP | 0x22,213,389,45,8
+    LTEXT           "OP Enable",IDC_STATIC,264,379,34,8
+    CONTROL         "1",IDC_OP1_AME,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,264,388,12,10
+    CONTROL         "2",IDC_OP2_AME,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,276,388,11,10
+    CONTROL         "3",IDC_OP3_AME,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,288,388,12,10
+    CONTROL         "4",IDC_OP4_AME,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,300,388,11,10
+    CTEXT           "AMD",IDC_STATIC,224,401,18,8
+    CONTROL         "",IDC_LFO_AMD,"LcdCtrl",WS_TABSTOP | 0x12,227,410,11,160
+    CTEXT           "MW",IDC_STATIC,246,401,15,8
+    CONTROL         "",IDC_MW_AMP,"LcdCtrl",WS_TABSTOP | 0x12,247,410,11,160
+    CTEXT           "FC",IDC_STATIC,266,401,11,8
+    CONTROL         "",IDC_FC_AMP,"LcdCtrl",WS_TABSTOP | 0x12,266,410,11,160
+    CTEXT           "BC",IDC_STATIC,285,401,11,8
+    CONTROL         "",IDC_BC_AMP,"LcdCtrl",WS_TABSTOP | 0x12,285,410,11,160
+    GROUPBOX        "Amplitude Modulation",IDC_AMPMOD_GBX,208,369,109,205
+    CONTROL         "",IDC_OP1_AR,"LcdCtrl",WS_TABSTOP | 0x12,277,26,11,76
+    CONTROL         "",IDC_OP1_D1R,"LcdCtrl",WS_TABSTOP | 0x12,288,26,11,76
+    CONTROL         "",IDC_OP1_D1L,"LcdCtrl",WS_TABSTOP | 0x12,299,26,11,76
+    CONTROL         "",IDC_OP1_D2R,"LcdCtrl",WS_TABSTOP | 0x12,310,26,11,76
+    CONTROL         "",IDC_OP1_RR,"LcdCtrl",WS_TABSTOP | 0x12,321,26,11,76
+    CONTROL         "",IDC_OP1_SHIFT,"LcdCtrl",WS_DISABLED | WS_TABSTOP | 0x10,332,26,11,76
+    CONTROL         "",IDC_OP1_EG,"EGCtrl",WS_TABSTOP | 0x1,345,26,219,76
+    CONTROL         "",IDC_OP2_AR,"LcdCtrl",WS_TABSTOP | 0x12,277,102,11,76
+    CONTROL         "",IDC_OP2_D1R,"LcdCtrl",WS_TABSTOP | 0x12,288,102,11,76
+    CONTROL         "",IDC_OP2_D1L,"LcdCtrl",WS_TABSTOP | 0x12,299,102,11,76
+    CONTROL         "",IDC_OP2_D2R,"LcdCtrl",WS_TABSTOP | 0x12,310,102,11,76
+    CONTROL         "",IDC_OP2_RR,"LcdCtrl",WS_TABSTOP | 0x12,321,102,11,76
+    CONTROL         "",IDC_OP2_SHIFT,"LcdCtrl",WS_TABSTOP | 0x10,332,102,11,76
+    CONTROL         "",IDC_OP2_EG,"EGCtrl",WS_TABSTOP,345,102,219,76
+    CONTROL         "",IDC_OP3_AR,"LcdCtrl",WS_TABSTOP | 0x12,277,178,11,76
+    CONTROL         "",IDC_OP3_D1R,"LcdCtrl",WS_TABSTOP | 0x12,288,178,11,76
+    CONTROL         "",IDC_OP3_D1L,"LcdCtrl",WS_TABSTOP | 0x12,299,178,11,76
+    CONTROL         "",IDC_OP3_D2R,"LcdCtrl",WS_TABSTOP | 0x12,310,178,11,76
+    CONTROL         "",IDC_OP3_RR,"LcdCtrl",WS_TABSTOP | 0x12,321,178,11,76
+    CONTROL         "",IDC_OP3_SHIFT,"LcdCtrl",WS_TABSTOP | 0x10,332,178,11,76
+    CONTROL         "",IDC_OP3_EG,"EGCtrl",WS_TABSTOP,345,178,219,76
+    CONTROL         "",IDC_OP4_AR,"LcdCtrl",WS_TABSTOP | 0x12,277,254,11,76
+    CONTROL         "",IDC_OP4_D1R,"LcdCtrl",WS_TABSTOP | 0x12,288,254,11,76
+    CONTROL         "",IDC_OP4_D1L,"LcdCtrl",WS_TABSTOP | 0x12,299,254,11,76
+    CONTROL         "",IDC_OP4_D2R,"LcdCtrl",WS_TABSTOP | 0x12,310,254,11,76
+    CONTROL         "",IDC_OP4_RR,"LcdCtrl",WS_TABSTOP | 0x12,321,254,11,76
+    CONTROL         "",IDC_OP4_SHIFT,"LcdCtrl",WS_TABSTOP | 0x10,332,254,11,76
+    CONTROL         "",IDC_OP4_EG,"EGCtrl",WS_TABSTOP,345,254,219,76
+    SCROLLBAR       IDC_EG_ORIGIN,345,16,219,10
+    CTEXT           "EG Graphs",IDC_EG_GRAPH_LBL,431,7,50,8
+    RTEXT           "FC",IDC_STATIC,326,379,10,8
+    CONTROL         "",IDC_FC_VOL,"LcdCtrl",WS_TABSTOP | 0x12,326,388,11,160
+    GROUPBOX        "Vol",IDC_VOLUME_GBX,320,369,24,185
+    RTEXT           "BC",IDC_STATIC,353,379,10,8
+    CONTROL         "",IDC_BC_EG_BIAS,"LcdCtrl",WS_TABSTOP | 0x12,352,388,11,160
+    LTEXT           "Sensitivity (EBS)",IDC_STATIC,370,379,54,8
+    CONTROL         "",IDC_OP1_EBS,"LcdCtrl",WS_TABSTOP | 0x12,370,388,11,47
+    CONTROL         "",IDC_OP2_EBS,"LcdCtrl",WS_TABSTOP | 0x12,382,388,11,47
+    CONTROL         "",IDC_OP3_EBS,"LcdCtrl",WS_TABSTOP | 0x12,394,388,11,47
+    CONTROL         "",IDC_OP4_EBS,"LcdCtrl",WS_TABSTOP | 0x12,406,388,11,47
+    GROUPBOX        "EG Bias",IDC_EGBIAS_GBX,347,369,79,185
+    RTEXT           "BC",IDC_STATIC,447,379,10,8
+    CONTROL         "",IDC_BC_PITCH_BIAS,"LcdCtrl",WS_TABSTOP | 0x16,445,388,15,160
+    GROUPBOX        "Pitch Bias",IDC_PITCHBIAS_GBX,430,369,46,185
+    PUSHBUTTON      "Algorithm",IDC_ALG_QUICKEDIT_BTN,3,29,49,10,BS_LEFT
+    PUSHBUTTON      "Frequency",IDC_FREQ_QUICKEDIT_BTN,70,58,51,10,BS_LEFT
+    PUSHBUTTON      "EG",IDC_EG_QUICKEDIT_BTN,277,0,21,10,BS_LEFT
+    PUSHBUTTON      "Output",IDC_OUTPUT_QUICKEDIT_BTN,4,134,38,10,BS_LEFT
+    CONTROL         "Carrier Follow",IDC_CARRIER_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,105,27,70,10
+    CONTROL         "Modulator Follow",IDC_MODULATOR_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,180,27,70,10
+    LTEXT           "Transpose (Middle C)",IDC_STATIC,127,291,68,8
+    CONTROL         "",IDC_TRANSPOSE,"LcdCtrl",WS_TABSTOP | 0x20,127,300,139,8
+    LTEXT           "Pitch Bend Range",IDC_STATIC,127,311,66,8
+    CONTROL         "",IDC_PB_RANGE,"LcdCtrl",WS_TABSTOP | 0x22,127,320,67,8
+    LTEXT           "Reverb Rate",IDC_STATIC,205,311,42,8
+    CONTROL         "",IDC_REVERB_RATE,"LcdCtrl",WS_TABSTOP | 0x20,205,320,61,8
+    GROUPBOX        "Portamento",IDC_PORTAMENTO_GBX,125,335,301,31
+    PUSHBUTTON      "1..4 On",IDC_FOLLOW_ON,105,40,36,10
+    CONTROL         "Relative",IDC_RELATIVE_FOLLOW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,148,40,65,10
+    PUSHBUTTON      "Off",IDC_FOLLOW_OFF,220,40,30,10
+    CONTROL         "Poly Mode",IDC_POLY_MODE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,130,347,45,12
+    CONTROL         "Fingered Porta",IDC_PORT_MODE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,180,347,58,12
+    LTEXT           "Porta Time",IDC_STATIC,246,342,35,8
+    CONTROL         "",IDC_PORT_TIME,"LcdCtrl",WS_TABSTOP | 0x22,245,352,175,8
+    GROUPBOX        "Misc",IDC_MISC_GBX,123,282,147,51
+END
+
+IDD_PFMDLG DIALOGEX 0, 0, 365, 268
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Performance Editor - TX81Z Programmer"
+MENU IDM_PFMDLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PFM_NAME,"LcdCtrl",WS_TABSTOP | 0x1,6,10,77,12
+    GROUPBOX        "Performance Name",IDC_PFM_NAME_GBX,2,0,88,27
+    LTEXT           "Assign Mode",IDC_ASSIGN_MODE_LBL,94,0,50,8
+    CONTROL         "Normal",IDC_ASSIGN_MODE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,94,10,50,14
+    LTEXT           "Effect Select",IDC_EFFECT_SELECT_LBL,149,0,42,8
+    COMBOBOX        IDC_EFFECT_SELECT,149,10,41,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Microtune Table",IDC_MICROTUNE_TABLE_LBL,195,0,104,8
+    COMBOBOX        IDC_MICROTUNE_TABLE,195,10,104,155,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Microtune Key",IDC_MICROTUNE_KEY_LBL,303,0,59,8
+    CONTROL         "",IDC_MICROTUNE_KEY,"LcdCtrl",WS_TABSTOP | 0x20,304,10,59,8
+    RTEXT           "Max Notes:",IDC_STATIC,5,42,38,8
+    RTEXT           "Voice:",IDC_STATIC,5,54,38,8
+    RTEXT           "Channel:",IDC_STATIC,5,67,38,8
+    RTEXT           "Low Limit:",IDC_STATIC,5,75,38,8
+    RTEXT           "High Limit:",IDC_STATIC,5,83,38,8
+    RTEXT           "Detune:",IDC_STATIC,5,91,38,8
+    RTEXT           "Note Shift:",IDC_STATIC,5,99,38,8
+    RTEXT           "Volume:",IDC_STATIC,5,107,38,8
+    RTEXT           "Out Assign:",IDC_STATIC,5,115,38,8
+    RTEXT           "LFO Select:",IDC_STATIC,5,123,38,8
+    RTEXT           "Microtune:",IDC_STATIC,5,132,38,8
+    CONTROL         "",IDC_INST1_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,50,42,70,8
+    CONTROL         "",IDC_INST1_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,50,50,70,9
+    CONTROL         "",IDC_INST1_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,50,59,70,8
+    CONTROL         "",IDC_INST1_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,50,67,70,8
+    CONTROL         "",IDC_INST1_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,50,75,70,8
+    CONTROL         "",IDC_INST1_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,50,83,70,8
+    CONTROL         "",IDC_INST1_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,50,91,70,8
+    CONTROL         "",IDC_INST1_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,50,99,70,8
+    CONTROL         "",IDC_INST1_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,50,107,70,8
+    CONTROL         "",IDC_INST1_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,50,115,70,8
+    CONTROL         "",IDC_INST1_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,50,123,70,8
+    CONTROL         "Off",IDC_INST1_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,50,131,70,11
+    CONTROL         "",IDC_INST2_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,130,42,70,8
+    CONTROL         "",IDC_INST2_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,130,50,70,9
+    CONTROL         "",IDC_INST2_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,130,59,70,8
+    CONTROL         "",IDC_INST2_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,130,67,70,8
+    CONTROL         "",IDC_INST2_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,130,75,70,8
+    CONTROL         "",IDC_INST2_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,130,83,70,8
+    CONTROL         "",IDC_INST2_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,130,91,70,8
+    CONTROL         "",IDC_INST2_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,130,99,70,8
+    CONTROL         "",IDC_INST2_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,130,107,70,8
+    CONTROL         "",IDC_INST2_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,130,115,70,8
+    CONTROL         "",IDC_INST2_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,130,123,70,8
+    CONTROL         "Off",IDC_INST2_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,130,131,70,11
+    CONTROL         "",IDC_INST3_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,210,42,70,8
+    CONTROL         "",IDC_INST3_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,210,50,70,9
+    CONTROL         "",IDC_INST3_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,210,59,70,8
+    CONTROL         "",IDC_INST3_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,210,67,70,8
+    CONTROL         "",IDC_INST3_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,210,75,70,8
+    CONTROL         "",IDC_INST3_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,210,83,70,8
+    CONTROL         "",IDC_INST3_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,210,91,70,8
+    CONTROL         "",IDC_INST3_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,210,99,70,8
+    CONTROL         "",IDC_INST3_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,210,107,70,8
+    CONTROL         "",IDC_INST3_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,210,115,70,8
+    CONTROL         "",IDC_INST3_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,210,123,70,8
+    CONTROL         "Off",IDC_INST3_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,210,131,70,11
+    CONTROL         "",IDC_INST4_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,290,42,70,8
+    CONTROL         "",IDC_INST4_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,290,50,70,9
+    CONTROL         "",IDC_INST4_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,290,59,70,8
+    CONTROL         "",IDC_INST4_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,290,67,70,8
+    CONTROL         "",IDC_INST4_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,290,75,70,8
+    CONTROL         "",IDC_INST4_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,290,83,70,8
+    CONTROL         "",IDC_INST4_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,290,91,70,8
+    CONTROL         "",IDC_INST4_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,290,99,70,8
+    CONTROL         "",IDC_INST4_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,290,107,70,8
+    CONTROL         "",IDC_INST4_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,290,115,70,8
+    CONTROL         "",IDC_INST4_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,290,123,70,8
+    CONTROL         "Off",IDC_INST4_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,290,131,70,11
+    RTEXT           "Max Notes:",IDC_STATIC,5,162,38,8
+    RTEXT           "Voice:",IDC_STATIC,5,174,38,8
+    RTEXT           "Channel:",IDC_STATIC,5,187,38,8
+    RTEXT           "Low Limit:",IDC_STATIC,5,195,38,8
+    RTEXT           "High Limit:",IDC_STATIC,5,203,38,8
+    RTEXT           "Detune:",IDC_STATIC,5,211,38,8
+    RTEXT           "Note Shift:",IDC_STATIC,5,219,38,8
+    RTEXT           "Volume:",IDC_STATIC,5,227,38,8
+    RTEXT           "Out Assign:",IDC_STATIC,5,235,38,8
+    RTEXT           "LFO Select:",IDC_STATIC,5,243,38,8
+    RTEXT           "Microtune:",IDC_STATIC,5,252,38,8
+    CONTROL         "",IDC_INST5_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,50,162,70,8
+    CONTROL         "",IDC_INST5_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,50,170,70,9
+    CONTROL         "",IDC_INST5_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,50,179,70,8
+    CONTROL         "",IDC_INST5_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,50,187,70,8
+    CONTROL         "",IDC_INST5_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,50,195,70,8
+    CONTROL         "",IDC_INST5_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,50,203,70,8
+    CONTROL         "",IDC_INST5_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,50,211,70,8
+    CONTROL         "",IDC_INST5_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,50,219,70,8
+    CONTROL         "",IDC_INST5_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,50,227,70,8
+    CONTROL         "",IDC_INST5_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,50,235,70,8
+    CONTROL         "",IDC_INST5_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,50,243,70,8
+    CONTROL         "Off",IDC_INST5_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,50,251,70,11
+    CONTROL         "",IDC_INST6_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,130,162,70,8
+    CONTROL         "",IDC_INST6_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,130,170,70,9
+    CONTROL         "",IDC_INST6_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,130,179,70,8
+    CONTROL         "",IDC_INST6_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,130,187,70,8
+    CONTROL         "",IDC_INST6_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,130,195,70,8
+    CONTROL         "",IDC_INST6_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,130,203,70,8
+    CONTROL         "",IDC_INST6_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,130,211,70,8
+    CONTROL         "",IDC_INST6_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,130,219,70,8
+    CONTROL         "",IDC_INST6_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,130,227,70,8
+    CONTROL         "",IDC_INST6_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,130,235,70,8
+    CONTROL         "",IDC_INST6_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,130,243,70,8
+    CONTROL         "Off",IDC_INST6_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,130,251,70,11
+    CONTROL         "",IDC_INST7_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,210,162,70,8
+    CONTROL         "",IDC_INST7_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,210,170,70,9
+    CONTROL         "",IDC_INST7_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,210,179,70,8
+    CONTROL         "",IDC_INST7_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,210,187,70,8
+    CONTROL         "",IDC_INST7_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,210,195,70,8
+    CONTROL         "",IDC_INST7_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,210,203,70,8
+    CONTROL         "",IDC_INST7_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,210,211,70,8
+    CONTROL         "",IDC_INST7_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,210,219,70,8
+    CONTROL         "",IDC_INST7_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,210,227,70,8
+    CONTROL         "",IDC_INST7_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,210,235,70,8
+    CONTROL         "",IDC_INST7_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,210,243,70,8
+    CONTROL         "Off",IDC_INST7_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,210,251,70,11
+    CONTROL         "",IDC_INST8_MAX_NOTES,"LcdCtrl",WS_TABSTOP | 0x22,290,162,70,8
+    CONTROL         "",IDC_INST8_VOICE_NAME,"Button",BS_OWNERDRAW | WS_TABSTOP,290,170,70,9
+    CONTROL         "",IDC_INST8_VOICE_NUM,"LcdCtrl",WS_TABSTOP | 0x20,290,179,70,8
+    CONTROL         "",IDC_INST8_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x20,290,187,70,8
+    CONTROL         "",IDC_INST8_LIMIT_L,"LcdCtrl",WS_TABSTOP | 0x20,290,195,70,8
+    CONTROL         "",IDC_INST8_LIMIT_H,"LcdCtrl",WS_TABSTOP | 0x20,290,203,70,8
+    CONTROL         "",IDC_INST8_DETUNE,"LcdCtrl",WS_TABSTOP | 0x26,290,211,70,8
+    CONTROL         "",IDC_INST8_NOTE_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,290,219,70,8
+    CONTROL         "",IDC_INST8_VOLUME,"LcdCtrl",WS_TABSTOP | 0x22,290,227,70,8
+    CONTROL         "",IDC_INST8_OUT_ASSIGN,"LcdCtrl",WS_TABSTOP | 0x20,290,235,70,8
+    CONTROL         "",IDC_INST8_LFO_SELECT,"LcdCtrl",WS_TABSTOP | 0x20,290,243,70,8
+    CONTROL         "Off",IDC_INST8_MICROTUNE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,290,251,70,11
+    PUSHBUTTON      "Instrument 1",IDC_INST1_QUICKEDIT_BTN,50,30,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 2",IDC_INST2_QUICKEDIT_BTN,130,30,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 3",IDC_INST3_QUICKEDIT_BTN,210,30,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 4",IDC_INST4_QUICKEDIT_BTN,290,30,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 5",IDC_INST5_QUICKEDIT_BTN,50,150,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 6",IDC_INST6_QUICKEDIT_BTN,130,150,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 7",IDC_INST7_QUICKEDIT_BTN,210,150,62,10,BS_LEFT
+    PUSHBUTTON      "Instrument 8",IDC_INST8_QUICKEDIT_BTN,290,150,62,10,BS_LEFT
+END
+
+IDD_FXDLG DIALOGEX 0, 0, 277, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Effect Editor - TX81Z Programmer"
+MENU IDM_FXDLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Time",IDC_STATIC,34,10,17,8
+    CONTROL         "",IDC_DELAY_TIME,"LcdCtrl",WS_TABSTOP | 0x20,54,10,215,8
+    RTEXT           "Pitch Shift",IDC_STATIC,17,21,33,8
+    CONTROL         "",IDC_PITCH_SHIFT,"LcdCtrl",WS_TABSTOP | 0x26,54,21,215,8
+    RTEXT           "Feedback",IDC_STATIC,19,32,31,8
+    CONTROL         "",IDC_DELAY_FEEDBACK,"LcdCtrl",WS_TABSTOP | 0x22,54,32,215,8
+    RTEXT           "Effect Level",IDC_STATIC,7,43,43,8
+    CONTROL         "",IDC_EFFECT_LEVEL,"LcdCtrl",WS_TABSTOP | 0x22,54,43,215,8
+    GROUPBOX        "Delay (Effect 1)",IDC_DELAY_GBX,4,0,270,57
+    LTEXT           "Select",IDC_STATIC,14,70,26,8
+    COMBOBOX        IDC_PAN_SELECT,14,80,48,70,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Direction",IDC_STATIC,69,70,35,8
+    CONTROL         "",IDC_PAN_DIR,"Button",BS_OWNERDRAW | WS_TABSTOP,69,80,40,13
+    LTEXT           "Pan Range",IDC_STATIC,119,70,36,8
+    CONTROL         "",IDC_PAN_RANGE,"LcdCtrl",WS_TABSTOP | 0x22,119,82,150,8
+    GROUPBOX        "Pan (Effect 2)",IDC_PAN_GBX,4,60,270,38
+    CONTROL         "C3",IDC_CHORD_C3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,18,115,20,12
+    CONTROL         "C#3",IDC_CHORD_CSH3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,38,115,20,12
+    CONTROL         "D3",IDC_CHORD_D3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,58,115,20,12
+    CONTROL         "D#3",IDC_CHORD_DSH3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,78,115,20,12
+    CONTROL         "E3",IDC_CHORD_E3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,98,115,20,12
+    CONTROL         "F3",IDC_CHORD_F3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,118,115,20,12
+    CONTROL         "F#3",IDC_CHORD_FSH3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,138,115,20,12
+    CONTROL         "A3",IDC_CHORD_A3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,198,115,20,12
+    CONTROL         "G#3",IDC_CHORD_GSH3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,178,115,20,12
+    CONTROL         "A#3",IDC_CHORD_ASH3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,218,115,20,12
+    CONTROL         "G3",IDC_CHORD_G3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,158,115,20,12
+    CONTROL         "B3",IDC_CHORD_B3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,238,115,20,12
+    CONTROL         "",IDC_KYBDCTRL,"KybdCtrl",WS_GROUP,11,163,257,39
+    CONTROL         "",IDC_CHORD_C3_N1,"LcdCtrl",0x80,20,128,15,8
+    CONTROL         "",IDC_CHORD_C3_N2,"LcdCtrl",0x80,20,136,15,8
+    CONTROL         "",IDC_CHORD_C3_N3,"LcdCtrl",0x80,20,144,15,8
+    CONTROL         "",IDC_CHORD_C3_N4,"LcdCtrl",0x80,20,152,15,8
+    CONTROL         "",IDC_CHORD_CSH3_N1,"LcdCtrl",0x80,40,128,15,8
+    CONTROL         "",IDC_CHORD_CSH3_N2,"LcdCtrl",0x80,40,136,15,8
+    CONTROL         "",IDC_CHORD_CSH3_N3,"LcdCtrl",0x80,40,144,15,8
+    CONTROL         "",IDC_CHORD_CSH3_N4,"LcdCtrl",0x80,40,152,15,8
+    CONTROL         "",IDC_CHORD_D3_N1,"LcdCtrl",0x80,60,128,15,8
+    CONTROL         "",IDC_CHORD_D3_N2,"LcdCtrl",0x80,60,136,15,8
+    CONTROL         "",IDC_CHORD_D3_N3,"LcdCtrl",0x80,60,144,15,8
+    CONTROL         "",IDC_CHORD_D3_N4,"LcdCtrl",0x80,60,152,15,8
+    CONTROL         "",IDC_CHORD_DSH3_N1,"LcdCtrl",0x80,80,128,15,8
+    CONTROL         "",IDC_CHORD_DSH3_N2,"LcdCtrl",0x80,80,136,15,8
+    CONTROL         "",IDC_CHORD_DSH3_N3,"LcdCtrl",0x80,80,144,15,8
+    CONTROL         "",IDC_CHORD_DSH3_N4,"LcdCtrl",0x80,80,152,15,8
+    CONTROL         "",IDC_CHORD_E3_N1,"LcdCtrl",0x80,100,128,15,8
+    CONTROL         "",IDC_CHORD_E3_N2,"LcdCtrl",0x80,100,136,15,8
+    CONTROL         "",IDC_CHORD_E3_N3,"LcdCtrl",0x80,100,144,15,8
+    CONTROL         "",IDC_CHORD_E3_N4,"LcdCtrl",0x80,100,152,15,8
+    CONTROL         "",IDC_CHORD_F3_N1,"LcdCtrl",0x80,120,128,15,8
+    CONTROL         "",IDC_CHORD_F3_N2,"LcdCtrl",0x80,120,136,15,8
+    CONTROL         "",IDC_CHORD_F3_N3,"LcdCtrl",0x80,120,144,15,8
+    CONTROL         "",IDC_CHORD_F3_N4,"LcdCtrl",0x80,120,152,15,8
+    CONTROL         "",IDC_CHORD_FSH3_N1,"LcdCtrl",0x80,140,128,15,8
+    CONTROL         "",IDC_CHORD_FSH3_N2,"LcdCtrl",0x80,140,136,15,8
+    CONTROL         "",IDC_CHORD_FSH3_N3,"LcdCtrl",0x80,140,144,15,8
+    CONTROL         "",IDC_CHORD_FSH3_N4,"LcdCtrl",0x80,140,152,15,8
+    CONTROL         "",IDC_CHORD_G3_N1,"LcdCtrl",0x80,160,128,15,8
+    CONTROL         "",IDC_CHORD_G3_N2,"LcdCtrl",0x80,160,136,15,8
+    CONTROL         "",IDC_CHORD_G3_N3,"LcdCtrl",0x80,160,144,15,8
+    CONTROL         "",IDC_CHORD_G3_N4,"LcdCtrl",0x80,160,152,15,8
+    CONTROL         "",IDC_CHORD_GSH3_N1,"LcdCtrl",0x80,180,128,15,8
+    CONTROL         "",IDC_CHORD_GSH3_N2,"LcdCtrl",0x80,180,136,15,8
+    CONTROL         "",IDC_CHORD_GSH3_N3,"LcdCtrl",0x80,180,144,15,8
+    CONTROL         "",IDC_CHORD_GSH3_N4,"LcdCtrl",0x80,180,152,15,8
+    CONTROL         "",IDC_CHORD_A3_N1,"LcdCtrl",0x80,200,128,15,8
+    CONTROL         "",IDC_CHORD_A3_N2,"LcdCtrl",0x80,200,136,15,8
+    CONTROL         "",IDC_CHORD_A3_N3,"LcdCtrl",0x80,200,144,15,8
+    CONTROL         "",IDC_CHORD_A3_N4,"LcdCtrl",0x80,200,152,15,8
+    CONTROL         "",IDC_CHORD_ASH3_N1,"LcdCtrl",0x80,220,128,15,8
+    CONTROL         "",IDC_CHORD_ASH3_N2,"LcdCtrl",0x80,220,136,15,8
+    CONTROL         "",IDC_CHORD_ASH3_N3,"LcdCtrl",0x80,220,144,15,8
+    CONTROL         "",IDC_CHORD_ASH3_N4,"LcdCtrl",0x80,220,152,15,8
+    CONTROL         "",IDC_CHORD_B3_N1,"LcdCtrl",0x80,240,128,15,8
+    CONTROL         "",IDC_CHORD_B3_N2,"LcdCtrl",0x80,240,136,15,8
+    CONTROL         "",IDC_CHORD_B3_N3,"LcdCtrl",0x80,240,144,15,8
+    CONTROL         "",IDC_CHORD_B3_N4,"LcdCtrl",0x80,240,152,15,8
+    GROUPBOX        "Chord (Effect 3)",IDC_CHORD_GBX,4,104,270,104
+END
+
+IDD_PCDLG DIALOGEX 0, 0, 247, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Program Change Table Editor - TX81Z Programmer"
+MENU IDM_PCDLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "PC Table",IDC_PC_LBL,1,5,70,8
+    RTEXT           "0",IDC_SELECTED_PCS,80,4,19,10,SS_SUNKEN
+    LISTBOX         IDC_PC_LBX,0,15,100,170,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Memory Numbers",IDC_MEM_LBL,148,5,74,8
+    RTEXT           "0",IDC_SELECTED_MEMNUMS,227,4,19,10,SS_SUNKEN
+    LISTBOX         IDC_MEM_LBX,147,15,100,170,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Set",IDC_SET_BTN,"Button",BS_OWNERDRAW | WS_TABSTOP,102,80,43,14
+END
+
+IDD_MTODLG DIALOGEX 0, 0, 371, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Microtunings (Octave) Editor - TX81Z Programmer"
+MENU IDM_MTODLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_MTFDLG DIALOGEX 0, 0, 341, 145
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Microtunings (Full Kbd) Editor - TX81Z Programmer"
+MENU IDM_MTFDLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_SYSDLG DIALOGEX 0, 0, 261, 223
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System Setup Editor - TX81Z Programmer"
+MENU IDM_SYSDLG_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Master Tune",IDC_STATIC,3,5,41,8
+    CONTROL         "",IDC_MASTER_TUNE,"LcdCtrl",WS_TABSTOP | 0x26,50,5,205,8
+    RTEXT           "Basic Receive Channel",IDC_STATIC,5,20,75,8
+    CONTROL         "",IDC_RCV_CH,"LcdCtrl",WS_TABSTOP | 0x20,85,20,170,8
+    RTEXT           "Transmit Channel",IDC_STATIC,24,35,56,8
+    CONTROL         "",IDC_TRANS_CH,"LcdCtrl",WS_TABSTOP | 0x22,85,35,170,8
+    RTEXT           "Program Change Switch",IDC_STATIC,3,50,77,8
+    CONTROL         "",IDC_PC_SW,"LcdCtrl",WS_TABSTOP | 0x20,85,50,60,8
+    RTEXT           "Control Change Switch",IDC_STATIC,7,124,73,8
+    CONTROL         "",IDC_CC_SW,"LcdCtrl",WS_TABSTOP | 0x20,85,124,120,8
+    CONTROL         "",IDC_PB_SW,"LcdCtrl",WS_TABSTOP | 0x20,85,109,120,8
+    RTEXT           "Pitch Bend Switch",IDC_STATIC,21,109,59,8
+    RTEXT           "Note Switch",IDC_STATIC,40,94,40,8
+    CONTROL         "",IDC_NOTE_SW,"LcdCtrl",WS_TABSTOP | 0x20,85,94,64,8
+    RTEXT           "System Exclusive",IDC_STATIC,5,157,56,8
+    RTEXT           "Memory Protect",IDC_STATIC,131,157,55,8
+    RTEXT           "Combine Mode",IDC_STATIC,13,142,48,8
+    RTEXT           "AT -> BC",IDC_STATIC,156,142,30,8
+    CONTROL         "Off",IDC_SYSEX_SW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,65,155,40,12
+    CONTROL         "Off",IDC_MEMPROT_SW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,192,155,40,12
+    CONTROL         "Off",IDC_COMBINE_SW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,65,140,40,12
+    CONTROL         "Off",IDC_AT_SW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE,192,140,40,12
+    LTEXT           "Note: System Exclusive must be enabled ON THE UNIT for this editor to have any effect on it whatsoever.",IDC_STATIC,3,171,257,18,NOT WS_GROUP
+    LTEXT           "It's located in PLAY SINGLE mode -> Utility button -> Midi Control? -> Exclusive",IDC_STATIC,3,188,256,9
+    LTEXT           "Set this to ""com"" or ""ind"" if you want the unit to receive program changes from the editor, for example when you double click on a patch in the snapshot list in the main window.",IDC_STATIC,5,63,250,25
+    LTEXT           "Startup Message",IDC_STATIC,25,206,54,8
+    CONTROL         "",IDC_STARTUP_MSG,"LcdCtrl",WS_TABSTOP | 0x1,84,205,121,12
+END
+
+IDD_DATADLG DIALOGEX 0, 0, 130, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Data"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,13,193,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,193,50,14
+    GROUPBOX        "Data Types",IDC_STATIC,5,33,120,156
+    CONTROL         "Voice Edit Buffer",IDC_VCED_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,45,69,10
+    CONTROL         "Performance Edit Buffer",IDC_PCED_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,57,93,10
+    CONTROL         "Effect Settings",IDC_FX_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,69,63,10
+    CONTROL         "Program Change Table",IDC_PC_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,81,89,10
+    CONTROL         "Microtunings (Octave)",IDC_MTO_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,93,90,10
+    CONTROL         "Microtunings (Full Kbd)",IDC_MTF_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,105,108,10
+    CONTROL         "System Setup",IDC_SYS_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,117,67,10
+    CONTROL         "I00-I32 Voice Bank",IDC_VMEM_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,129,76,10
+    CONTROL         "PF01-PF24 Performance Bank",IDC_PMEM_CHK,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,141,110,10
+    CONTROL         "Preset Voice Banks A-D",IDC_PRESET_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,153,90,10
+    PUSHBUTTON      "Check All",IDC_CHECK_ALL_BTN,11,168,54,15,BS_MULTILINE
+    PUSHBUTTON      "Clear All",IDC_CLEAR_ALL_BTN,65,168,54,15,BS_MULTILINE
+    LTEXT           "",IDC_MSG,5,5,119,25
+END
+
+IDD_COPYINSTDLG DIALOG 0, 0, 127, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Copy Instrument"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,64,50,14
+    LTEXT           "X",IDC_COPY_INST_LBL,3,4,120,27
+    CONTROL         "",IDC_INST1_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,46,10,8
+    CTEXT           "1",IDC_STATIC,6,36,8,8
+    CONTROL         "",IDC_INST2_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,46,10,8
+    CTEXT           "2",IDC_STATIC,21,36,8,8
+    CONTROL         "",IDC_INST3_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,46,10,8
+    CTEXT           "3",IDC_STATIC,36,36,8,8
+    CONTROL         "",IDC_INST4_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,46,10,8
+    CTEXT           "4",IDC_STATIC,51,36,8,8
+    CONTROL         "",IDC_INST5_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,46,10,8
+    CTEXT           "5",IDC_STATIC,66,36,8,8
+    CONTROL         "",IDC_INST6_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,81,46,10,8
+    CTEXT           "6",IDC_STATIC,81,36,8,8
+    CONTROL         "",IDC_INST7_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,46,10,8
+    CTEXT           "7",IDC_STATIC,96,36,8,8
+    CONTROL         "",IDC_INST8_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,46,10,8
+    CTEXT           "8",IDC_STATIC,111,36,8,8
+END
+
+IDD_IMPORTDLG DIALOG 0, 0, 321, 144
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "",1119,0,0,180,135
+    LTEXT           "Importing uses a simple heuristic to search for voices and/or performances in the files you select.",IDC_STATIC,185,5,118,25
+    GROUPBOX        "Search For:",IDC_STATIC,185,33,124,52,WS_GROUP
+    CONTROL         "Voices",IDC_VMEM_RDO,"Button",BS_AUTORADIOBUTTON,191,45,36,10
+    CONTROL         "Performances",IDC_PMEM_RDO,"Button",BS_AUTORADIOBUTTON,191,57,60,10
+    CONTROL         "Both",IDC_BOTH_RDO,"Button",BS_AUTORADIOBUTTON,191,69,31,10
+    GROUPBOX        "Options",IDC_STATIC,185,90,124,60,WS_GROUP
+    CONTROL         "Do Not Import Duplicate Items",IDC_NO_DUPLICATES_CHK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,191,103,113,8
+    CONTROL         "Make Duplicate Names Unique",IDC_UNIQUE_NAMES_CHK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,191,116,113,10
+    CONTROL         "Check Every Byte Position For A Match",IDC_CHECK_EVERY_POS_CHK,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,191,128,114,19
+END
+
+IDD_EXPORTDLG DIALOGEX 0, 0, 291, 151
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "",1119,0,0,100,150
+    GROUPBOX        "Options",IDC_STATIC,105,113,180,35,WS_GROUP
+    CONTROL         "Selected Only",IDC_SELECTED_ONLY_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,113,123,58,10
+    CONTROL         "Write Sysex Headers",IDC_SYSEX_HEADERS_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,183,123,82,10
+    LISTBOX         IDC_EXPORT_LBX,103,12,183,105,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOSEL | WS_VSCROLL
+    LTEXT           "Items to be exported:",IDC_STATIC,104,2,92,8
+    CONTROL         "Append To File",IDC_APPEND_FILE_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,193,135,63,10
+END
+
+IDD_RECOMMENTDLG DIALOGEX 0, 0, 305, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Item Comment"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Enter new comment:",IDC_STATIC,5,7,70,8
+    CONTROL         "",IDC_COMMENT_LCD,"LcdCtrl",WS_TABSTOP | 0x1,4,16,297,12
+    LTEXT           "Note: All selected items will be given the same comment.",IDC_STATIC,5,33,180,10
+    DEFPUSHBUTTON   "OK",IDOK,196,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,251,48,50,14
+END
+
+IDD_RENAMEDLG DIALOGEX 0, 0, 231, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename Items"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "If multiple items are selected in the list box, they will be given the same name.  You can number these by checking the ""Use Item Numbers"" check box, selecting the position of the rightmost digit of the number, and setting the starting number.",IDC_STATIC,7,4,219,35
+    LTEXT           "Enter New Name:",IDC_STATIC,148,51,60,8
+    CONTROL         "",IDC_NAME_LCD,"LcdCtrl",WS_TABSTOP | 0x1,147,60,77,12
+    CONTROL         "Use Item Numbers",IDC_USE_COUNT_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,75,75,11
+    RTEXT           "Count Position:",IDC_COUNT_POS_LBL,92,76,51,8
+    CONTROL         "",IDC_COUNT_POS_TRK,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,147,75,78,12
+    RTEXT           "Start Counting At:",IDC_COUNT_START_LBL,127,97,61,8
+    EDITTEXT        IDC_COUNT_START_TBX,190,95,34,12,ES_RIGHT | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_COUNT_START_SPN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,213,95,11,12
+    DEFPUSHBUTTON   "OK",IDOK,120,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,120,50,14
+END
+
+IDD_DIFFDLG DIALOGEX 0, 0, 231, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Item Comparison"
+MENU IDM_DIFF_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_DIFF_LBX,0,0,231,270,LBS_SORT | LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_STOREDLG DIALOGEX 0, 0, 263, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Store Item"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Select the memory number\r\nwhere you want to store item:",IDC_STATIC,3,2,97,16
+    CONTROL         "",IDC_NAME_LCD,"LcdCtrl",0x81,104,5,77,12
+    LISTBOX         IDC_STORE1_LBX,1,20,130,131,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_STORE2_LBX,132,20,130,131,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,155,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,154,50,14
+END
+
+IDD_SEARCHDLG DIALOGEX 0, 0, 305, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Search Phrase"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Enter search phrase:",IDC_STATIC,5,21,70,8
+    CONTROL         "",IDC_SEARCH_LCD,"LcdCtrl",WS_TABSTOP | 0x1,4,32,297,12
+    LTEXT           "All items matching the search phrase will be moved to the top of the list.",IDC_STATIC,5,4,240,10
+    DEFPUSHBUTTON   "OK",IDOK,195,89,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,251,89,50,14
+    GROUPBOX        "Search In",IDC_STATIC,55,50,87,52
+    CONTROL         "Name And Comment",IDC_NAME_AND_COMMENT_RDO,"Button",BS_AUTORADIOBUTTON,60,88,81,10
+    CONTROL         "Name",IDC_NAME_RDO,"Button",BS_AUTORADIOBUTTON,60,62,34,10
+    CONTROL         "Comment",IDC_COMMENT_RDO,"Button",BS_AUTORADIOBUTTON,60,75,46,10
+END
+
+IDD_KYBDDLG DIALOGEX 0, 0, 384, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keyboard - TX81Z Programmer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Mod Wheel:",IDC_STATIC,2,2,39,8
+    CONTROL         "",IDC_MOD_WHEEL,"LcdCtrl",WS_TABSTOP | 0x22,41,2,204,8
+    LTEXT           "Transmit Channel:",IDC_STATIC,252,2,58,8
+    CONTROL         "",IDC_KYBD_CHANNEL,"LcdCtrl",WS_TABSTOP | 0x22,311,2,71,8
+    CONTROL         "Fixed Velocity",IDC_FIXED_VEL_ENABLE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,0,12,60,10
+    CONTROL         "",IDC_FIXED_VEL_VALUE,"LcdCtrl",WS_TABSTOP | 0x22,63,13,204,8
+    LTEXT           "MIDI Note Number:",IDC_STATIC,283,13,63,8
+    RTEXT           "",IDC_MIDI_NOTE,347,13,21,11,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_KYBDCTRL,"KybdCtrl",0x0,1,27,381,38
+END
+
+IDD_BNDLDLG DIALOG 0, 0, 253, 201
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Place Performance Bundle Items"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,147,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,185,50,14
+    LISTBOX         IDC_BUNDLE_LBX,0,35,100,145,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_SNAPSHOT_LBX,152,35,100,145,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select a bundled item and a snapshot item, then click the Place button to place the bundled item in the snapshot.",IDC_STATIC,3,1,247,17
+    LTEXT           "Bundled Items",IDC_STATIC,1,25,79,8
+    LTEXT           "Snapshot Locations",IDC_SNAPSHOT_LBL,154,25,91,8
+    CONTROL         "Unplace",IDC_UNPLACE_BTN,"Button",BS_OWNERDRAW,102,90,48,14
+    CONTROL         "Place",IDC_PLACE_BTN,"Button",BS_OWNERDRAW,102,90,48,14
+END
+
+IDD_WAITDLG DIALOGEX 0, 0, 122, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Sorting..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Please wait...",IDC_STATIC,38,23,45,8
+END
+
+IDD_REGISTERDLG DIALOGEX 0, 0, 186, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Enter Registration Info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Name",IDC_STATIC,5,5,20,8
+    EDITTEXT        IDC_NAMETBX,5,15,175,12
+    LTEXT           "Serial Number",IDC_STATIC,5,35,45,8
+    EDITTEXT        IDC_NUMTBX,5,45,175,12
+    DEFPUSHBUTTON   "OK",IDOK,75,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,65,50,14
+END
+
+IDD_ABOUTDLG DIALOG 22, 17, 290, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TX81Z Programmer"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,118,130,53,14,WS_GROUP
+    CONTROL         IDB_LOGO_BMP,-1,"Static",SS_BITMAP,58,9,231,31
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#include <winres.h>\r\n"
+    "#include <dlgs.h>\r\n"
+    "#include ""lcdctrl.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SPLITUPDOWN         CURSOR                  "res/splitUD.cur"
+IDC_SPLITDOWN           CURSOR                  "res/splitD.cur"
+IDC_SPLITUP             CURSOR                  "res/splitU.cur"
+IDC_SPLITLEFTRIGHT      CURSOR                  "res/splitLR.cur"
+IDC_SPLITLEFT           CURSOR                  "res/splitL.cur"
+IDC_SPLITRIGHT          CURSOR                  "res/splitR.cur"
+IDC_PAN                 CURSOR                  "res/hand.cur"
+IDC_FINGER              CURSOR                  "res/finger.cur"
+IDC_LINK                CURSOR                  "res/link.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO_BMP            BITMAP                  "res/logo.bmp"
+IDB_FILE_BMP            BITMAP                  "res/filebtn2.bmp"
+IDB_SORT_BMP            BITMAP                  "res/sortbtn2.bmp"
+IDB_COPY_LEFT_BMP       BITMAP                  "res/copy_l.bmp"
+IDB_DISABLED_COPY_LEFT_BMP BITMAP                  "res/disabledcopy_l.bmp"
+IDB_COPY_RIGHT_BMP      BITMAP                  "res/copy_r.bmp"
+IDB_DISABLED_COPY_RIGHT_BMP BITMAP                  "res/disabledcopy_r.bmp"
+IDB_DELETE_BMP          BITMAP                  "res/delete.bmp"
+IDB_DISABLED_DELETE_BMP BITMAP                  "res/disableddelete.bmp"
+IDB_RENAME_BMP          BITMAP                  "res/rename.bmp"
+IDB_DISABLED_RENAME_BMP BITMAP                  "res/disabledrename.bmp"
+IDB_RECOMMENT_BMP       BITMAP                  "res/recomment.bmp"
+IDB_DISABLED_RECOMMENT_BMP BITMAP                  "res/disabledrecomment.bmp"
+IDB_DIFF_BMP            BITMAP                  "res/diff.bmp"
+IDB_DISABLED_DIFF_BMP   BITMAP                  "res/disableddiff.bmp"
+IDB_RESET_BMP           BITMAP                  "res/reset.bmp"
+IDB_STORE_BMP           BITMAP                  "res/store.bmp"
+IDB_UTILITY_BMP         BITMAP                  "res/utility.bmp"
+IDB_EDITCMP_BMP         BITMAP                  "res/editcmp.bmp"
+IDB_PLAYPFM_BMP         BITMAP                  "res/playpfm.bmp"
+IDB_LEFT_ARROW_BMP      BITMAP                  "res/leftarrow.bmp"
+IDB_RIGHT_ARROW_BMP     BITMAP                  "res/rightarrow.bmp"
+IDB_DEC_BMP             BITMAP                  "res/dec.bmp"
+IDB_INC_BMP             BITMAP                  "res/inc.bmp"
+IDB_CURSOR_BMP          BITMAP                  "res/cursor.bmp"
+IDB_SET_BMP             BITMAP                  "res/set.bmp"
+IDB_DISABLED_SET_BMP    BITMAP                  "res/disabledset.bmp"
+IDB_PLACE_BMP           BITMAP                  "res/place.bmp"
+IDB_DISABLED_PLACE_BMP  BITMAP                  "res/disabledplace.bmp"
+IDB_UNPLACE_BMP         BITMAP                  "res/unplace.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINWND, DIALOG
+    BEGIN
+    END
+
+    IDD_MIDIDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_VOICEDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_DATADLG, DIALOG
+    BEGIN
+    END
+
+    IDD_IMPORTDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 311
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_RECOMMENTDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_WAITDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_REGISTERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_ABOUTDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

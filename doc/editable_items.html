@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>TX81Z Programmer - Editable Items</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Editable Items</h2>
+
+Out of all the hundreds or even thousands of items that you can manage with
+the TX81Z Programmer, only seven of them are directly editable and those are
+the first seven items in the snapshot: the VCED, the PCED, the effects
+settings, the program change table, the two microtuning tables, and the system
+setup.  Each of these items has its own editor window, which you can bring up
+by selecting the item in the snapshot list and clicking the "Edit Item"
+button.
+
+<p>
+
+Anything else you want to edit has to be copied into one of these seven items
+before it can be edited.  This is usually done automatically and it will
+replace the current contents of the item with the item you want to edit before
+bringing up the editor for that item.  For example, if you have a voice
+called "GrandPiano" in the voice edit buffer (see <a href="edit_buffers.html">
+Edit Buffers</a>), and you double-click on a patch in a library called "Uprt
+Piano" in order to edit it, "GrandPiano" will be erased out of the voice edit
+buffer and replaced with "Uprt Piano".
+
+<p>
+
+There are a number of situations in which the contents of an editable item are
+replaced:
+
+<p>
+
+<ul>
+  <li>When you double-click on a bank voice in the snapshot (that is, the type
+      code is a patch number), then the contents of the VCED are replaced with
+      the voice you double-clicked on.
+  <p>
+  <li>When you double-click on a bank performance in the snapshot (that is, the
+      type code is a performance number), then the contents of the PCED are
+      replaced with the performance you double-clicked on.
+  <p>
+  <li>When you double-click on a library item that is not a performance bundle,
+      that item will replace the editable item in the snapshot that has the
+      same type as the double-clicked item.  If it's a performance bundle, it
+      <i>could</i> replace the effects or one of the microtuning tables (see
+      <a href="bundles.html">Performance Bundles</a> for more information on
+      how they are copied into the snapshot).
+  <p>
+  <li>If you manually change patches on the front panel of the unit, then the
+      unit will automatically send a bulk dump of the voice or performance
+      that is shown in the display.  The TX81Z Programmer will pick this up
+      and update its copy of the voice or performance edit buffer, so as to
+      stay synchronized with the unit.
+  <p>
+  <li>Anything you do in an editor will directly change the edit buffer it is
+      associated with.
+</ul>
+
+<p>
+
+<h3>A Word Of Warning</h3>
+
+The snapshot was designed to act as a reflection of what is currently stored
+in the TX81Z.  It shouldn't be used as a library.  You should always use a
+scratch file as the working snapshot, especially if you have the TX81Z
+Programmer set up to <a
+href="mainwnd_menu.html#autosavesnapshots">automatically save snapshots</a>
+when you close the program or open a new snapshot.
+
+<p>
+
+If you want to use snapshots to store different TX81Z setups to use in
+different situations, do it with the "Save Copy As..." and "Load Copy" items
+in the snapshot menu.  This will prevent the program from saving changes to
+your setups that you didn't intend to save.
+
+</body>
+</html>
+

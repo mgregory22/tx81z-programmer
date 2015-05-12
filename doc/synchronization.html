@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TX81Z Programmer - Synchronization</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+<img src="logo.gif"><p>
+
+<h2>Synchronization With The Snapshot While Editing</h2>
+
+When you edit a voice in the voice editor of the program, the program will
+apply the edit to the edit buffer in the snapshot and it will send a parameter
+change message to the the TX81Z.  In other words, the program will try to keep
+two synchronized.
+
+<p>
+
+This process isn't perfect, however, and the two can sometimes fall out of
+sync with each other and you'll have to manually synchronize them.
+
+<p>
+
+You can either send the snapshot's edit buffer to the TX81Z, or retrieve the
+TX81Z's edit buffer to update the snapshot to get them back into sync.  This
+can be done using the Editor menu of the editor you are working in, or with
+buttons to the right of the snapshot list in the main window.
+
+<p>
+
+<h2>Automatic Synchronization</h2>
+
+My goal with this program was to try and create a transparent interface to the
+unit, but the communication from the TX81Z to the program is very limited, so I
+needed to hack around the limitations, and I did this by retrieving dumps and
+analyzing them to figure out what state the unit is in.  This was kind of
+tricky but I think it works pretty good.  The situations where the data is
+retrieved automatically are as follows:
+
+<p>
+
+<ul>
+  <li>The program opens the MIDI-In port and leaves it open the whole time the
+      program is running.  I did this so that when the TX81Z sends a dump, the
+      program will receive it and update the snapshot.  But it won't receive
+      every dump spontaneously, only the VCED and the PCED.  I did this for a
+      couple of reasons.  For one, if you change patches with the front panel
+      of the unit, the TX81Z will send a sysex dump of the current patch.  The
+      editor will receive this and use it to update the snapshot.  I did this
+      so you'll know what you are editing at all times.  Another reason for the
+      spontaneous updates is that certain functions are not available with
+      direct sysex commands, so I worked around this with the remote sysex
+      commands, which are commands that act like button pushes from the front
+      panel.  The complication with this is that the program has to know what
+      mode the unit is in in order to send the right series of commands.  The
+      only way this can be done is by sending Play/Perform button messages and
+      receiving the dumps until the dump of the desired mode is received.
+      Fortunately, this won't wipe out the edit buffer if you have made edits
+      on it, so it's a perfectly safe thing to do -- on my unit at least.  You
+      may want to test yours to be sure.  I know there are
+      <a href="tx81z_notes.html#versions">different versions of the TX81Z</a>,
+      but I don't know what all of the differences are between them.
+<p>
+  <li>The program will request the program change table when it needs to do a
+      program change.  It does a program change when you select a bank item and
+      click the "Transmit Program Change" button, or you double-click on a
+      bank item.  That's pretty obvious, but another situation where it
+      requests the program change table is when you go to store a voice or
+      performance from within the program.  It does this to be sure that the
+      right patch is selected before going through with the storage procedure,
+      which involves a bunch of remote commands, so it also does the Play
+      button jig above, sends a program change, and then sends a bunch of
+      button push commands, so it's a pretty involved process.  I haven't had
+      any problems with it though, so I think it should be okay.  If you have
+      any problems with it, let me know.
+<p>
+      Another thing about doing program changes is that if the program change
+      that it needs to do is not in the table, then it hacks the table in order
+      to do the program change.  In other words, it replaces the first entry
+      with the entry it needs, sends program change #1, and then changes it
+      back.  It's kind of funny, really, but that's the only way to do it when
+      the editor needs to do a program change that's not in the table.  
+<p>
+  <li>The system setup is the only other thing the editor grabs out of the unit.
+      It mostly needs this to see if memory protect is turned on, and it needs
+      to know this whenever you store a voice or performance, or you send a
+      voice bank or performance bank to the unit.
+<p>
+  <li>There's another situation where the system setup is relevant, but the
+      editor doesn't retrieve it automatically, and that's when sending a
+      program change while in performance mode.  The "program change switch"
+      in the system setup affects this and the editor will conform to the
+      behavior of the unit if the system setup is properly synchronized, so
+      this is the main reason I added the
+      <a href="mainwnd_menu.html#startupsystem">Retrieve System Setup At
+      Startup</a> option to the main menu.
+</ul>
+
+<p>
+
+So those are all of the synchronization scenarios.  Wasn't that fun?  I don't
+think it's really important to remember all that.  As long as you don't treat
+the snapshot data like permanent data, then you should be safe from data loss.
+
+<p>
+
+I don't think the system setup and program change are all that important, but
+it's possible to lose a voice or performance that you've been working on if
+you're not careful.
+
+<p>
+
+The thing is is that it was a design decision I made between convenience and
+safety, and I chose convenience.  I think in the long run, when you're
+comfortable with the program, that convenience is better.  I probably worry too
+much about it, but I really have no idea who will be using this program and
+what type of skills people have.  I just don't know.
+
+<p>
+
+What I do know is that I downloaded an editor for my FS1R one time and I
+clicked on something before I knew how it worked, and it wiped out all of the
+data on my FS1R, 100 voices, 100 performances, many of them programmed from
+the front panel, and I had no backup or anything.  I was pretty ticked off
+about it and I pretty much quit making music altogether after that, so I don't
+want that to happen to anyone.
+
+</body>
+</html>
+
