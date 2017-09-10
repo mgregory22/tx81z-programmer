@@ -11,290 +11,292 @@
 <UL>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="TX81Z Programmer Manual">
-		<param name="Local" value="index.html">
+		<param name="Local" value="res/index.html">
 		</OBJECT>
 	<UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Quick Start">
-			<param name="Local" value="quickstart.html">
+			<param name="Local" value="res/quickstart.html">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Invokation / Multiple TX81Zs">
-			<param name="Local" value="invokation.html">
+			<param name="Local" value="res/invokation.html">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Main Window">
-			<param name="Local" value="mainwnd.html">
+			<param name="Local" value="res/mainwnd.html">
 			</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Main Window Menu">
-				<param name="Local" value="mainwnd_menu.html">
+				<param name="Local" value="res/mainwnd_menu.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Main Window Controls">
-				<param name="Local" value="mainwnd_controls.html">
+				<param name="Local" value="res/mainwnd_controls.html">
 				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Snapshot">
-			<param name="Local" value="snapshot.html">
+			<param name="Local" value="res/snapshot.html">
 			</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Snapshot Area">
-				<param name="Local" value="snapshot_area.html">
+				<param name="Local" value="res/snapshot_area.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Snapshot Menu">
-				<param name="Local" value="snapshot_menu.html">
+				<param name="Local" value="res/snapshot_menu.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Snapshot Buttons">
-				<param name="Local" value="snapshot_buttons.html">
+				<param name="Local" value="res/snapshot_buttons.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Item Types">
-				<param name="Local" value="item_types.html">
+				<param name="Local" value="res/item_types.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Editable Items">
-				<param name="Local" value="editable_items.html">
+				<param name="Local" value="res/editable_items.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Edit Buffers">
-				<param name="Local" value="edit_buffers.html">
+				<param name="Local" value="res/edit_buffers.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Synchronization">
-				<param name="Local" value="synchronization.html">
+				<param name="Local" value="res/synchronization.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Snapshot Files">
-				<param name="Local" value="snapshot_files.html">
+				<param name="Local" value="res/snapshot_files.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Performance Bundles">
-				<param name="Local" value="bundles.html">
+				<param name="Local" value="res/bundles.html">
 				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Libraries">
-			<param name="Local" value="libraries.html">
+			<param name="Local" value="res/libraries.html">
 			</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Library Area">
-				<param name="Local" value="library_area.html">
+				<param name="Local" value="res/library_area.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Library Menus">
-				<param name="Local" value="library_menus.html">
+				<param name="Local" value="res/library_menus.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Library Buttons">
-				<param name="Local" value="library_buttons.html">
+				<param name="Local" value="res/library_buttons.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Performance Bundles">
-				<param name="Local" value="bundles.html">
+				<param name="Local" value="res/bundles.html">
 				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Voice Editor">
-			<param name="Local" value="voice_editor.html">
+			<param name="Local" value="res/voice_editor.html">
 			</OBJECT>
 		<UL>
             <LI> <OBJECT type="text/sitemap">
                 <param name="Name" value="Controls And Features">
+                <param name="Local" value="res/controls_and_features.html">
                 </OBJECT>
             <UL>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Voice Editor Menus">
-                    <param name="Local" value="ve_menus.html">
+                    <param name="Local" value="res/ve_menus.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Scrolling">
-                    <param name="Local" value="ve_scrolling.html">
+                    <param name="Local" value="res/ve_scrolling.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="LCD Controls">
-                    <param name="Local" value="ve_lcdctrls.html">
+                    <param name="Local" value="res/ve_lcdctrls.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="EG Graphs">
-                    <param name="Local" value="ve_eggraphs.html">
+                    <param name="Local" value="res/ve_eggraphs.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Multiple Parameter Editing">
-                    <param name="Local" value="ve_multiedit.html">
+                    <param name="Local" value="res/ve_multiedit.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Simplified Frequency Selection">
-                    <param name="Local" value="ve_simplefreq.html">
+                    <param name="Local" value="res/ve_simplefreq.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Menu Buttons">
-                    <param name="Local" value="ve_menubtns.html">
+                    <param name="Local" value="res/ve_menubtns.html">
                     </OBJECT>
             </UL>
             <LI> <OBJECT type="text/sitemap">
                 <param name="Name" value="Parameter Controls">
+                <param name="Local" value="res/parameter_controls.html">
                 </OBJECT>
             <UL>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Algorithm And Feedback">
-                    <param name="Local" value="algorithm.html">
+                    <param name="Local" value="res/algorithm.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Amplitude Modulation Controls">
-                    <param name="Local" value="ampmod.html">
+                    <param name="Local" value="res/ampmod.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="EG Bias Controls">
-                    <param name="Local" value="egbias.html">
+                    <param name="Local" value="res/egbias.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="EG Controls">
-                    <param name="Local" value="eg.html">
+                    <param name="Local" value="res/eg.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Frequency Controls">
-                    <param name="Local" value="frequency.html">
+                    <param name="Local" value="res/frequency.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Misc Controls">
-                    <param name="Local" value="misc.html">
+                    <param name="Local" value="res/misc.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Output Controls">
-                    <param name="Local" value="output.html">
+                    <param name="Local" value="res/output.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Pitch Bias Control">
-                    <param name="Local" value="pitchbias.html">
+                    <param name="Local" value="res/pitchbias.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Pitch Modulation Controls">
-                    <param name="Local" value="pitchmod.html">
+                    <param name="Local" value="res/pitchmod.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Portamento Controls">
-                    <param name="Local" value="portamento.html">
+                    <param name="Local" value="res/portamento.html">
                     </OBJECT>
                 <LI> <OBJECT type="text/sitemap">
                     <param name="Name" value="Volume Control">
-                    <param name="Local" value="vol.html">
+                    <param name="Local" value="res/vol.html">
                     </OBJECT>
             </UL>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Performance Editor">
-			<param name="Local" value="performance_editor.html">
+			<param name="Local" value="res/performance_editor.html">
 			</OBJECT>
 		<UL>
             <LI> <OBJECT type="text/sitemap">
                 <param name="Name" value="Performance Editor Menus">
-                <param name="Local" value="pe_menus.html">
+                <param name="Local" value="res/pe_menus.html">
                 </OBJECT>
             <LI> <OBJECT type="text/sitemap">
                 <param name="Name" value="Controls">
-                <param name="Local" value="pe_controls.html">
+                <param name="Local" value="res/pe_controls.html">
                 </OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Effects Editor">
-			<param name="Local" value="effects_editor.html">
+			<param name="Local" value="res/effects_editor.html">
 			</OBJECT>
 		<UL>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Program Change Table Editor">
-			<param name="Local" value="pctable_editor.html">
+			<param name="Local" value="res/pctable_editor.html">
 			</OBJECT>
 		<UL>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Microtunings Editors">
-			<param name="Local" value="microtunings_editors.html">
+			<param name="Local" value="res/microtunings_editors.html">
 			</OBJECT>
 		<UL>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="System Setup Editor">
-			<param name="Local" value="system_editor.html">
+			<param name="Local" value="res/system_editor.html">
 			</OBJECT>
 		<UL>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Controls">
-			<param name="Local" value="controls.html">
+			<param name="Local" value="res/controls.html">
 			</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Algorithm Control">
-				<param name="Local" value="algctrl.html">
+				<param name="Local" value="res/algctrl.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Buttons">
-				<param name="Local" value="buttons.html">
+				<param name="Local" value="res/buttons.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Combo Boxes">
-				<param name="Local" value="comboboxes.html">
+				<param name="Local" value="res/comboboxes.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Dialog Boxes">
-				<param name="Local" value="dialogs.html">
+				<param name="Local" value="res/dialogs.html">
 				</OBJECT>
             <LI> <OBJECT type="text/sitemap">
                 <param name="Name" value="Keyboard Navigation">
-                <param name="Local" value="keyboard_navigation.html">
+                <param name="Local" value="res/keyboard_navigation.html">
                 </OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="LCD Controls">
-				<param name="Local" value="lcdctrl.html">
+				<param name="Local" value="res/lcdctrl.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="List Boxes">
-				<param name="Local" value="listboxes.html">
+				<param name="Local" value="res/listboxes.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Menus">
-				<param name="Local" value="menus.html">
+				<param name="Local" value="res/menus.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="MIDI Keyboard Control">
-				<param name="Local" value="midi_keyboard.html">
+				<param name="Local" value="res/midi_keyboard.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Radio Panel Controls">
-				<param name="Local" value="rpanel.html">
+				<param name="Local" value="res/rpanel.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Remote Control">
-				<param name="Local" value="remote_control.html">
+				<param name="Local" value="res/remote_control.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Scroll Bars">
-				<param name="Local" value="scrollbars.html">
+				<param name="Local" value="res/scrollbars.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Windows">
-				<param name="Local" value="windows.html">
+				<param name="Local" value="res/windows.html">
 				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Glossary">
-			<param name="Local" value="glossary.html">
+			<param name="Local" value="res/glossary.html">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="TX81Z Notes">
-			<param name="Local" value="tx81z_notes.html">
+			<param name="Local" value="res/tx81z_notes.html">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="License">
-			<param name="Local" value="license.html">
+			<param name="Local" value="res/license.html">
 			</OBJECT>
 	</UL>
 </UL>

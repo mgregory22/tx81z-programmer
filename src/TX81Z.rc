@@ -10,7 +10,7 @@
 #include "resource.h"
 #include <winres.h>
 #include <dlgs.h>
-#include "lcdctrl.h"
+#include "ctrl/lcdctrl.h"
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS

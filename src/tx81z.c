@@ -22,7 +22,7 @@
 #include "resource.h"
 #include "snapshot.h"
 #include "txpack.h"
-#include "TX81Z.h"
+#include "tx81z.h"
 
 /*
  * Global constants

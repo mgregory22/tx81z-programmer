@@ -3,85 +3,87 @@
 Binary Index=No
 Binary TOC=Yes
 Compatibility=1.1 or later
-Compiled file=.\TX81Z.chm
+Compiled file=..\Win32\Release\TX81Z.chm
 Contents file=TX81Z.hhc
 Default Window=Main
-Default topic=index.html
+Default topic=res/index.html
 Display compile progress=No
 Full-text search=Yes
 Language=0x409 English (United States)
 Title=TX81Z Programmer User Manual
 
 [WINDOWS]
-Main="TX81Z Programmer Manual","TX81Z.hhc",,"index.html","index.html",,,,,0x42420,122,0x184e,[0,8,564,392],0xb0000,,,,,,0
+Main="TX81Z Programmer Manual","TX81Z.hhc",,"res/index.html","res/index.html",,,,,0x42420,122,0x184e,[0,8,564,392],0xb0000,,,,,,0
 
 
 [FILES]
-algctrl.html
-algorithm.html
-ampmod.html
-bundles.html
-buttons.html
-comboboxes.html
-controls.html
-dialogs.html
-edit_buffers.html
-editable_items.html
-effects_editor.html
-eg.html
-egbias.html
-frequency.html
-glossary.html
-index.html
-invokation.html
-item_types.html
-keyboard_navigation.html
-lcdctrl.html
-lfo.html
-libraries.html
-library_area.html
-library_buttons.html
-library_menus.html
-license.html
-listboxes.html
-mainwnd.html
-mainwnd_controls.html
-mainwnd_menu.html
-menus.html
-microtunings_editors.html
-midi_keyboard.html
-misc.html
-mysteries.html
-output.html
-pctable_editor.html
-pe_controls.html
-pe_menus.html
-performance_editor.html
-pitchbias.html
-pitchmod.html
-portamento.html
-quickstart.html
-remote_control.html
-rpanel.html
-scrollbars.html
-snapshot.html
-snapshot_area.html
-synchronization.html
-snapshot_menu.html
-snapshot_files.html
-snapshot_buttons.html
-system_editor.html
-tx81z_notes.html
-ve_eggraphs.html
-ve_lcdctrls.html
-ve_menubtns.html
-ve_menus.html
-ve_multiedit.html
-ve_scrolling.html
-ve_simplefreq.html
-voice_editor.html
-vol.html
-windows.html
+res/algctrl.html
+res/algorithm.html
+res/ampmod.html
+res/bundles.html
+res/buttons.html
+res/comboboxes.html
+res/controls.html
+res/controls_and_features.html
+res/dialogs.html
+res/edit_buffers.html
+res/editable_items.html
+res/effects_editor.html
+res/eg.html
+res/egbias.html
+res/frequency.html
+res/glossary.html
+res/index.html
+res/invokation.html
+res/item_types.html
+res/keyboard_navigation.html
+res/lcdctrl.html
+res/lfo.html
+res/libraries.html
+res/library_area.html
+res/library_buttons.html
+res/library_menus.html
+res/license.html
+res/listboxes.html
+res/mainwnd.html
+res/mainwnd_controls.html
+res/mainwnd_menu.html
+res/menus.html
+res/microtunings_editors.html
+res/midi_keyboard.html
+res/misc.html
+res/mysteries.html
+res/output.html
+res/parameter_controls.html
+res/pctable_editor.html
+res/pe_controls.html
+res/pe_menus.html
+res/performance_editor.html
+res/pitchbias.html
+res/pitchmod.html
+res/portamento.html
+res/quickstart.html
+res/remote_control.html
+res/rpanel.html
+res/scrollbars.html
+res/snapshot.html
+res/snapshot_area.html
+res/synchronization.html
+res/snapshot_menu.html
+res/snapshot_files.html
+res/snapshot_buttons.html
+res/system_editor.html
+res/tx81z_notes.html
+res/ve_eggraphs.html
+res/ve_lcdctrls.html
+res/ve_menubtns.html
+res/ve_menus.html
+res/ve_multiedit.html
+res/ve_scrolling.html
+res/ve_simplefreq.html
+res/voice_editor.html
+res/vol.html
+res/windows.html
 
 [INFOTYPES]
 

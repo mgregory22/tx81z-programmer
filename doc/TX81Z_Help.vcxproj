@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res/algctrl.gif" />
+    <Image Include="res/algorithm.gif" />
+    <Image Include="res/ampmod.gif" />
+    <Image Include="res/bndldlg.gif" />
+    <Image Include="res/checkbox.gif" />
+    <Image Include="res/combobox.gif" />
+    <Image Include="res/datadlg.gif" />
+    <Image Include="res/dataflow.gif" />
+    <Image Include="res/dialog.gif" />
+    <Image Include="res/diff.gif" />
+    <Image Include="res/editgreet.gif" />
+    <Image Include="res/editkeys.gif" />
+    <Image Include="res/eg.gif" />
+    <Image Include="res/egbias.gif" />
+    <Image Include="res/EGgraphs.gif" />
+    <Image Include="res/excel.gif" />
+    <Image Include="res/exportdlg.gif" />
+    <Image Include="res/frequency.gif" />
+    <Image Include="res/fxdlg.gif" />
+    <Image Include="res/importdlg.gif" />
+    <Image Include="res/keynav.gif" />
+    <Image Include="res/lcdctrl.gif" />
+    <Image Include="res/lfo.gif" />
+    <Image Include="res/library_area.gif" />
+    <Image Include="res/library_buttons.gif" />
+    <Image Include="res/library_file_menu.gif" />
+    <Image Include="res/library_sort_menu.gif" />
+    <Image Include="res/listbox.gif" />
+    <Image Include="res/listbox_ctrl.gif" />
+    <Image Include="res/listbox_ctrl_shift.gif" />
+    <Image Include="res/listbox_shift.gif" />
+    <Image Include="res/logo.gif" />
+    <Image Include="res/mainwnd.gif" />
+    <Image Include="res/mainwnd_help_menu.gif" />
+    <Image Include="res/mainwnd_midi_menu.gif" />
+    <Image Include="res/mainwnd_options_menu.gif" />
+    <Image Include="res/mainwnd_program_menu.gif" />
+    <Image Include="res/mainwnd_window_menu.gif" />
+    <Image Include="res/menu.gif" />
+    <Image Include="res/midi_keyboard.gif" />
+    <Image Include="res/midi_setup.gif" />
+    <Image Include="res/misc.gif" />
+    <Image Include="res/mtodlg.gif" />
+    <Image Include="res/multiedit.gif" />
+    <Image Include="res/multiedit_1.gif" />
+    <Image Include="res/multiedit_output.gif" />
+    <Image Include="res/output.gif" />
+    <Image Include="res/pctable.gif" />
+    <Image Include="res/pe_assign.gif" />
+    <Image Include="res/pe_copyinst.gif" />
+    <Image Include="res/pe_edit_menu.gif" />
+    <Image Include="res/pe_effect.gif" />
+    <Image Include="res/pe_help_menu.gif" />
+    <Image Include="res/pe_inst.gif" />
+    <Image Include="res/pe_menubtn.gif" />
+    <Image Include="res/pe_mtkey.gif" />
+    <Image Include="res/pe_mttable.gif" />
+    <Image Include="res/pe_pfm_menu.gif" />
+    <Image Include="res/pe_store_pfm.gif" />
+    <Image Include="res/pe_window_menu.gif" />
+    <Image Include="res/pfmdlg.gif" />
+    <Image Include="res/pitchbias.gif" />
+    <Image Include="res/pitchmod.gif" />
+    <Image Include="res/popupmenu.gif" />
+    <Image Include="res/portamento.gif" />
+    <Image Include="res/pushbutton.gif" />
+    <Image Include="res/pushlike.gif" />
+    <Image Include="res/recommentdlg.gif" />
+    <Image Include="res/remote_control.gif" />
+    <Image Include="res/renamedlg.gif" />
+    <Image Include="res/rev1_0.gif" />
+    <Image Include="res/rev1_1.gif" />
+    <Image Include="res/rev1_2.gif" />
+    <Image Include="res/rev1_3.gif" />
+    <Image Include="res/rev1_4.gif" />
+    <Image Include="res/rev1_5.gif" />
+    <Image Include="res/rev1_6.gif" />
+    <Image Include="res/rpanel.gif" />
+    <Image Include="res/scrollbar.gif" />
+    <Image Include="res/searchdlg.gif" />
+    <Image Include="res/shortcut1.gif" />
+    <Image Include="res/shortcut2.gif" />
+    <Image Include="res/shortcut3.gif" />
+    <Image Include="res/shortcut4.gif" />
+    <Image Include="res/shortcut5.gif" />
+    <Image Include="res/shortcut6.gif" />
+    <Image Include="res/shortcut7.gif" />
+    <Image Include="res/shortcut8.gif" />
+    <Image Include="res/simplefreq.gif" />
+    <Image Include="res/snapshot.gif" />
+    <Image Include="res/snapshot_list.gif" />
+    <Image Include="res/snapshot_menu.gif" />
+    <Image Include="res/storedlg.gif" />
+    <Image Include="res/sysdlg.gif" />
+    <Image Include="res/system_menu.gif" />
+    <Image Include="res/testentry.gif" />
+    <Image Include="res/ve_edit_menu.gif" />
+    <Image Include="res/ve_help_menu.gif" />
+    <Image Include="res/ve_menubtns.gif" />
+    <Image Include="res/ve_menubtn_copy.gif" />
+    <Image Include="res/ve_menubtn_rand.gif" />
+    <Image Include="res/ve_menubtn_swap.gif" />
+    <Image Include="res/ve_options_menu.gif" />
+    <Image Include="res/ve_store_dlg.gif" />
+    <Image Include="res/ve_voice_menu.gif" />
+    <Image Include="res/ve_window_menu.gif" />
+    <Image Include="res/voice_editor.gif" />
+    <Image Include="res/vol.gif" />
+    <Image Include="res/window.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res/algctrl.html" />
+    <None Include="res/algorithm.html" />
+    <None Include="res/ampmod.html" />
+    <None Include="res/bundles.html" />
+    <None Include="res/buttons.html" />
+    <None Include="res/comboboxes.html" />
+    <None Include="res/controls.html" />
+    <None Include="res/dialogs.html" />
+    <None Include="res/editable_items.html" />
+    <None Include="res/edit_buffers.html" />
+    <None Include="res/effects_editor.html" />
+    <None Include="res/eg.html" />
+    <None Include="res/egbias.html" />
+    <None Include="res/frequency.html" />
+    <None Include="res/glossary.html" />
+    <None Include="res/index.html" />
+    <None Include="res/invokation.html" />
+    <None Include="res/item_types.html" />
+    <None Include="res/keyboard_navigation.html" />
+    <None Include="res/lcdctrl.html" />
+    <None Include="res/lfo.html" />
+    <None Include="res/libraries.html" />
+    <None Include="res/library_area.html" />
+    <None Include="res/library_buttons.html" />
+    <None Include="res/library_menus.html" />
+    <None Include="res/license.html" />
+    <None Include="res/listboxes.html" />
+    <None Include="res/mainwnd.html" />
+    <None Include="res/mainwnd_controls.html" />
+    <None Include="res/mainwnd_menu.html" />
+    <None Include="res/TX81Z.mak" />
+    <None Include="res/menus.html" />
+    <None Include="res/microtunings_editors.html" />
+    <None Include="res/midi_keyboard.html" />
+    <None Include="res/misc.html" />
+    <None Include="res/mysteries.html" />
+    <None Include="res/note.html" />
+    <None Include="res/output.html" />
+    <None Include="res/pctable_editor.html" />
+    <None Include="res/performance_editor.html" />
+    <None Include="res/pe_controls.html" />
+    <None Include="res/pe_menus.html" />
+    <None Include="res/pitchbias.html" />
+    <None Include="res/pitchmod.html" />
+    <None Include="res/portamento.html" />
+    <None Include="res/quickstart.html" />
+    <None Include="res/remote_control.html" />
+    <None Include="res/rpanel.html" />
+    <None Include="res/scrollbars.html" />
+    <None Include="res/snapshot.html" />
+    <None Include="res/snapshot_area.html" />
+    <None Include="res/snapshot_buttons.html" />
+    <None Include="res/snapshot_files.html" />
+    <None Include="res/snapshot_menu.html" />
+    <None Include="res/styles.css" />
+    <None Include="res/synchronization.html" />
+    <None Include="res/system_editor.html" />
+    <None Include="res/template.html" />
+    <None Include="res/toc.html" />
+    <None Include="TX81Z.hhc" />
+    <None Include="TX81Z.hhk" />
+    <None Include="TX81Z.hhp" />
+    <None Include="res/tx81z_notes.html" />
+    <None Include="res/ve_eggraphs.html" />
+    <None Include="res/ve_lcdctrls.html" />
+    <None Include="res/ve_menubtns.html" />
+    <None Include="res/ve_menus.html" />
+    <None Include="res/ve_multiedit.html" />
+    <None Include="res/ve_scrolling.html" />
+    <None Include="res/ve_simplefreq.html" />
+    <None Include="res/voice_editor.html" />
+    <None Include="res/vol.html" />
+    <None Include="res/windows.html" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36F9D44C-15D8-4606-8140-C7F7DB306F3D}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput>$(IntDir)\TX81Z.chm</NMakeOutput>
+    <NMakePreprocessorDefinitions>
+    </NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>nmake /f TX81Z.mak</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>nmake /A  /f TX81Z.mak</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>nmake clean /f TX81Z.mak</NMakeCleanCommandLine>
+    <OutDir>$(SolutionDir)Win32\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Win32\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

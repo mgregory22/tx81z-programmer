@@ -29,6 +29,7 @@ if (!empty($_GET)) {
   );
   foreach ($_GET as $param => $dummy) {
       $param = str_replace('_html', '.html', $param);
+      $param = str_replace('res/', '', $param);
       if (in_array($param, $pages)) {
           $source = $param;
       }

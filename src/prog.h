@@ -103,8 +103,8 @@ void Prog_UpdateSysColors(void);
 #ifdef DEFINE_GLOBALS
 
 const _TUCHAR Prog_name[] = _T("TX81Z Programmer");
-const _TUCHAR Prog_copyright[] = _T("Copyright (c) 2005-2015 Matt Gregory");
-const _TUCHAR Prog_version[] = _T("1.22");
+const _TUCHAR Prog_copyright[] = _T("Copyright (c) 2005, 2006, 2007, 2010, 2013, 2015, 2017 Matt Gregory");
+const _TUCHAR Prog_version[] = _T("1.23");
 HINSTANCE Prog_instance;
 HREGISTRY Prog_registry;
 HWND Prog_mainWnd;

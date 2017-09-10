@@ -18,8 +18,8 @@
  * with TX81Z Programmer.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "stdafx.h"
-#include "exportdlg.h"
-#include "importdlg.h"
+#include "dlg/exportdlg.h"
+#include "dlg/importdlg.h"
 #include "prog.h"
 #include "snapshot.h"
 #include "tx81z.h"

@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>hhc;hhk;hhp;mak</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>html;gif</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res/algctrl.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/algorithm.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ampmod.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/bndldlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/checkbox.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/combobox.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/datadlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/dataflow.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/dialog.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/diff.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/editgreet.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/editkeys.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/eg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/egbias.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/EGgraphs.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/excel.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/exportdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/frequency.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/fxdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/importdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/keynav.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/lcdctrl.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/lfo.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/library_area.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/library_buttons.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/library_file_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/library_sort_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/listbox.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/listbox_ctrl.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/listbox_ctrl_shift.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/listbox_shift.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/logo.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mainwnd.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mainwnd_help_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mainwnd_midi_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mainwnd_options_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mainwnd_program_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mainwnd_window_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/midi_keyboard.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/midi_setup.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/misc.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/mtodlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/multiedit.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/multiedit_1.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/multiedit_output.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/output.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pctable.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_assign.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_copyinst.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_edit_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_effect.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_help_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_inst.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_menubtn.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_mtkey.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_mttable.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_pfm_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_store_pfm.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pe_window_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pfmdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pitchbias.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pitchmod.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/popupmenu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/portamento.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pushbutton.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/pushlike.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/recommentdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/remote_control.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/renamedlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_0.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_1.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_2.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_3.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_4.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_5.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rev1_6.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/rpanel.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/scrollbar.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/searchdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut1.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut2.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut3.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut4.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut5.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut6.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut7.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/shortcut8.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/simplefreq.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/snapshot.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/snapshot_list.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/snapshot_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/storedlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/sysdlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/system_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/testentry.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_edit_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_help_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_menubtns.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_menubtn_copy.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_menubtn_rand.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_menubtn_swap.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_options_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_store_dlg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_voice_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/ve_window_menu.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/voice_editor.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/vol.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res/window.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TX81Z.hhc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="TX81Z.hhk">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="TX81Z.hhp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res/algctrl.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/algorithm.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ampmod.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/bundles.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/buttons.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/comboboxes.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/controls.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/dialogs.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/editable_items.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/edit_buffers.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/effects_editor.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/eg.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/egbias.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/frequency.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/glossary.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/index.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/invokation.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/item_types.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/keyboard_navigation.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/lcdctrl.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/lfo.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/libraries.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/library_area.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/library_buttons.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/library_menus.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/license.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/listboxes.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/mainwnd.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/mainwnd_controls.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/mainwnd_menu.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/TX81Z.mak">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res/menus.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/microtunings_editors.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/midi_keyboard.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/misc.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/mysteries.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/note.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/output.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/pctable_editor.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/performance_editor.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/pe_controls.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/pe_menus.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/pitchbias.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/pitchmod.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/portamento.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/quickstart.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/remote_control.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/rpanel.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/scrollbars.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/snapshot.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/snapshot_area.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/snapshot_buttons.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/snapshot_files.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/snapshot_menu.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/synchronization.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/system_editor.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/template.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/toc.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/tx81z_notes.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_eggraphs.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_lcdctrls.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_menubtns.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_menus.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_multiedit.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_scrolling.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/ve_simplefreq.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/voice_editor.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/vol.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/windows.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res/styles.css">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

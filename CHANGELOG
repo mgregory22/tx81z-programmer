@@ -275,7 +275,11 @@
 
 1.22 - Released 2015-05-12
 
-   * Removed the licensing code.
+    * Removed the licensing code.
 
-   * Made free.
+    * Made free.
+
+1.23 - Released 2017-09-10
+
+    * Created .msi installer
 

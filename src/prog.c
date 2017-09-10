@@ -18,27 +18,27 @@
  * with TX81Z Programmer.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "stdafx.h"
-#include "algctrl.h"
-#include "egctrl.h"
-#include "fxdlg.h"
-#include "kybdctrl.h"
-#include "kybddlg.h"
-#include "lcdctrl.h"
-#include "mainwnd.h"
-#include "menubtn.h"
-#include "mtfdlg.h"
-#include "mtodlg.h"
-#include "pcdlg.h"
-#include "pfmdlg.h"
-#include "remotewnd.h"
+#include "ctrl/algctrl.h"
+#include "ctrl/egctrl.h"
+#include "ctrl/kybdctrl.h"
+#include "ctrl/lcdctrl.h"
+#include "ctrl/rpanel.h"
+#include "ctrl/txlbx.h"
+#include "ctrl/voicemenu.h"
+#include "dlg/fxdlg.h"
+#include "dlg/kybddlg.h"
+#include "dlg/mtfdlg.h"
+#include "dlg/mtodlg.h"
+#include "dlg/pcdlg.h"
+#include "dlg/pfmdlg.h"
+#include "dlg/voicedlg.h"
+#include "gui/menubtn.h"
+#include "wnd/mainwnd.h"
+#include "wnd/remotewnd.h"
 #include "resource.h"
-#include "rpanel.h"
 #include "snapshot.h"
 #include "tx81z.h"
-#include "txlbx.h"
 #include "txlib.h"
-#include "voicedlg.h"
-#include "voicemenu.h"
 #define DEFINE_GLOBALS
 #include "prog.h"
 
@@ -141,7 +141,7 @@ static const _TUCHAR *p_regSubkeys[10] = {
 };
 static const _TUCHAR p_helpPrefix[] = _T("tx81z.chm::/");
 #define p_helpPrefixLen STRSIZE(p_helpPrefix)
-static const _TUCHAR p_helpSitePrefix[] = _T("http://the-all.org/tx81z/programmer/docs.php?");
+static const _TUCHAR p_helpSitePrefix[] = _T("https://the-all.org/tx81z/programmer/docs.php?");
 #define p_helpSitePrefixLen STRSIZE(p_helpSitePrefix)
 #define p_helpPathMax (_MAX_PATH * 2)
 #define p_helpSiteMax 1024

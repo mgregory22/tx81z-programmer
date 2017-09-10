@@ -12,9 +12,7 @@
 
 # Build results
 [Dd]ebug/
-[Dd]ebugU/
 [Rr]elease/
-[Rr]eleaseU/
 x64/
 x86/
 build/

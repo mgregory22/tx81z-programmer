@@ -15,136 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="aboutdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="algctrl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="area.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bndldlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cdvlist.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="copyinstdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="datadlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dialog.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="diffdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="egctrl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="exportdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="file.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="filedlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="filepath.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="font.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fxdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="guierror.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="importdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="keynav.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kybdctrl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kybddlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lcdctrl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mainwnd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="menubtn.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="midi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="midierror.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="minifont.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="msgbox.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="msgerror.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mtfdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mtgen.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mtodlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pcdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pfmdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pfmnav.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="prog.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="random.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="recommentdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="rect.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="registry.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="remotewnd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="renamedlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="rpanel.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="searchdlg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="snapshot.c">
@@ -153,19 +24,7 @@
     <ClCompile Include="stdafx.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="storedlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="str.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sysdlg.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="tx81z.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="txlbx.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="txlib.c">
@@ -177,16 +36,160 @@
     <ClCompile Include="undo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="voicedlg.c">
+    <ClCompile Include="msg\cdvlist.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="voicemenu.c">
+    <ClCompile Include="msg\file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="voicenav.c">
+    <ClCompile Include="msg\filepath.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="window.c">
+    <ClCompile Include="msg\random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\area.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\dialog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\minifont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\msgbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\rect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\aboutdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\bndldlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\copyinstdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\datadlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\diffdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\exportdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\fxdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\importdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\kybddlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\mtfdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\mtgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\mtodlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\pcdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\pfmdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\recommentdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\renamedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\searchdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\setupdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\storedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\sysdlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\voicedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\algctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\egctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\kybdctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\lcdctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\rpanel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\txlbx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\voicemenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="midi\midi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\keynav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\pfmnav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\voicenav.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="midi\midierror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\msgerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\guierror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg\filedlg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnd\mainwnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnd\remotewnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\menubtn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -196,148 +199,19 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="aboutdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="algctrl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="area.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="bndldlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cdvlist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="colors.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="copyinstdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="datadlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dialog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="diffdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="egctrl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="exportdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="file.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="filedlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="filepath.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="font.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="func.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fxdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="guierror.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="importdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="keynav.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="kybdctrl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="kybddlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lcdctrl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="macros.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mainwnd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="menubtn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="midi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="midierror.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="minifont.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="msgbox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="msgerror.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mtfdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mtgen.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mtodlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pcdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pfmdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pfmnav.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="prog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="random.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="recommentdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rect.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="registry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="remotewnd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="renamedlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rpanel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="searchdlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="snapshot.h">
@@ -346,19 +220,7 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="storedlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="str.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sysdlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="tx81z.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="txlbx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="txlib.h">
@@ -370,19 +232,166 @@
     <ClInclude Include="undo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="voicedlg.h">
+    <ClInclude Include="gui\area.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="voicemenu.h">
+    <ClInclude Include="gui\colors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="voicenav.h">
+    <ClInclude Include="gui\dialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="window.h">
+    <ClInclude Include="gui\font.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="winx.h">
+    <ClInclude Include="gui\minifont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\msgbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\winx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\cdvlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\filepath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\aboutdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\bndldlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\copyinstdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\datadlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\diffdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\exportdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\fxdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\importdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\kybddlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\mtfdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\mtgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\mtodlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\pcdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\pfmdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\recommentdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\renamedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\searchdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\storedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\sysdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\voicedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\algctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\egctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\kybdctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\lcdctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\rpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\txlbx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\voicemenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\keynav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\pfmnav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\voicenav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="midi\midierror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\guierror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\msgerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg\filedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnd\mainwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnd\remotewnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\menubtn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
