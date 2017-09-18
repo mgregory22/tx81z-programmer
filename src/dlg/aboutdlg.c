@@ -46,7 +46,7 @@ static int ad_progLen;
 static int ad_copyLen;
 static const _TUCHAR ad_websiteLabel[] = _T("Website:");
 #define ad_websiteLabelLen  STRSIZE(ad_websiteLabel)
-static const _TUCHAR ad_website[] = _T("https://the-all.org/tx81z/programmer.html");
+static const _TUCHAR ad_website[] = _T("https://mgregory22.me/tx81z/programmer.html");
 #define ad_websiteLen  STRSIZE(ad_website)
 static const _TUCHAR ad_emailLabel[] = _T("Email:");
 #define ad_emailLabelLen  STRSIZE(ad_emailLabel)
@@ -60,8 +60,8 @@ static const _TUCHAR ad_ack1[] = _T("Special thanks to Fran Bourdeau and Jesse H
 #define ad_emailBottom    (ad_emailTop + 15)
 #define ad_ack1Top        172
 #define ad_ack1Bottom     (ad_ack1Top + 15)
-static RECT ad_websiteRect = { 147, ad_websiteTop, 350, ad_websiteBottom };
-static RECT ad_emailRect = { 147, ad_emailTop, 302, ad_emailBottom };
+static RECT ad_websiteRect = { 132, ad_websiteTop, 380, ad_websiteBottom };
+static RECT ad_emailRect = { 132, ad_emailTop, 302, ad_emailBottom };
 static BOOL ad_mouseDown;
 static RECT *focusRect;
 
@@ -222,12 +222,12 @@ void ad_OnPaint(HWND aboutDlg)
     /*
      * Draw the website label.
      */
-    RECT_SET(textRect, 87, ad_websiteTop, 137, ad_websiteBottom);
+    RECT_SET(textRect, 72, ad_websiteTop, 122, ad_websiteBottom);
     DrawText(dC, ad_websiteLabel, ad_websiteLabelLen, &textRect, DT_RIGHT | DT_SINGLELINE);
     /*
      * Draw the email label.
      */
-    RECT_SET(textRect, 87, ad_emailTop, 137, ad_emailBottom);
+    RECT_SET(textRect, 72, ad_emailTop, 122, ad_emailBottom);
     DrawText(dC, ad_emailLabel, ad_emailLabelLen, &textRect, DT_RIGHT | DT_SINGLELINE);
     /*
      * Set up a hyperlink font.

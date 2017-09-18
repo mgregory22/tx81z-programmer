@@ -1,6 +1,6 @@
 # TX81Z Programmer
 
-https://the-all.org/tx81z/programmer.html
+https://mgregory22.me/tx81z/programmer.html
 
 This is an MS-Windows software editor for the 1987 Yamaha TX81Z synthesizer module.
 

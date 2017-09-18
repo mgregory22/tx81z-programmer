@@ -141,7 +141,7 @@ static const _TUCHAR *p_regSubkeys[10] = {
 };
 static const _TUCHAR p_helpPrefix[] = _T("tx81z.chm::/");
 #define p_helpPrefixLen STRSIZE(p_helpPrefix)
-static const _TUCHAR p_helpSitePrefix[] = _T("https://the-all.org/tx81z/programmer/docs.php?");
+static const _TUCHAR p_helpSitePrefix[] = _T("https://mgregory22.me/tx81z/programmer/docs.php?");
 #define p_helpSitePrefixLen STRSIZE(p_helpSitePrefix)
 #define p_helpPathMax (_MAX_PATH * 2)
 #define p_helpSiteMax 1024
