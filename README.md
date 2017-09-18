@@ -10,8 +10,8 @@ This code was originally written on Visual C++ 6.  I now have it configured to c
 
 ## Software Dependencies
 
-* [Visual Studio Community Edition 2015](https://www.visualstudio.com/vs/older-downloads/)
-* [Microsoft Visual Studio 2015 Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2015InstallerProjects) to build the installer project
+* [Visual Studio Community Edition 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community)
+* [Microsoft Visual Studio 2017 Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects) to build the installer project
 * [Microsoft HTML Help Workshop 1.3](https://msdn.microsoft.com/en-us/library/windows/desktop/ms669985.aspx) to build the HTML Help file
 
 ## File Layout

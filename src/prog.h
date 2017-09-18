@@ -104,7 +104,7 @@ void Prog_UpdateSysColors(void);
 
 const _TUCHAR Prog_name[] = _T("TX81Z Programmer");
 const _TUCHAR Prog_copyright[] = _T("Copyright (c) 2005, 2006, 2007, 2010, 2013, 2015, 2017 Matt Gregory");
-const _TUCHAR Prog_version[] = _T("1.24");
+const _TUCHAR Prog_version[] = _T("1.25");
 HINSTANCE Prog_instance;
 HREGISTRY Prog_registry;
 HWND Prog_mainWnd;

@@ -286,3 +286,8 @@
 1.24 - Released 2017-09-14
 
     * Changed links to https://mgregory22.me/
+
+1.25 - Released 2017-09-18
+
+    * Fixed prerequisites for the installer.  The previous version was
+	  installing .net stuff instead of the Visual C++ Runtime Libraries.

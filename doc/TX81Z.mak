@@ -47,6 +47,7 @@ OUTPUTPATH=..\Win32\Release
 TARGET=$(OUTPUTPATH)\TX81Z.chm
 
 $(TARGET): TX81Z.hhp TX81Z.hhc TX81Z.hhk $(DEPS)
+# -1 turns off error checking: https://docs.microsoft.com/en-us/cpp/build/command-modifiers
 	-1 $(HHC) TX81Z.hhp
 
 clean:
